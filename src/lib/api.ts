@@ -1,28 +1,8 @@
-import { Post } from "@/interfaces/post";
-import fs from "fs";
+import {Post} from "@/interfaces/post";
+import fs from "node:fs";
 import matter from "gray-matter";
-import { join } from "path";
-
-const postsDirectory = join(process.cwd(), "_posts");
-
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
-}
-
-export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-
-  return { ...data, slug: realSlug, content } as Post;
-}
-
-export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
-}
+import {join} from "node:path";
+const directory=join(process.cwd(),"_posts");
+export function getPostSlugs(){return fs.readdirSync(directory).filter(name=>/^[a-z0-9-]+\.md$/.test(name))}
+export function getPostBySlug(slug:string):Post|undefined {const name=slug.replace(/\.md$/,"");if(!/^[a-z0-9-]+$/.test(name))return;const path=join(directory,`${name}.md`);if(!fs.existsSync(path))return;const {data,content}=matter(fs.readFileSync(path,"utf8"));if(data.status!=="published")return;return {...data,slug:name,content} as Post}
+export function getAllPosts():Post[]{return getPostSlugs().map(getPostBySlug).filter((post):post is Post=>!!post).sort((a,b)=>b.date.localeCompare(a.date))}

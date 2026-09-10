@@ -2,6 +2,8 @@ import { type Author } from "./author";
 
 export type Post = {
   slug: string;
+  category: string;
+  readTime: number;
   title: string;
   date: string;
   coverImage: string;

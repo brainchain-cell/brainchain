@@ -1,72 +1,10 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
+import type {Metadata} from "next";
+import Link from "next/link";
+import {notFound} from "next/navigation";
+import {getAllPosts,getPostBySlug} from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
-import Alert from "@/app/_components/alert";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
-
-export default async function Post(props: Params) {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return notFound();
-  }
-
-  const content = await markdownToHtml(post.content || "");
-
-  return (
-    <main>
-      <Alert preview={post.preview} />
-      <Container>
-        <Header />
-        <article className="mb-32">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
-          <PostBody content={content} />
-        </article>
-      </Container>
-    </main>
-  );
-}
-
-type Params = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export async function generateMetadata(props: Params): Promise<Metadata> {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-
-  if (!post) {
-    return notFound();
-  }
-
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
-
-  return {
-    title,
-    openGraph: {
-      title,
-      images: [post.ogImage.url],
-    },
-  };
-}
-
-export async function generateStaticParams() {
-  const posts = getAllPosts();
-
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
+type Props={params:Promise<{slug:string}>};
+export const dynamicParams=false;
+export default async function Article({params}:Props){const post=getPostBySlug((await params).slug);if(!post)notFound();return <main id="main" className="article"><Link href="/#guides">← All guides</Link><h1>{post.title}</h1><p className="meta">{post.category} · Brainchain editorial · {post.readTime} min read</p><p className="notice">An editorial guide based on linked documentation. This is not a hands-on product review.</p><div className="prose" dangerouslySetInnerHTML={{__html:await markdownToHtml(post.content)}}/><p className="notice">Read our <Link href="/disclosure">affiliate disclosure</Link> and <Link href="/about">editorial standards</Link>.</p></main>}
+export async function generateMetadata({params}:Props):Promise<Metadata>{const post=getPostBySlug((await params).slug);if(!post)notFound();return {title:post.title,description:post.excerpt}}
+export function generateStaticParams(){return getAllPosts().map(post=>({slug:post.slug}))}

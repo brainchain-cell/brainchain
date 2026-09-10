@@ -1,30 +1,3 @@
-import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
-
-export default function Index() {
-  const allPosts = getAllPosts();
-
-  const heroPost = allPosts[0];
-
-  const morePosts = allPosts.slice(1);
-
-  return (
-    <main>
-      <Container>
-        <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
-    </main>
-  );
-}
+import Link from "next/link";
+import {getAllPosts} from "@/lib/api";
+export default function Home(){const posts=getAllPosts();return <main id="main"><section className="hero"><div><p className="eyebrow">THE PRACTICAL AI PUBLICATION</p><h1>Less busywork.<br/><span>Better work.</span></h1><p className="lede">Understand the tools. Find a useful workflow. Put AI to work on something that matters.</p><a className="button" href="#guides">Explore the guides <span aria-hidden="true">↗</span></a></div><aside className="feature"><p className="eyebrow">START HERE / 01</p><h2>Automate a task,<br/>not a broken process.</h2><p>A practical checklist for choosing your first automation—and knowing whether it actually helps.</p><Link href="/posts/choose-your-first-automation">Read the field guide <span aria-hidden="true">↗</span></Link><div className="sequence"><span>Define</span><span>Test</span><span>Measure</span></div></aside></section><section id="guides" className="guides"><div className="section-heading"><div><p className="eyebrow">THE FIELD GUIDES</p><h2>Useful before impressive.</h2></div><p>Automation · Writing · Productivity</p></div><div className="cards">{posts.map((post,i)=><article className="card" key={post.slug}><div className="card-top"><span>{post.category}</span><span>0{i+1}</span></div><h3><Link href={`/posts/${post.slug}`}>{post.title}</Link></h3><p>{post.excerpt}</p><div className="card-bottom"><span>{post.readTime} min read</span><Link aria-label={`Read ${post.title}`} href={`/posts/${post.slug}`}>Read guide ↗</Link></div></article>)}</div></section><section className="principles"><h2>Clear sources.<br/>Honest limitations.</h2><div><p>No invented hands-on tests. No made-up scores. Our guides distinguish documented features from editorial suggestions, and link to the original sources.</p><Link href="/about">How Brainchain works ↗</Link></div></section></main>}
