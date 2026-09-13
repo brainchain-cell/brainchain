@@ -1,0 +1,37 @@
+[
+  {
+    "id": "foundations",
+    "title": "Foundations",
+    "summary": "Pick a task, design a small workflow, and keep AI outputs honest before you buy another tool.",
+    "lessons": [
+      "choose-your-first-automation",
+      "ai-writing-with-a-verification-step",
+      "choose-ai-tools-by-task"
+    ]
+  },
+  {
+    "id": "cursor",
+    "title": "Cursor",
+    "summary": "Brief a coding agent, review its diffs, and keep Git as the source of truth.",
+    "lessons": [
+      "brief-a-coding-agent",
+      "review-before-you-merge-ai-code"
+    ]
+  },
+  {
+    "id": "notion",
+    "title": "Notion",
+    "summary": "Use Notion AI inside your workspace without confusing drafts with approved records.",
+    "lessons": [
+      "keep-notion-ai-drafts-separate"
+    ]
+  },
+  {
+    "id": "agents",
+    "title": "Agents and automation",
+    "summary": "Tell fixed workflows from computer-using agents, and decide which one your task needs.",
+    "lessons": [
+      "agent-or-automation"
+    ]
+  }
+]
