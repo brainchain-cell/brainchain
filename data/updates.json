@@ -1,10 +1,52 @@
 [
   {
-    "id": "3eb3e9557eb7038e",
-    "title": "Paul Christiano joins OpenAI Foundation Board",
-    "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+    "id": "968c32634dc2a1cb",
+    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
     "source": "OpenAI",
-    "date": "2026-09-09T17:00:00+00:00"
+    "date": "2026-09-14T00:00:00+00:00"
+  },
+  {
+    "id": "4aeb82da9975e2f5",
+    "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "source": "OpenAI",
+    "date": "2026-09-11T16:00:00+00:00"
+  },
+  {
+    "id": "46fcf5bb7b99520f",
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "source": "OpenAI",
+    "date": "2026-09-11T10:00:00+00:00"
+  },
+  {
+    "id": "39842fa0b34b37cb",
+    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "source": "OpenAI",
+    "date": "2026-09-10T16:00:00+00:00"
+  },
+  {
+    "id": "ceadd21f5d3a2d65",
+    "title": "3 ways to prep for your next big race with Search",
+    "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "source": "Google AI",
+    "date": "2026-09-10T16:00:00+00:00"
+  },
+  {
+    "id": "6a886414536a09e3",
+    "title": "Now everyone can put data to work",
+    "url": "https://openai.com/index/put-data-to-work",
+    "source": "OpenAI",
+    "date": "2026-09-10T15:00:00+00:00"
+  },
+  {
+    "id": "0bb946f0c4215389",
+    "title": "Introducing ChatGPT for Financial Services",
+    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "source": "OpenAI",
+    "date": "2026-09-10T07:00:00+00:00"
   },
   {
     "id": "73af7527f82e0ada",
@@ -19,41 +61,6 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
     "source": "Google AI",
     "date": "2026-09-09T16:00:00+00:00"
-  },
-  {
-    "id": "a7c183de5112de47",
-    "title": "The AI policy window is open. We need to act.",
-    "url": "https://openai.com/index/ai-policy-window",
-    "source": "OpenAI",
-    "date": "2026-09-09T13:00:00+00:00"
-  },
-  {
-    "id": "333ccaae81484d3a",
-    "title": "GPT-6 Astra: The next generation in intelligence for work",
-    "url": "https://openai.com/index/gpt-6-astra-next-generation-work",
-    "source": "OpenAI",
-    "date": "2026-09-09T11:00:00+00:00"
-  },
-  {
-    "id": "503e9c2326e78f3e",
-    "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-    "url": "https://openai.com/index/codex-quantum-computing-experiments",
-    "source": "OpenAI",
-    "date": "2026-09-08T17:00:00+00:00"
-  },
-  {
-    "id": "a00fc889a2dd293b",
-    "title": "The Work Now Within Reach",
-    "url": "https://openai.com/index/the-work-now-within-reach",
-    "source": "OpenAI",
-    "date": "2026-09-08T13:00:00+00:00"
-  },
-  {
-    "id": "1dcea8b0f8acab14",
-    "title": "Introducing ChatGPT Images 2.5",
-    "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-    "source": "OpenAI",
-    "date": "2026-09-08T11:30:00+00:00"
   },
   {
     "id": "5eb2aa71a90a9c91",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
     "source": "Google AI",
     "date": "2026-09-01T16:00:00+00:00"
-  },
-  {
-    "id": "a1c9c66d73112465",
-    "title": "3 new ways to plan and book travel in Search",
-    "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
-    "source": "Google AI",
-    "date": "2026-08-27T16:00:00+00:00"
   }
 ]
