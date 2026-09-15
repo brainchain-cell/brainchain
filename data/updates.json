@@ -1,5 +1,26 @@
 [
   {
+    "id": "6666660dfd652924",
+    "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+    "source": "Google AI",
+    "date": "2026-09-14T19:00:00+00:00"
+  },
+  {
+    "id": "ac6fab4ebd9f6bc8",
+    "title": "DevFest is back",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "source": "Google AI",
+    "date": "2026-09-14T16:00:00+00:00"
+  },
+  {
+    "id": "7f82d995c515e5ba",
+    "title": "How Fyxer built an AI executive assistant people trust",
+    "url": "https://openai.com/index/fyxer",
+    "source": "OpenAI",
+    "date": "2026-09-14T12:00:00+00:00"
+  },
+  {
     "id": "968c32634dc2a1cb",
     "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
     "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
@@ -42,13 +63,6 @@
     "date": "2026-09-10T15:00:00+00:00"
   },
   {
-    "id": "0bb946f0c4215389",
-    "title": "Introducing ChatGPT for Financial Services",
-    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
-    "source": "OpenAI",
-    "date": "2026-09-10T07:00:00+00:00"
-  },
-  {
     "id": "73af7527f82e0ada",
     "title": "Get ready for the game with new football features in Search",
     "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
@@ -68,19 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
     "source": "Google AI",
     "date": "2026-09-02T15:40:00+00:00"
-  },
-  {
-    "id": "c97fc05837957282",
-    "title": "The latest AI news we announced in August 2026",
-    "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
-    "source": "Google AI",
-    "date": "2026-09-01T20:45:00+00:00"
-  },
-  {
-    "id": "7415c6bcd9dd29da",
-    "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-    "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-    "source": "Google AI",
-    "date": "2026-09-01T16:00:00+00:00"
   }
 ]
