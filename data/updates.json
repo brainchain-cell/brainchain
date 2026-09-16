@@ -1,5 +1,33 @@
 [
   {
+    "id": "970c94673769027a",
+    "title": "AI for Societal Impact",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+    "source": "Google AI",
+    "date": "2026-09-15T16:00:00+00:00"
+  },
+  {
+    "id": "6fff55fdf7cb614f",
+    "title": "Building AI to accelerate science and improve lives",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+    "source": "Google AI",
+    "date": "2026-09-15T16:00:00+00:00"
+  },
+  {
+    "id": "50f1fa34d3c31e12",
+    "title": "AI for everyone in every language",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "source": "Google AI",
+    "date": "2026-09-15T16:00:00+00:00"
+  },
+  {
+    "id": "b21c5e1ffc812be8",
+    "title": "New insights from Google’s AI & Economy ATLAS",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "source": "Google AI",
+    "date": "2026-09-15T13:00:00+00:00"
+  },
+  {
     "id": "6666660dfd652924",
     "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
     "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
@@ -49,38 +77,10 @@
     "date": "2026-09-10T16:00:00+00:00"
   },
   {
-    "id": "ceadd21f5d3a2d65",
-    "title": "3 ways to prep for your next big race with Search",
-    "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
-    "source": "Google AI",
-    "date": "2026-09-10T16:00:00+00:00"
-  },
-  {
     "id": "6a886414536a09e3",
     "title": "Now everyone can put data to work",
     "url": "https://openai.com/index/put-data-to-work",
     "source": "OpenAI",
     "date": "2026-09-10T15:00:00+00:00"
-  },
-  {
-    "id": "73af7527f82e0ada",
-    "title": "Get ready for the game with new football features in Search",
-    "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
-    "source": "Google AI",
-    "date": "2026-09-09T16:00:00+00:00"
-  },
-  {
-    "id": "82b8bf7db8ec7233",
-    "title": "Recreating a 70-year love story frame by frame",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-    "source": "Google AI",
-    "date": "2026-09-09T16:00:00+00:00"
-  },
-  {
-    "id": "5eb2aa71a90a9c91",
-    "title": "Proactive cyber defense for governments and enterprises",
-    "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-    "source": "Google AI",
-    "date": "2026-09-02T15:40:00+00:00"
   }
 ]
