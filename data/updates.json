@@ -1,5 +1,40 @@
 [
   {
+    "id": "f3899afd4d6a0a2d",
+    "title": "Our framework for reporting model misalignment",
+    "url": "https://openai.com/index/model-misalignment-reporting-framework",
+    "source": "OpenAI",
+    "date": "2026-09-16T17:00:00+00:00"
+  },
+  {
+    "id": "b0366f9850a9d166",
+    "title": "Helping older adults use AI in everyday life",
+    "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+    "source": "OpenAI",
+    "date": "2026-09-16T16:00:00+00:00"
+  },
+  {
+    "id": "6ac27c68838b29ee",
+    "title": "Reimagining advertising with AI",
+    "url": "https://openai.com/index/reimagining-advertising-with-ai",
+    "source": "OpenAI",
+    "date": "2026-09-16T13:00:00+00:00"
+  },
+  {
+    "id": "4410122683c56925",
+    "title": "How to connect AI usage to business value",
+    "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+    "source": "OpenAI",
+    "date": "2026-09-16T12:00:00+00:00"
+  },
+  {
+    "id": "7d2872733a614740",
+    "title": "How workers are unlocking new ways of working",
+    "url": "https://openai.com/index/unlocking-new-ways-of-working",
+    "source": "OpenAI",
+    "date": "2026-09-16T09:00:00+00:00"
+  },
+  {
     "id": "970c94673769027a",
     "title": "AI for Societal Impact",
     "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
@@ -47,40 +82,5 @@
     "url": "https://openai.com/index/fyxer",
     "source": "OpenAI",
     "date": "2026-09-14T12:00:00+00:00"
-  },
-  {
-    "id": "968c32634dc2a1cb",
-    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
-    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "source": "OpenAI",
-    "date": "2026-09-14T00:00:00+00:00"
-  },
-  {
-    "id": "4aeb82da9975e2f5",
-    "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
-    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
-    "source": "OpenAI",
-    "date": "2026-09-11T16:00:00+00:00"
-  },
-  {
-    "id": "46fcf5bb7b99520f",
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-    "source": "OpenAI",
-    "date": "2026-09-11T10:00:00+00:00"
-  },
-  {
-    "id": "39842fa0b34b37cb",
-    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
-    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-    "source": "OpenAI",
-    "date": "2026-09-10T16:00:00+00:00"
-  },
-  {
-    "id": "6a886414536a09e3",
-    "title": "Now everyone can put data to work",
-    "url": "https://openai.com/index/put-data-to-work",
-    "source": "OpenAI",
-    "date": "2026-09-10T15:00:00+00:00"
   }
 ]
