@@ -1,5 +1,26 @@
 [
   {
+    "id": "590df77dc8c3726e",
+    "title": "Making global data easier to explore",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+    "source": "Google AI",
+    "date": "2026-09-17T20:00:00+00:00"
+  },
+  {
+    "id": "d22acfa5d0cc1d09",
+    "title": "How Cooley is accelerating IPO work with ChatGPT",
+    "url": "https://openai.com/index/cooley-gopublic",
+    "source": "OpenAI",
+    "date": "2026-09-17T12:00:00+00:00"
+  },
+  {
+    "id": "192794312f979cbd",
+    "title": "Introducing Astra for Law",
+    "url": "https://openai.com/index/astra-for-law",
+    "source": "OpenAI",
+    "date": "2026-09-17T00:00:00+00:00"
+  },
+  {
     "id": "f3899afd4d6a0a2d",
     "title": "Our framework for reporting model misalignment",
     "url": "https://openai.com/index/model-misalignment-reporting-framework",
@@ -26,13 +47,6 @@
     "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
     "source": "OpenAI",
     "date": "2026-09-16T12:00:00+00:00"
-  },
-  {
-    "id": "7d2872733a614740",
-    "title": "How workers are unlocking new ways of working",
-    "url": "https://openai.com/index/unlocking-new-ways-of-working",
-    "source": "OpenAI",
-    "date": "2026-09-16T09:00:00+00:00"
   },
   {
     "id": "970c94673769027a",
@@ -68,19 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
     "source": "Google AI",
     "date": "2026-09-14T19:00:00+00:00"
-  },
-  {
-    "id": "ac6fab4ebd9f6bc8",
-    "title": "DevFest is back",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
-    "source": "Google AI",
-    "date": "2026-09-14T16:00:00+00:00"
-  },
-  {
-    "id": "7f82d995c515e5ba",
-    "title": "How Fyxer built an AI executive assistant people trust",
-    "url": "https://openai.com/index/fyxer",
-    "source": "OpenAI",
-    "date": "2026-09-14T12:00:00+00:00"
   }
 ]
