@@ -1,5 +1,26 @@
 [
   {
+    "id": "d92122e53ec9d4f7",
+    "title": "New experts join Google’s AI & Economy team",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "source": "Google AI",
+    "date": "2026-09-18T14:00:00+00:00"
+  },
+  {
+    "id": "44ec3a3d6fdc7de7",
+    "title": "Co-creating the future of fashion with Google",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+    "source": "Google AI",
+    "date": "2026-09-18T13:00:00+00:00"
+  },
+  {
+    "id": "a00923bf4ddda715",
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "url": "https://openai.com/index/australian-youth-safety-blueprint",
+    "source": "OpenAI",
+    "date": "2026-09-18T12:00:00+00:00"
+  },
+  {
     "id": "590df77dc8c3726e",
     "title": "Making global data easier to explore",
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
@@ -42,13 +63,6 @@
     "date": "2026-09-16T13:00:00+00:00"
   },
   {
-    "id": "4410122683c56925",
-    "title": "How to connect AI usage to business value",
-    "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-    "source": "OpenAI",
-    "date": "2026-09-16T12:00:00+00:00"
-  },
-  {
     "id": "970c94673769027a",
     "title": "AI for Societal Impact",
     "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
@@ -68,19 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
     "source": "Google AI",
     "date": "2026-09-15T16:00:00+00:00"
-  },
-  {
-    "id": "b21c5e1ffc812be8",
-    "title": "New insights from Google’s AI & Economy ATLAS",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
-    "source": "Google AI",
-    "date": "2026-09-15T13:00:00+00:00"
-  },
-  {
-    "id": "6666660dfd652924",
-    "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
-    "source": "Google AI",
-    "date": "2026-09-14T19:00:00+00:00"
   }
 ]
