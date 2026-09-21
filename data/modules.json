@@ -12,26 +12,30 @@
   {
     "id": "cursor",
     "title": "Cursor",
-    "summary": "Brief a coding agent, review its diffs, and keep Git as the source of truth.",
+    "summary": "Brief a coding agent, review its diffs, keep Git as the source of truth, and direct multi-step Projects when work outlives one chat.",
     "lessons": [
       "brief-a-coding-agent",
-      "review-before-you-merge-ai-code"
+      "review-before-you-merge-ai-code",
+      "cursor-projects-for-multi-step-work"
     ]
   },
   {
     "id": "notion",
     "title": "Notion",
-    "summary": "Use Notion AI inside your workspace without confusing drafts with approved records.",
+    "summary": "Use Notion AI without mixing drafts into your system of record, and share team skills as SKILL.md across agents.",
     "lessons": [
-      "keep-notion-ai-drafts-separate"
+      "keep-notion-ai-drafts-separate",
+      "notion-agent-skills-skill-md"
     ]
   },
   {
     "id": "agents",
     "title": "Agents and automation",
-    "summary": "Tell fixed workflows from computer-using agents, and decide which one your task needs.",
+    "summary": "Tell fixed workflows from computer-using agents, then practice parallel threads and managed harnesses when judgment is the bottleneck.",
     "lessons": [
-      "agent-or-automation"
+      "agent-or-automation",
+      "claude-code-projects-parallel-agents",
+      "openai-agents-api-harness"
     ]
   }
 ]

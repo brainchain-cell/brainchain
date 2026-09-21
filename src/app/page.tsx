@@ -38,14 +38,20 @@ export default function Home(){
           <article className="card">
             <div className="card-top"><span>Build</span><span>02</span></div>
             <h3><Link href="/learn#cursor">Cursor</Link></h3>
-            <p>Brief a coding agent and review diffs before you merge.</p>
-            <div className="card-bottom"><span>2 lessons</span><Link href="/learn#cursor">Open module ↗</Link></div>
+            <p>Brief a coding agent, review diffs, and direct Projects when work outlives one chat.</p>
+            <div className="card-bottom"><span>3 lessons</span><Link href="/learn#cursor">Open module ↗</Link></div>
           </article>
           <article className="card">
             <div className="card-top"><span>Workspace</span><span>03</span></div>
             <h3><Link href="/learn#notion">Notion</Link></h3>
-            <p>Use Notion AI without mixing drafts into your system of record.</p>
-            <div className="card-bottom"><span>1 lesson</span><Link href="/learn#notion">Open module ↗</Link></div>
+            <p>Use Notion AI without mixing drafts into your system of record, and share skills as SKILL.md.</p>
+            <div className="card-bottom"><span>2 lessons</span><Link href="/learn#notion">Open module ↗</Link></div>
+          </article>
+          <article className="card">
+            <div className="card-top"><span>Direct</span><span>04</span></div>
+            <h3><Link href="/learn#agents">Agents and automation</Link></h3>
+            <p>Tell fixed workflows from agents, then keep parallel threads and harnesses behind review.</p>
+            <div className="card-bottom"><span>3 lessons</span><Link href="/learn#agents">Open module ↗</Link></div>
           </article>
         </div>
       </section>
@@ -61,7 +67,7 @@ export default function Home(){
         <div className="cards">
           {posts.map((post,i)=>(
             <article className="card" key={post.slug}>
-              <div className="card-top"><span>{post.category}</span><span>0{i+1}</span></div>
+              <div className="card-top"><span>{post.category}</span><span>{String(i+1).padStart(2,"0")}</span></div>
               <h3><Link href={`/posts/${post.slug}`}>{post.title}</Link></h3>
               <p>{post.excerpt}</p>
               <div className="card-bottom">
