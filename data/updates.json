@@ -1,5 +1,40 @@
 [
   {
+    "id": "08ffdb24bebd9aa2",
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "source": "OpenAI",
+    "date": "2026-09-21T12:00:00+00:00"
+  },
+  {
+    "id": "8fe4474fdbb9c4c4",
+    "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+    "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+    "source": "OpenAI",
+    "date": "2026-09-21T12:00:00+00:00"
+  },
+  {
+    "id": "10538c022345675d",
+    "title": "Building standards for the next phase of AI",
+    "url": "https://openai.com/index/building-standards-next-phase-ai",
+    "source": "OpenAI",
+    "date": "2026-09-21T10:00:00+00:00"
+  },
+  {
+    "id": "2f8d9b98fc157bb3",
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "source": "OpenAI",
+    "date": "2026-09-21T07:00:00+00:00"
+  },
+  {
+    "id": "d2871d486c61275a",
+    "title": "How V7 gives AI agents institutional memory",
+    "url": "https://openai.com/index/v7",
+    "source": "OpenAI",
+    "date": "2026-09-21T00:00:00+00:00"
+  },
+  {
     "id": "d92122e53ec9d4f7",
     "title": "New experts join Google’s AI & Economy team",
     "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
@@ -26,41 +61,6 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
     "source": "Google AI",
     "date": "2026-09-17T20:00:00+00:00"
-  },
-  {
-    "id": "d22acfa5d0cc1d09",
-    "title": "How Cooley is accelerating IPO work with ChatGPT",
-    "url": "https://openai.com/index/cooley-gopublic",
-    "source": "OpenAI",
-    "date": "2026-09-17T12:00:00+00:00"
-  },
-  {
-    "id": "192794312f979cbd",
-    "title": "Introducing Astra for Law",
-    "url": "https://openai.com/index/astra-for-law",
-    "source": "OpenAI",
-    "date": "2026-09-17T00:00:00+00:00"
-  },
-  {
-    "id": "f3899afd4d6a0a2d",
-    "title": "Our framework for reporting model misalignment",
-    "url": "https://openai.com/index/model-misalignment-reporting-framework",
-    "source": "OpenAI",
-    "date": "2026-09-16T17:00:00+00:00"
-  },
-  {
-    "id": "b0366f9850a9d166",
-    "title": "Helping older adults use AI in everyday life",
-    "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-    "source": "OpenAI",
-    "date": "2026-09-16T16:00:00+00:00"
-  },
-  {
-    "id": "6ac27c68838b29ee",
-    "title": "Reimagining advertising with AI",
-    "url": "https://openai.com/index/reimagining-advertising-with-ai",
-    "source": "OpenAI",
-    "date": "2026-09-16T13:00:00+00:00"
   },
   {
     "id": "970c94673769027a",
