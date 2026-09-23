@@ -1,10 +1,31 @@
 [
   {
-    "id": "08ffdb24bebd9aa2",
-    "title": "Advisory Group on Mathematics and Artificial Intelligence",
-    "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "id": "f9027d80e820682e",
+    "title": "Better prompt caching for GPT-6",
+    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
     "source": "OpenAI",
-    "date": "2026-09-21T12:00:00+00:00"
+    "date": "2026-09-22T21:00:00+00:00"
+  },
+  {
+    "id": "73461b3e97af0d93",
+    "title": "Introducing GPT-6 Sol and Luna",
+    "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+    "source": "OpenAI",
+    "date": "2026-09-22T18:00:00+00:00"
+  },
+  {
+    "id": "3fcefd9c665fb2c2",
+    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+    "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+    "source": "OpenAI",
+    "date": "2026-09-22T12:00:00+00:00"
+  },
+  {
+    "id": "60efaf744a4d6c2c",
+    "title": "Priorities and principles for effective third party assessments",
+    "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+    "source": "OpenAI",
+    "date": "2026-09-22T00:00:00+00:00"
   },
   {
     "id": "8fe4474fdbb9c4c4",
@@ -14,25 +35,11 @@
     "date": "2026-09-21T12:00:00+00:00"
   },
   {
-    "id": "10538c022345675d",
-    "title": "Building standards for the next phase of AI",
-    "url": "https://openai.com/index/building-standards-next-phase-ai",
+    "id": "08ffdb24bebd9aa2",
+    "title": "Advisory Group on Mathematics and Artificial Intelligence",
+    "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
     "source": "OpenAI",
-    "date": "2026-09-21T10:00:00+00:00"
-  },
-  {
-    "id": "2f8d9b98fc157bb3",
-    "title": "Expanding OpenAI Academy with new learning paths",
-    "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-    "source": "OpenAI",
-    "date": "2026-09-21T07:00:00+00:00"
-  },
-  {
-    "id": "d2871d486c61275a",
-    "title": "How V7 gives AI agents institutional memory",
-    "url": "https://openai.com/index/v7",
-    "source": "OpenAI",
-    "date": "2026-09-21T00:00:00+00:00"
+    "date": "2026-09-21T12:00:00+00:00"
   },
   {
     "id": "d92122e53ec9d4f7",
@@ -47,13 +54,6 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
     "source": "Google AI",
     "date": "2026-09-18T13:00:00+00:00"
-  },
-  {
-    "id": "a00923bf4ddda715",
-    "title": "Introducing the Australian Youth Safety Blueprint",
-    "url": "https://openai.com/index/australian-youth-safety-blueprint",
-    "source": "OpenAI",
-    "date": "2026-09-18T12:00:00+00:00"
   },
   {
     "id": "590df77dc8c3726e",
