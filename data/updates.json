@@ -1,5 +1,47 @@
 [
   {
+    "id": "50d71cd52400f551",
+    "title": "How we will do better for Australia",
+    "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+    "source": "OpenAI",
+    "date": "2026-09-28T19:00:00+00:00"
+  },
+  {
+    "id": "2fc54b690d7b20a2",
+    "title": "Towards safety cases for frontier AI training",
+    "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+    "source": "OpenAI",
+    "date": "2026-09-28T19:00:00+00:00"
+  },
+  {
+    "id": "db713ef86bd59ea8",
+    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "source": "Google AI",
+    "date": "2026-09-28T19:00:00+00:00"
+  },
+  {
+    "id": "0adf5bb2a473897d",
+    "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+    "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+    "source": "OpenAI",
+    "date": "2026-09-28T07:00:00+00:00"
+  },
+  {
+    "id": "833e9419a34f8836",
+    "title": "Are you a Codex Original?",
+    "url": "https://openai.com/form/codex-originals",
+    "source": "OpenAI",
+    "date": "2026-09-28T00:00:00+00:00"
+  },
+  {
+    "id": "eb674100bb687fff",
+    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+    "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+    "source": "OpenAI",
+    "date": "2026-09-28T00:00:00+00:00"
+  },
+  {
     "id": "9de028fbe46cac8b",
     "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
     "url": "https://openai.com/index/proaction",
@@ -12,41 +54,6 @@
     "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
     "source": "Google AI",
     "date": "2026-09-23T18:00:00+00:00"
-  },
-  {
-    "id": "52e46e8371e1f699",
-    "title": "Two years of OpenAI Academy",
-    "url": "https://openai.com/index/two-years-of-openai-academy",
-    "source": "OpenAI",
-    "date": "2026-09-23T16:00:00+00:00"
-  },
-  {
-    "id": "9328fa400dd37e6b",
-    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-    "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-    "source": "OpenAI",
-    "date": "2026-09-23T13:00:00+00:00"
-  },
-  {
-    "id": "347b65ce144a221e",
-    "title": "Sam Altman’s remarks at the United Nations Security Council",
-    "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
-    "source": "OpenAI",
-    "date": "2026-09-23T12:00:00+00:00"
-  },
-  {
-    "id": "52b80abd4e046c04",
-    "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-    "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
-    "source": "OpenAI",
-    "date": "2026-09-23T12:00:00+00:00"
-  },
-  {
-    "id": "f2ff7f7605612041",
-    "title": "How invideo improves color grading 3x with GPT‑6 Astra",
-    "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
-    "source": "OpenAI",
-    "date": "2026-09-23T12:00:00+00:00"
   },
   {
     "id": "d92122e53ec9d4f7",
@@ -73,13 +80,6 @@
     "id": "970c94673769027a",
     "title": "AI for Societal Impact",
     "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
-    "source": "Google AI",
-    "date": "2026-09-15T16:00:00+00:00"
-  },
-  {
-    "id": "6fff55fdf7cb614f",
-    "title": "Building AI to accelerate science and improve lives",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
     "source": "Google AI",
     "date": "2026-09-15T16:00:00+00:00"
   }
