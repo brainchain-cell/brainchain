@@ -1,15 +1,36 @@
 [
   {
-    "id": "50d71cd52400f551",
-    "title": "How we will do better for Australia",
-    "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+    "id": "d6b9f5e651b1891e",
+    "title": "Introducing GPT-6.1 Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
     "source": "OpenAI",
-    "date": "2026-09-28T19:00:00+00:00"
+    "date": "2026-09-29T10:00:00+00:00"
+  },
+  {
+    "id": "6071f63e21f64254",
+    "title": "DevDay 2026 Recap",
+    "url": "https://openai.com/index/devday-2026-recap",
+    "source": "OpenAI",
+    "date": "2026-09-29T10:00:00+00:00"
+  },
+  {
+    "id": "dec620cb7225d243",
+    "title": "Introducing dots",
+    "url": "https://openai.com/index/introducing-dots",
+    "source": "OpenAI",
+    "date": "2026-09-29T00:00:00+00:00"
   },
   {
     "id": "2fc54b690d7b20a2",
     "title": "Towards safety cases for frontier AI training",
     "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+    "source": "OpenAI",
+    "date": "2026-09-28T19:00:00+00:00"
+  },
+  {
+    "id": "50d71cd52400f551",
+    "title": "How we will do better for Australia",
+    "url": "https://openai.com/index/how-we-will-do-better-for-australia",
     "source": "OpenAI",
     "date": "2026-09-28T19:00:00+00:00"
   },
@@ -26,27 +47,6 @@
     "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
     "source": "OpenAI",
     "date": "2026-09-28T07:00:00+00:00"
-  },
-  {
-    "id": "833e9419a34f8836",
-    "title": "Are you a Codex Original?",
-    "url": "https://openai.com/form/codex-originals",
-    "source": "OpenAI",
-    "date": "2026-09-28T00:00:00+00:00"
-  },
-  {
-    "id": "eb674100bb687fff",
-    "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-    "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-    "source": "OpenAI",
-    "date": "2026-09-28T00:00:00+00:00"
-  },
-  {
-    "id": "9de028fbe46cac8b",
-    "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-    "url": "https://openai.com/index/proaction",
-    "source": "OpenAI",
-    "date": "2026-09-25T19:00:00+00:00"
   },
   {
     "id": "1ccf342131e2aeec",
