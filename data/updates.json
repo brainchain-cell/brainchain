@@ -1,5 +1,26 @@
 [
   {
+    "id": "c38af6e5cae43e23",
+    "title": "A model guide for the GPT-6 family",
+    "url": "https://openai.com/index/practical-guide-building-gpt-6",
+    "source": "OpenAI",
+    "date": "2026-10-02T16:15:00+00:00"
+  },
+  {
+    "id": "6a7bb4e3e69d69f5",
+    "title": "The latest AI news we announced in September 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+    "source": "Google AI",
+    "date": "2026-10-02T15:00:00+00:00"
+  },
+  {
+    "id": "882596cbc7639eb4",
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "url": "https://openai.com/index/chatham-financial",
+    "source": "OpenAI",
+    "date": "2026-10-02T00:00:00+00:00"
+  },
+  {
     "id": "b8087b88cb63ae7f",
     "title": "The eternal complement",
     "url": "https://openai.com/index/the-eternal-complement",
@@ -26,20 +47,6 @@
     "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
     "source": "OpenAI",
     "date": "2026-09-30T10:30:00+00:00"
-  },
-  {
-    "id": "061338e668ed6974",
-    "title": "Helping small businesses put AI to work",
-    "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-    "source": "OpenAI",
-    "date": "2026-09-30T10:00:00+00:00"
-  },
-  {
-    "id": "d6b9f5e651b1891e",
-    "title": "Introducing GPT-6.1 Sol",
-    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-    "source": "OpenAI",
-    "date": "2026-09-29T10:00:00+00:00"
   },
   {
     "id": "db713ef86bd59ea8",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
     "source": "Google AI",
     "date": "2026-09-17T20:00:00+00:00"
-  },
-  {
-    "id": "970c94673769027a",
-    "title": "AI for Societal Impact",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
-    "source": "Google AI",
-    "date": "2026-09-15T16:00:00+00:00"
   }
 ]
