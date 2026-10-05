@@ -1,5 +1,12 @@
 [
   {
+    "id": "2d8e70fb45cef747",
+    "title": "Building advertising for the way people use AI",
+    "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+    "source": "OpenAI",
+    "date": "2026-10-05T10:00:00+00:00"
+  },
+  {
     "id": "c38af6e5cae43e23",
     "title": "A model guide for the GPT-6 family",
     "url": "https://openai.com/index/practical-guide-building-gpt-6",
@@ -40,13 +47,6 @@
     "url": "https://openai.com/index/the-den-family-social",
     "source": "OpenAI",
     "date": "2026-10-01T00:00:00+00:00"
-  },
-  {
-    "id": "90249c2a3882c6d3",
-    "title": "Disrupting a coordinated model-distillation campaign",
-    "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-    "source": "OpenAI",
-    "date": "2026-09-30T10:30:00+00:00"
   },
   {
     "id": "db713ef86bd59ea8",
