@@ -1,5 +1,33 @@
 [
   {
+    "id": "661f64ddb5f472a2",
+    "title": "Helping teens learn, plan, and shape the future of AI",
+    "url": "https://openai.com/index/teens-learn-and-plan",
+    "source": "OpenAI",
+    "date": "2026-10-07T12:00:00+00:00"
+  },
+  {
+    "id": "b6aec8c05cfc3e2f",
+    "title": "Introducing Playground: Create and play custom games",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+    "source": "Google AI",
+    "date": "2026-10-07T12:00:00+00:00"
+  },
+  {
+    "id": "4e324623ab7ca6fe",
+    "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+    "url": "https://openai.com/index/radisson",
+    "source": "OpenAI",
+    "date": "2026-10-07T07:00:00+00:00"
+  },
+  {
+    "id": "a097ef0d441a7216",
+    "title": "GPT-6 and Intelligent UI for everyone",
+    "url": "https://openai.com/index/gpt-6-for-everyone",
+    "source": "OpenAI",
+    "date": "2026-10-07T00:00:00+00:00"
+  },
+  {
     "id": "2896758265cec81d",
     "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
     "url": "https://openai.com/index/atlassian-partnership",
@@ -19,27 +47,6 @@
     "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
     "source": "OpenAI",
     "date": "2026-10-06T12:00:00+00:00"
-  },
-  {
-    "id": "f57eff9c23a4454b",
-    "title": "Advancing computer use with Ironclad",
-    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-    "source": "OpenAI",
-    "date": "2026-10-06T10:00:00+00:00"
-  },
-  {
-    "id": "d2b5b29b4c815525",
-    "title": "Our approach to EU text provenance rules",
-    "url": "https://openai.com/index/eu-text-provenance",
-    "source": "OpenAI",
-    "date": "2026-10-05T15:00:00+00:00"
-  },
-  {
-    "id": "2d8e70fb45cef747",
-    "title": "Building advertising for the way people use AI",
-    "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-    "source": "OpenAI",
-    "date": "2026-10-05T10:00:00+00:00"
   },
   {
     "id": "6a7bb4e3e69d69f5",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
     "source": "Google AI",
     "date": "2026-09-18T13:00:00+00:00"
-  },
-  {
-    "id": "590df77dc8c3726e",
-    "title": "Making global data easier to explore",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
-    "source": "Google AI",
-    "date": "2026-09-17T20:00:00+00:00"
   }
 ]
