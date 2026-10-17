@@ -1,5 +1,26 @@
 [
   {
+    "id": "9732b2763df5a67a",
+    "title": "How Itaú is building generative AI for its entire customer base",
+    "url": "https://openai.com/index/itau-generative-ai",
+    "source": "OpenAI",
+    "date": "2026-10-16T19:00:00+00:00"
+  },
+  {
+    "id": "9e63539289a31c86",
+    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "source": "OpenAI",
+    "date": "2026-10-16T00:00:00+00:00"
+  },
+  {
+    "id": "b6756c0a180ee554",
+    "title": "Benefit Street Partners answers questions faster with Codex",
+    "url": "https://openai.com/index/benefit-street-partners",
+    "source": "OpenAI",
+    "date": "2026-10-16T00:00:00+00:00"
+  },
+  {
     "id": "32165ee6af8945a5",
     "title": "Bringing GPT-Rosalind to academic research labs",
     "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
@@ -19,27 +40,6 @@
     "url": "https://openai.com/index/sullivan-cromwell",
     "source": "OpenAI",
     "date": "2026-10-15T00:00:00+00:00"
-  },
-  {
-    "id": "57c3309db5bedcde",
-    "title": "Amp puts AI agents to work beyond code with OpenAI models",
-    "url": "https://openai.com/index/amp-beyond-coding",
-    "source": "OpenAI",
-    "date": "2026-10-14T12:00:00+00:00"
-  },
-  {
-    "id": "004cd593adabcd24",
-    "title": "SentinelOne cuts malware analysis from weeks to hours",
-    "url": "https://openai.com/index/sentinelone",
-    "source": "OpenAI",
-    "date": "2026-10-14T12:00:00+00:00"
-  },
-  {
-    "id": "a8b8c31de898145e",
-    "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-    "url": "https://openai.com/index/third-moment-research",
-    "source": "OpenAI",
-    "date": "2026-10-14T07:00:00+00:00"
   },
   {
     "id": "74c9e10c02543c49",
