@@ -1,7 +1,6 @@
 ---
 title: "A better AI writing workflow starts before the prompt"
 category: Writing
-readTime: 6
 excerpt: "Give the draft a clear brief, keep facts traceable and make the final edit yours."
 date: "2026-09-10"
 status: published

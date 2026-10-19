@@ -1,7 +1,6 @@
 ---
 title: "Treat OpenAI's Agents API as a managed harness—not autopilot"
 category: Agents
-readTime: 9
 excerpt: "The Agents API public beta exposes the Codex harness: durable sessions, tools, and sandboxes. You still choose the environment and the approval boundary."
 date: "2026-09-21"
 status: published

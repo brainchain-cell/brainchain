@@ -1,7 +1,6 @@
 ---
 title: "Review AI code before you merge it"
 category: Cursor
-readTime: 7
 excerpt: "Use diffs, checks and a short review checklist so agent-written changes do not become silent debt."
 date: "2026-09-13"
 status: published

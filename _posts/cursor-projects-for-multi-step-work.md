@@ -1,7 +1,6 @@
 ---
 title: "Use Cursor Projects for work that outlives one chat"
 category: Cursor
-readTime: 8
 excerpt: "Direct a Cursor Project through its coordinator: shared context, cloud workers, and a review gate you still own."
 date: "2026-09-21"
 status: published
