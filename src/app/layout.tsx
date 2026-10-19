@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { CloudflareAnalytics } from "@/components/CloudflareAnalytics";
+import { pageMetadata, SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/metadata";
 import "./globals.css";
-export const metadata: Metadata = {title:{default:"Brainchain — AI tools for useful work",template:"%s | Brainchain"},description:"Practical guides to automation, writing and productivity. Make informed decisions about AI tools."};
+
+export const metadata: Metadata = {
+  ...pageMetadata({
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    path: "/",
+  }),
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_TITLE, template: `%s | ${SITE_NAME}` },
+};
 export default function RootLayout({children}:{children:React.ReactNode}) {
   return (
     <html lang="en">
@@ -35,6 +46,7 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
           (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
           ml('account', '2632671');
         `}</Script>
+        <CloudflareAnalytics />
       </body>
     </html>
   );
