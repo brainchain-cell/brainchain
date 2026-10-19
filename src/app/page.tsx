@@ -1,5 +1,6 @@
 import Link from "next/link";
 import modules from "../../data/modules.json";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import {getAllPosts} from "@/lib/api";
 
 const moduleBlurbs: Record<string, {label: string; text: string}> = {
@@ -87,16 +88,7 @@ export default function Home(){
           ))}
         </div>
       </section>
-      <section id="newsletter" className="newsletter" aria-labelledby="newsletter-heading">
-        <div className="newsletter-copy">
-          <p className="eyebrow">BY EMAIL</p>
-          <h2 id="newsletter-heading">Put one useful AI workflow into practice.</h2>
-          <p>Get Brainchain&apos;s practical lessons, copyable prompts and workflow exercises by email. Start with the first-automation worksheet.</p>
-        </div>
-        <div className="newsletter-form">
-          <div className="ml-embedded" data-form="QZNbil"></div>
-        </div>
-      </section>
+      <NewsletterSignup />
       <section className="principles">
         <h2>Clear sources.<br/>Honest limitations.</h2>
         <div>
