@@ -1,0 +1,619 @@
+{
+  "categories": [
+    {
+      "id": "automation",
+      "title": "Automation",
+      "description": "Connect apps and run a workflow when something happens.",
+      "applicationCategory": "BusinessApplication"
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "description": "Draft, rewrite, and check text.",
+      "applicationCategory": "BusinessApplication"
+    },
+    {
+      "id": "research",
+      "title": "Research",
+      "description": "Search for sources, or work from documents you provide.",
+      "applicationCategory": "EducationalApplication"
+    },
+    {
+      "id": "voice-audio",
+      "title": "Voice and audio",
+      "description": "Transcribe speech, generate a voice, or edit sound.",
+      "applicationCategory": "MultimediaApplication"
+    },
+    {
+      "id": "coding",
+      "title": "Coding",
+      "description": "Edit a project with an assistant or a coding agent.",
+      "applicationCategory": "DeveloperApplication"
+    },
+    {
+      "id": "image-video",
+      "title": "Image and video",
+      "description": "Generate or edit images and video.",
+      "applicationCategory": "MultimediaApplication"
+    },
+    {
+      "id": "productivity",
+      "title": "Productivity",
+      "description": "Notes, meetings, and decks in the place the work already lives.",
+      "applicationCategory": "BusinessApplication"
+    }
+  ],
+  "tools": [
+    {
+      "slug": "make",
+      "name": "Make",
+      "category": "automation",
+      "summary": "Make builds scenarios: automated workflows that take data from one app, transform it, and send it to another. Most actions use one credit. Some AI-provider actions use more.",
+      "whoItsFor": "People and teams connecting the apps they already use. Make's pricing page describes plans for someone new to automation and for running a business on it, including a start-up discount for companies under 20 employees.",
+      "freeTier": "Yes. The free plan includes 1,000 credits per month.",
+      "paidFrom": "unknown",
+      "pricingModel": "Paid plans named on the pricing page are Core, Pro, and Teams, plus a start-up offer (50% off Business for qualifying companies under 20 employees). Core, Pro, and Teams accept major credit cards, ACH direct debit, and Google Pay. Enterprise can pay by wire after an invoice. The pricing page text did not list an entry dollar price.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.make.com/en/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.make.com/",
+      "lessons": [
+        "choose-your-first-automation",
+        "choose-ai-tools-by-task",
+        "agent-or-automation"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "zapier",
+      "name": "Zapier",
+      "category": "automation",
+      "summary": "Zapier is a no-code automation platform. A plan sets features and a monthly task allowance. A successful step in a Zap, and some programmatic calls, consume tasks.",
+      "whoItsFor": "Zapier's pricing page describes Free for trying automation solo, Professional for an individual who needs multi-step Zaps, and Team for people building together. Enterprise is arranged with sales.",
+      "freeTier": "Yes. Free includes 100 tasks per month and two-step Zaps.",
+      "paidFrom": "Professional from $19.99 per month on annual billing for 750 tasks, or $29.99 per month if billed monthly.",
+      "pricingModel": "Self-serve plans are Free, Professional, and Team. Each paid plan is a feature level plus a task tier. The published entry paid tier is 750 tasks: Professional $19.99/month annual or $29.99/month monthly. Team starts at the 2,000-task tier ($69/month annual or $103.50/month monthly). Prices on the page are USD. A 14-day Professional trial does not require a card.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://zapier.com/pricing",
+      "indiaNotes": "Zapier lists INR among its billing currencies, with USD, GBP, EUR, and others. Non-USD prices are converted from the USD price at the time of payment, so a recurring INR charge can change between invoices. UPI and Indian-card acceptance were not stated.",
+      "website": "https://zapier.com/",
+      "lessons": [
+        "choose-your-first-automation",
+        "choose-ai-tools-by-task",
+        "agent-or-automation"
+      ],
+      "featured": false,
+      "offer": {
+        "price": "19.99",
+        "priceCurrency": "USD",
+        "description": "Professional, 750 tasks/month, annual billing, as listed on zapier.com/pricing on 2026-10-19. Monthly billing for that tier is $29.99."
+      }
+    },
+    {
+      "slug": "n8n",
+      "name": "n8n",
+      "category": "automation",
+      "summary": "n8n runs workflows and AI nodes. Cloud plans are priced on full workflow executions, not on each step. A standard self-hosted Community Edition is on GitHub.",
+      "whoItsFor": "n8n's pricing page aims the cloud Starter plan at first workflows, Pro at solo builders and small teams, and Business at companies with fewer than 100 employees. Hosted data is described as stored in the EU, in Frankfurt.",
+      "freeTier": "The Community Edition is free to self-host. A permanent free cloud plan was not listed. The standard n8n Cloud trial does not require a credit card; the Business trial does.",
+      "paidFrom": "Cloud Starter is €20 per month, billed annually.",
+      "pricingModel": "Cloud Starter €20/month, Pro €50/month, and Business €667/month, each billed annually on the pricing page. Enterprise is custom. The page says annual billing saves 17% against monthly, and monthly figures were not listed in the text retrieved.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://n8n.io/pricing/",
+      "indiaNotes": "unknown",
+      "website": "https://n8n.io/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "20",
+        "priceCurrency": "EUR",
+        "description": "n8n Cloud Starter per month, billed annually, as listed on n8n.io/pricing on 2026-10-19."
+      }
+    },
+    {
+      "slug": "chatgpt",
+      "name": "ChatGPT",
+      "category": "writing",
+      "summary": "ChatGPT is OpenAI's chat app for text, uploads, images, voice, and research tools. The free plan lists unlimited everyday text chats, with limits on uploads, images, voice, deep research, memory, Codex, and ChatGPT Work.",
+      "whoItsFor": "The pricing page describes Free for trying ChatGPT, Go for longer conversations, Plus for advanced work, and Pro for research and coding. Go, Free, and Plus are for individuals. Business starts at 2 users. Enterprise is via sales.",
+      "freeTier": "Yes.",
+      "paidFrom": "unknown",
+      "pricingModel": "The pricing page names Go, Plus, Pro, Business, and Enterprise as paid plans and says Go, Plus, Business, and Enterprise are priced per user per month. It says Go, Plus, or Business can be bought with any major credit card. OpenAI's Help Center lists ChatGPT Plus at $20/month, billed monthly, and says that article's Plus plan has no annual billing. Go and Pro dollar amounts were not in the pricing-page text retrieved, so the lowest paid price is unknown.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://openai.com/chatgpt/pricing/",
+      "indiaNotes": "unknown",
+      "website": "https://chatgpt.com/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "claude",
+      "name": "Claude",
+      "category": "writing",
+      "summary": "Claude is Anthropic's chat app for web, desktop, and mobile. The free plan includes chat, web search, file creation, code execution, Artifacts, and voice. Paid plans add more usage and Claude Code.",
+      "whoItsFor": "Anthropic describes Free as for everyone, Pro as everyday work, and Max as people who work with Claude all day. Team is for 2 to 150 people. Enterprise pricing on the same page is separate.",
+      "freeTier": "Yes. $0.",
+      "paidFrom": "Pro is $20 if billed monthly, or $17 per month when $200 is billed annually.",
+      "pricingModel": "Free $0. Pro $17/month with the annual discount ($200 up front) or $20 billed monthly. Max is from $100/month. The page says Pro and Max can be paid by credit card, prices exclude tax, and usage limits apply. Claude Code is included on paid plans and not on Free.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://claude.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://claude.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "17",
+        "priceCurrency": "USD",
+        "description": "Claude Pro per month when $200 is billed annually, as listed on claude.com/pricing on 2026-10-19. Monthly Pro is $20."
+      }
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini",
+      "category": "writing",
+      "summary": "Gemini is Google's AI assistant for chat, image generation, Deep Research, and work inside Google apps on higher plans. The subscriptions page reviewed here was the United States view.",
+      "whoItsFor": "The page describes the free plan for everyday help at work, school, or home. Paid Google AI plans add higher limits, Gemini in Gmail and Docs, and more storage. Google AI plans are listed as 18+.",
+      "freeTier": "Yes. The free plan lists access to a Flash-Lite model, image generation, Deep Research, Gemini Live, Canvas, and Gems.",
+      "paidFrom": "unknown",
+      "pricingModel": "The US subscriptions page lists Google AI Plus, Pro, and Ultra above the free plan. Ultra is shown at $99.99/month, with a $199.99/month option for higher limits. Plus and Pro dollar amounts were not in the page text retrieved, so the lowest paid price is unknown. The page says plans are available in more than 140 countries and tells readers to check the country list.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://gemini.google/subscriptions/",
+      "indiaNotes": "unknown",
+      "website": "https://gemini.google/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "grammarly",
+      "name": "Grammarly",
+      "category": "writing",
+      "summary": "Grammarly checks spelling and grammar on the free plan and adds rewrites, tone changes, plagiarism and AI-text detection, and more AI prompts on Pro.",
+      "whoItsFor": "The plans page describes Free for writing without spelling and grammar mistakes, Pro for clearer writing, and Enterprise, sold through Superhuman Go, for larger organizations.",
+      "freeTier": "Yes. $0, with 100 AI prompts per month.",
+      "paidFrom": "Pro is listed at $12 USD. The billing interval was not printed beside that figure.",
+      "pricingModel": "Free is $0 (100 AI prompts/month). Pro is listed at $12 USD and includes 2,000 AI prompts per member per month, plus a $0 trial with an email reminder two days before it ends. Enterprise is contact sales. Named payment methods are Visa, American Express, Mastercard, Discover, and PayPal. Business invoices for 10 or more annual members can also be paid by bank transfer, Apple Pay, or Google Pay.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.grammarly.com/plans",
+      "indiaNotes": "unknown",
+      "website": "https://www.grammarly.com/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "jasper",
+      "name": "Jasper",
+      "category": "writing",
+      "summary": "Jasper's pricing page describes a generative platform for marketers creating on-brand written and visual content, with a self-serve Pro plan and a custom Business plan.",
+      "whoItsFor": "Jasper says Pro is for exploring on your own and creating content for more than one brand, and Business is for teams that need custom controls, security, training, and support.",
+      "freeTier": "No lasting free plan was listed. Pro has a 7-day free trial.",
+      "paidFrom": "Pro is $59/month billed yearly, or $69/month billed monthly.",
+      "pricingModel": "Two plans. Pro is $59/month billed yearly or $69/month billed monthly, and can be cancelled. Business is custom pricing and starts with a 12-month commitment. The page says annual Pro saves about 20% versus monthly.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.jasper.ai/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.jasper.ai/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "59",
+        "priceCurrency": "USD",
+        "description": "Jasper Pro per month, billed yearly, as stated on jasper.ai/pricing on 2026-10-19. Month-to-month Pro is $69."
+      }
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "category": "research",
+      "summary": "Perplexity answers questions from the web and cites sources. Its hub page says core search is free and that Pro adds higher limits, projects, file uploads, and image generation.",
+      "whoItsFor": "The pricing page contrasts limited free usage with paid plans for heavier research, including a higher tier aimed at the hardest questions. Enterprise is described separately.",
+      "freeTier": "Yes. The hub page says core search is free. The pricing page lists Free at $0/month.",
+      "paidFrom": "unknown",
+      "pricingModel": "Official pages disagree on the number, so this directory does not pick one. perplexity.ai/hub states Pro at $20/month or $200/year. perplexity.ai/hub/pricing states a paid plan at $17/month when billed annually and another at $167/month when billed annually. Re-check both pages before you pay.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.perplexity.ai/hub/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.perplexity.ai/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "gemini-notebook",
+      "name": "Gemini Notebook",
+      "category": "research",
+      "summary": "Gemini Notebook is Google's source-grounded research notebook. You supply the documents, and answers are meant to stay tied to that material. The site says NotebookLM was renamed Gemini Notebook in July 2026 and that existing notebooks still open.",
+      "whoItsFor": "People studying or researching from their own sources. The product page lists Audio Overviews, reports, flashcards, quizzes, and video overviews.",
+      "freeTier": "A separate free-or-paid price was not published on notebooklm.google. The Gemini subscriptions page describes higher Gemini Notebook limits on paid Google AI plans.",
+      "paidFrom": "unknown",
+      "pricingModel": "No standalone price was on the Gemini Notebook product page. Paid Google AI plans describe more notebooks and Audio Overviews. See the Gemini entry for what those plan prices did and did not show.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://notebooklm.google/",
+      "indiaNotes": "unknown",
+      "website": "https://notebooklm.google/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "elicit",
+      "name": "Elicit",
+      "category": "research",
+      "summary": "Elicit searches research papers and extracts answers with sources. The pricing page says search covers more than 138 million papers.",
+      "whoItsFor": "The page describes Basic for casual exploration, Pro for systematic reviews, Scale for teams collaborating, and Enterprise for companies and schools.",
+      "freeTier": "Yes. Basic is free, with limited Research Agent and Research Reports usage and unlimited paper search.",
+      "paidFrom": "Pro is $49 per user per month, billed as $588 annually, on the yearly prices shown.",
+      "pricingModel": "The yearly view lists Pro at $49 per user/month ($588 annually) and Scale at $169 per user/month ($2,028 annually). Enterprise is custom. The month-to-month prices were not in the text retrieved. Pro lists a systematic-review workflow that can screen 5,000 papers.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://elicit.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://elicit.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "49",
+        "priceCurrency": "USD",
+        "description": "Elicit Pro per user per month, billed annually ($588), as shown on the yearly pricing view on 2026-10-19. Month-to-month price was not retrieved."
+      }
+    },
+    {
+      "slug": "consensus",
+      "name": "Consensus",
+      "category": "research",
+      "summary": "Consensus presents itself to researchers, students, and clinicians as a way to gather peer-reviewed papers, with summaries and study-design labels described in on-page quotations.",
+      "whoItsFor": "The pricing page addresses individuals, and has a separate area for teams and enterprise. It says it is used by researchers, students, and clinicians.",
+      "freeTier": "unknown",
+      "paidFrom": "unknown",
+      "pricingModel": "The pricing page lists monthly and annual toggles for individual and for team or enterprise plans. Plan prices were not in the text retrieved.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://consensus.app/pricing/",
+      "indiaNotes": "unknown",
+      "website": "https://consensus.app/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "category": "voice-audio",
+      "summary": "ElevenLabs generates and edits speech, sound effects, music, and related audio. Credits are shared across those products. The free plan includes 10,000 credits a month.",
+      "whoItsFor": "The pricing page offers a free build tier, Starter and Creator for individuals, and Scale, Business, and Enterprise for larger workloads. A startup grants program is listed separately.",
+      "freeTier": "Yes. $0 with 10,000 credits per month. The page says rollover does not apply to Free.",
+      "paidFrom": "Starter is $6 per month (30,000 credits). Annual billing is two months free, which the page equates to $5 per month for Starter.",
+      "pricingModel": "Monthly prices on the page: Free $0, Starter $6, Creator $22 ($11 the first month), Pro $99, Scale $299, Business $990. Enterprise is custom. Annual billing is monthly price times 10. Payments named: credit card, Apple Pay, and Google Pay. Prices exclude taxes, levies, and duties.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://elevenlabs.io/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://elevenlabs.io/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "6",
+        "priceCurrency": "USD",
+        "description": "ElevenLabs Starter per month, as listed on elevenlabs.io/pricing on 2026-10-19. Annual Starter is described as $5 per month."
+      }
+    },
+    {
+      "slug": "descript",
+      "name": "Descript",
+      "category": "voice-audio",
+      "summary": "Descript edits audio and video from a transcript. The pricing page includes transcription, AI speech, filler-word removal, and an AI co-editor called Underlord.",
+      "whoItsFor": "The page describes Free for getting started, Hobbyist for watermark-free projects, Creator for a small team, Business for collaboration, and Enterprise for custom security and billing.",
+      "freeTier": "Yes. $0. The page says a credit card is not required. Free includes 60 media minutes per month.",
+      "paidFrom": "Hobbyist is listed at both $16 and $24 per person per month.",
+      "pricingModel": "Hobbyist shows $16 and $24 per person/month, Creator $24 and $35, Business $50 and $65. The page says annual billing saves up to 35% versus monthly. The retrieved text did not label which of each pair is the monthly rate. Paid Hobbyist, Creator, and Business subscriptions are charged to a credit card. Enterprise can ask about invoicing such as ACH.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.descript.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.descript.com/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "otter",
+      "name": "Otter",
+      "category": "voice-audio",
+      "summary": "Otter transcribes meetings and recordings, identifies speakers, and adds an AI chat over the notes. Basic includes 300 monthly transcription minutes and live transcription.",
+      "whoItsFor": "The pricing page describes Basic for trying it, Pro for individuals and small teams, a further plan for medium-sized teams, and Enterprise. It joins Zoom, Microsoft Teams, and Google Meet.",
+      "freeTier": "Yes. Basic is free and includes 300 monthly transcription minutes.",
+      "paidFrom": "Pro is listed at $16.99 per user per month, and the annual prices include $8.49 per user per month.",
+      "pricingModel": "Prices are in USD. Pro shows $16.99/user/month and $8.49/user/month. The asterisk on the lower figure is tied to a first-time-subscriber note. A medium-team plan shows $30 and $24 without a plan name in the retrieved text. Payments named: credit and debit cards on the website, plus Apple App Store and Google Play in-app purchases. PayPal is not accepted. A student and teacher discount exists for .edu email addresses.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://otter.ai/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://otter.ai/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "8.49",
+        "priceCurrency": "USD",
+        "description": "Otter Pro per user per month on the annual price shown on otter.ai/pricing on 2026-10-19, with a first-time-subscriber note. The page also lists $16.99/user/month."
+      }
+    },
+    {
+      "slug": "suno",
+      "name": "Suno",
+      "category": "voice-audio",
+      "summary": "Suno generates songs from a description. The pricing page lists a free starter plan, Pro, and Premier, with commercial rights called out on the comparison table.",
+      "whoItsFor": "The page says the plans are for creators making music, from a free starter plan to Premier for maximum credits and every listed feature.",
+      "freeTier": "Yes. A free starter plan is listed, with the free model named v6-mini in the comparison table.",
+      "paidFrom": "unknown",
+      "pricingModel": "Plans named: Free, Pro, and Premier. Premier is listed at $24. The billing interval and the Pro price were not in the text retrieved, so the entry paid price is unknown.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://suno.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://suno.com/",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "cursor",
+      "name": "Cursor",
+      "category": "coding",
+      "summary": "Cursor is a coding agent that can edit a project, run commands, and, on higher plans, use cloud agents. The pricing page also bundles Grok chat, image, and video features and X subscription perks into the same plans.",
+      "whoItsFor": "People who want an agent in the editor. Cursor's own plan guide on that page recommends Premium for new AI users, Super for daily agent users, and Ultra for the highest limits. That is the vendor's guidance, not a Brainchain test.",
+      "freeTier": "Yes. $0/month with limited agent requests and limited chat requests.",
+      "paidFrom": "Plus is $8/month.",
+      "pricingModel": "The pricing page lists Free $0, Plus $8/month, Premium $30/month, Super $100/month, and Ultra $200/month. Teams is $30+ per user/month. Enterprise is custom. Prices exclude tax. Self-serve plans take major credit and debit cards. Third-party models in Cursor are billed separately at API list price on Premium and above. The page says subscriptions are sold by X Subscription Corp.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://cursor.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://cursor.com/",
+      "lessons": [
+        "brief-a-coding-agent",
+        "review-before-you-merge-ai-code",
+        "cursor-projects-for-multi-step-work",
+        "agent-or-automation"
+      ],
+      "featured": false,
+      "offer": {
+        "price": "8",
+        "priceCurrency": "USD",
+        "description": "Cursor Plus per month, as listed on cursor.com/pricing on 2026-10-19. Prices exclude tax."
+      }
+    },
+    {
+      "slug": "claude-code",
+      "name": "Claude Code",
+      "category": "coding",
+      "summary": "Claude Code is Anthropic's terminal coding agent. The pricing page says it is included on every paid Claude plan and omitted from Free, and that terminal work and chat draw from the same usage pool.",
+      "whoItsFor": "People who already use Claude and want the same plan to cover a coding session in the terminal. Heavy use can also be moved to pay-as-you-go API credits, which the pricing FAQ says is separate.",
+      "freeTier": "Not on the Free Claude plan. The pricing comparison marks Claude Code as No on Free and Yes on Pro and Max.",
+      "paidFrom": "Included with Claude Pro, which is $20/month billed monthly or $17/month when $200 is billed annually.",
+      "pricingModel": "No separate Claude Code price was listed. It is included with paid Claude plans. Pro is $20/month monthly or $17/month annually ($200 up front). Max starts at $100/month. See the Claude entry for the rest of that page.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://claude.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://claude.com/",
+      "lessons": [
+        "claude-code-projects-parallel-agents"
+      ],
+      "featured": false,
+      "offer": {
+        "price": "17",
+        "priceCurrency": "USD",
+        "description": "Claude Pro per month when billed annually, which is the cheapest paid plan that includes Claude Code on claude.com/pricing as checked 2026-10-19. Monthly Pro is $20."
+      }
+    },
+    {
+      "slug": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "coding",
+      "summary": "GitHub Copilot is GitHub's coding assistant. The plans page says chat, agent mode, code review, the cloud agent, the CLI, and Copilot Apps spend GitHub AI Credits. The free plan supports the CLI and agent mode with limited usage.",
+      "whoItsFor": "Developers who want suggestions and an agent inside GitHub and supported editors. The page lists individual plans (Free, Pro, Pro+, Max) and separate organization credit pools.",
+      "freeTier": "Yes. $0, with limited chat and agent usage.",
+      "paidFrom": "Pro is $10 per month in the plans header.",
+      "pricingModel": "The plans header lists Free $0, Pro $10 per month, Pro+ $39 per month, and Max $100 per month. The same page also prints other monthly dollar figures inside a credits breakdown. Those were not treated as the plan price. Confirm the figure in the plan picker before you pay.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://github.com/features/copilot/plans",
+      "indiaNotes": "unknown",
+      "website": "https://github.com/features/copilot",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "10",
+        "priceCurrency": "USD",
+        "description": "GitHub Copilot Pro per month, from the plans header on github.com/features/copilot/plans on 2026-10-19."
+      }
+    },
+    {
+      "slug": "openai-codex",
+      "name": "OpenAI Codex",
+      "category": "coding",
+      "summary": "OpenAI's ChatGPT pricing page lists Codex as a feature of ChatGPT plans: limited access on Free and expanded access on Plus and Pro. A separate Codex subscription price was not on that page.",
+      "whoItsFor": "People writing code through ChatGPT's coding surface. The Brainchain lesson on the Agents API covers the managed Codex harness, which is a related OpenAI product and not the same screen as ChatGPT.",
+      "freeTier": "Limited Codex access is listed on the free ChatGPT plan.",
+      "paidFrom": "unknown",
+      "pricingModel": "Codex access is described as part of ChatGPT Free, Plus, and Pro. Plus is $20/month on the OpenAI Help Center page for ChatGPT Plus. Go and Pro dollar amounts were not in the ChatGPT pricing-page text, and no standalone Codex price was retrieved.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://openai.com/chatgpt/pricing/",
+      "indiaNotes": "unknown",
+      "website": "https://chatgpt.com/",
+      "lessons": [
+        "openai-agents-api-harness"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "replit",
+      "name": "Replit",
+      "category": "coding",
+      "summary": "Replit is a browser workspace for building software, with an agent powered by language models. The pricing page says agent behaviour is probabilistic and can make mistakes.",
+      "whoItsFor": "People who want to build in a hosted workspace. The page describes more Free Mode usage, collaborator seats, and security controls on the higher listed price, and an Enterprise plan via sales.",
+      "freeTier": "The page mentions Free Mode limits (up to 30 hours of chat and up to 60 projects). It does not clearly state a lasting $0 plan.",
+      "paidFrom": "A plan is listed at $18 per month, billed annually, next to a $20 figure.",
+      "pricingModel": "The retrieved pricing text shows $18/month billed annually (beside $20) and $90/month billed annually (beside $100). Plan names were not in that text. The $18 plan mentions $20 towards more powerful models. Prices are subject to tax. Enterprise is contact sales.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://replit.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://replit.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "18",
+        "priceCurrency": "USD",
+        "description": "Lower Replit plan per month, billed annually, as shown on replit.com/pricing on 2026-10-19. A $20 figure is shown beside it. The plan name was not in the retrieved text."
+      }
+    },
+    {
+      "slug": "midjourney",
+      "name": "Midjourney",
+      "category": "image-video",
+      "summary": "Midjourney generates images and video by subscription. The plan comparison says every plan renews monthly or yearly until you cancel, and that Relax Mode for unlimited images starts on Standard.",
+      "whoItsFor": "People generating images or video. Stealth Mode, which keeps outputs private, is only on Pro and Mega. A company with more than $1,000,000 USD gross revenue per year must use Pro or Mega for the commercial terms described there.",
+      "freeTier": "No free plan is described. All four tiers are paid subscriptions.",
+      "paidFrom": "Basic is $10 per month, or $8 per month when $96 is billed annually.",
+      "pricingModel": "Monthly prices on the docs comparison: Basic $10, Standard $30, Pro $60, Mega $120. Annual prices: Basic $96 ($8/month), Standard $288 ($24/month), Pro $576 ($48/month), Mega $1,152 ($96/month). Extra GPU time is $4/hour on every plan. The docs page says annual billing is 20% off.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "indiaNotes": "unknown",
+      "website": "https://www.midjourney.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "8",
+        "priceCurrency": "USD",
+        "description": "Midjourney Basic per month on the annual plan ($96 up front), from the official plan comparison on 2026-10-19. Monthly Basic is $10."
+      }
+    },
+    {
+      "slug": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "category": "image-video",
+      "summary": "Adobe Firefly generates and edits images, video, audio, and vector graphics from text prompts, using Adobe models and partner models. The product page says Firefly models are trained on licensed Adobe Stock and public-domain content.",
+      "whoItsFor": "Adobe describes it for content creators, art directors, marketers, and design teams, including people who move results into Photoshop, Premiere, or Adobe Express.",
+      "freeTier": "Yes. Adobe says there is a free plan with free daily generations. The number of daily generations was not in the text retrieved.",
+      "paidFrom": "unknown",
+      "pricingModel": "The product page says paid plans add generative credits and that you need a paid subscription once the free allowance runs out. It points to a separate plans page for figures. Dollar amounts were not in the product-page text retrieved.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.adobe.com/products/firefly.html",
+      "indiaNotes": "unknown",
+      "website": "https://www.adobe.com/products/firefly.html",
+      "lessons": [],
+      "featured": false
+    },
+    {
+      "slug": "runway",
+      "name": "Runway",
+      "category": "image-video",
+      "summary": "Runway generates images, video, and audio and charges credits per generation. The pricing page says the free plan is a one-time deposit of 125 credits that does not expire.",
+      "whoItsFor": "The page describes Standard for creators, with Pro and Max adding more credits. Extra credits can be bought from the billing page, with a 1,000-credit minimum.",
+      "freeTier": "Yes, as a one-time 125-credit deposit that does not expire. It is not a monthly refill.",
+      "paidFrom": "Standard is $12 per month, billed annually. The page also shows $15 beside that price.",
+      "pricingModel": "The page headline says pricing from $12/month. Annual prices shown: Standard $12/month, Pro $28/month, Max $76/month, with $15, $35, and $95 beside them. Standard and Pro monthly credits do not roll over. Max can roll over up to one month of unused credits. Purchased extra credits do not expire.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://runwayml.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://runwayml.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "12",
+        "priceCurrency": "USD",
+        "description": "Runway Standard per month, billed annually, as listed on runwayml.com/pricing on 2026-10-19. A $15 figure is shown beside it."
+      }
+    },
+    {
+      "slug": "heygen",
+      "name": "HeyGen",
+      "category": "image-video",
+      "summary": "HeyGen makes avatar videos from a script, including translation. The free plan includes up to 3 videos a month, each up to 1 minute, and the FAQ says no credit card is required.",
+      "whoItsFor": "The pricing page describes Free and Creator for trying it and for solo creators, Pro for individuals exporting at higher quality, and Business for teams. Enterprise is contact sales.",
+      "freeTier": "Yes. $0, up to 3 videos per month, up to 1 minute each.",
+      "paidFrom": "Creator is $29 per month. The FAQ also says Creator is $24 per month if you pay annually.",
+      "pricingModel": "Plan cards: Free $0, Creator $29/month, Pro from $49/month, Business $149/month plus $20 per extra seat. The FAQ repeats Creator at $29/month or $24/month annually, Pro from $49/month, and Business at $149/month plus $20/seat/month. Pro credit tiers go up to 100,000 credits at $4,300 in that FAQ.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.heygen.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.heygen.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "24",
+        "priceCurrency": "USD",
+        "description": "HeyGen Creator per month when paid annually, from the pricing FAQ on 2026-10-19. The plan card lists Creator at $29/month."
+      }
+    },
+    {
+      "slug": "canva",
+      "name": "Canva",
+      "category": "image-video",
+      "summary": "Canva is an online design editor with templates, stock media, and an AI allowance. The pricing page says Canva Free is available to anyone and that Pro adds premium templates, background removal, and more AI use.",
+      "whoItsFor": "The pricing page describes Free for getting started, Pro for a solo creator, and Business for marketers and growing teams. Education pricing is a separate tab.",
+      "freeTier": "Yes. Canva Free is listed, including an AI allowance described as up to 200 Standard AI uses or 20 Premium AI uses.",
+      "paidFrom": "A US view of the pricing page lists Pro at US$144 per year for one person. The month-to-month US price was not retrieved.",
+      "pricingModel": "Canva localizes currency. One US view lists Free at US$0 and Pro at US$144 per year for one person. Other regional views of the same page type showed different currencies and amounts. Do not treat US$144 as the price outside that view. Pro and Business offer a free trial.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.canva.com/pricing/",
+      "indiaNotes": "unknown. The India pricing URL did not return plan prices when checked, and the public page localizes currency by region. UPI and Indian-card acceptance were not stated in the text retrieved.",
+      "website": "https://www.canva.com/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "144",
+        "priceCurrency": "USD",
+        "description": "Canva Pro per year for one person, from a US view of canva.com/pricing on 2026-10-19. Canva shows other currencies in other regions. This is not an India price."
+      }
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "category": "productivity",
+      "summary": "Notion is a workspace of pages and databases. The pricing page includes Notion AI on a trial for Free and Plus, and includes Notion Agent on the Business plan.",
+      "whoItsFor": "The page describes Free for personal projects, Plus for small teams, Business for growing companies that want the AI workspace, and Enterprise for custom security and pricing.",
+      "freeTier": "Yes. $0 per member per month, with a trial of Notion AI. A free workspace with two or more members has a block limit.",
+      "paidFrom": "Plus is $10 per member per month. Business, which lists Notion Agent, is $20 per member per month.",
+      "pricingModel": "Free $0, Plus $10 per member/month, Business $20 per member/month. Enterprise is custom. Custom Agents are described as free to try, then $10 per 1,000 monthly Notion credits. Notion says it accepts all major credit and debit card brands. The Plus plan is free for students and educators who sign up with an eligible school email, with a one-member limit.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://www.notion.com/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://www.notion.com/",
+      "lessons": [
+        "choose-ai-tools-by-task",
+        "ai-writing-with-a-verification-step",
+        "keep-notion-ai-drafts-separate",
+        "notion-agent-skills-skill-md"
+      ],
+      "featured": false,
+      "offer": {
+        "price": "10",
+        "priceCurrency": "USD",
+        "description": "Notion Plus per member per month, as listed on notion.com/pricing on 2026-10-19."
+      }
+    },
+    {
+      "slug": "gamma",
+      "name": "Gamma",
+      "category": "productivity",
+      "summary": "Gamma generates presentations, documents, and web pages from a prompt. The help center says every new account starts on the Free plan with no time limit and no credit card, with 400 starting credits that do not refresh.",
+      "whoItsFor": "People turning an outline into slides or a page. The pricing page describes Plus for more AI and removing Gamma branding, Pro for custom branding and an API, and Ultra for higher limits.",
+      "freeTier": "Yes. Free does not require a card. It includes 400 starting credits that do not refresh. Referrals can add more credits.",
+      "paidFrom": "Plus is listed at $9 per seat per month, with $108 per seat billed annually, on gamma.app/cs/pricing.",
+      "pricingModel": "gamma.app/cs/pricing lists Plus at $9 per seat/month ($108 per seat billed annually), Pro at $18 per seat/month ($216 billed annually), and Ultra at $90 ($1,080 billed annually). The English pricing page names the same plans. Gamma's help center says the annual tab shows a lower effective monthly rate than month-to-month, so confirm which tab you are reading. Prices are subject to tax.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://gamma.app/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://gamma.app/",
+      "lessons": [],
+      "featured": false,
+      "offer": {
+        "price": "9",
+        "priceCurrency": "USD",
+        "description": "Gamma Plus per seat per month as listed on gamma.app/cs/pricing on 2026-10-19, with $108 per seat billed annually. Confirm whether that figure is the annual rate before paying."
+      }
+    },
+    {
+      "slug": "fireflies",
+      "name": "Fireflies",
+      "category": "productivity",
+      "summary": "Fireflies joins meetings on Zoom, Google Meet, and Microsoft Teams and writes transcripts, summaries, and recordings. The pricing page lists Free, Pro, Business, and Enterprise.",
+      "whoItsFor": "People who want a meeting record they can search. Pro and Business add more transcription, exports, and integrations. Enterprise adds admin and security controls. Seats are teammates added to the workspace.",
+      "freeTier": "Yes. A Free plan is listed. The monthly allowance on Free was not in the text retrieved.",
+      "paidFrom": "unknown",
+      "pricingModel": "Plan names on the page are Free, Pro, Business, and Enterprise. The FAQ says paid plans are charged per seat and that volume discounts start above 50 members. Dollar amounts were not in the text retrieved. Sign-in is described as Google or Outlook auth.",
+      "pricingLastChecked": "2026-10-19",
+      "pricingSource": "https://fireflies.ai/pricing",
+      "indiaNotes": "unknown",
+      "website": "https://fireflies.ai/",
+      "lessons": [],
+      "featured": false
+    }
+  ]
+}

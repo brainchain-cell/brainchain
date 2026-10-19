@@ -7,3 +7,30 @@
 .affiliate-cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px;max-width:100%}
 .affiliate-cta .button{max-width:100%;height:auto;white-space:normal;text-align:center}
 .affiliate-cta p{margin:0;font-size:15px;color:#4f625a;max-width:46ch}
+.site-header nav{flex-wrap:wrap;row-gap:8px}
+.tools-page{padding-top:55px;padding-bottom:70px}
+.tools-page h1{font-size:clamp(40px,5vw,64px);letter-spacing:-2.5px;line-height:1.05}
+.tools-lede{max-width:680px;font-size:18px}
+.tools-links,.tool-jumps{display:flex;flex-wrap:wrap;gap:18px;margin:8px 0 28px}
+.tools-links a,.tool-jumps a{font-weight:700;text-decoration:none}
+.tool-jumps a{border:1px solid var(--line);background:white;padding:8px 12px}
+.tool-group{margin-top:18px;padding-top:12px}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tool-card{border:1px solid var(--line);background:white;padding:22px;display:flex;flex-direction:column;min-height:240px}
+.tool-card h3{font-size:24px;line-height:1.2;letter-spacing:-.5px;margin:18px 0 10px}
+.tool-card h3 a{text-decoration:none}
+.tool-card p{color:#4f625a;margin:0 0 16px}
+.tool-card .card-bottom{margin-top:auto}
+.featured-slot{background:var(--accent);border:1px solid #a4de4c;padding:22px 24px;margin:0 0 22px}
+.featured-slot h3{font-size:28px;letter-spacing:-.6px;margin:8px 0}
+.featured-slot-empty{display:none}
+.sponsored{display:inline-block;background:#142826;color:white;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 8px;margin:0}
+.tool-kicker{margin-top:22px}
+.tools-footnote{color:#526c61;font-size:14px}
+.form-grid{display:grid;gap:14px;margin-top:8px}
+.form-grid label{display:grid;gap:6px;font-size:14px;font-weight:700}
+.form-grid input,.form-grid textarea,.form-grid select{font:inherit;font-weight:400;padding:12px;border:1px solid var(--line);background:white;color:var(--ink);width:100%}
+.form-status{min-height:1.5em;margin-top:14px}
+.honeypot{position:absolute;left:-9999px;height:0;overflow:hidden}
+@media(max-width:900px){.tool-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.tools-page h1{letter-spacing:-1.5px}.tool-grid{grid-template-columns:1fr}.tool-card{min-height:0}}

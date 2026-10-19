@@ -23,6 +23,7 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
           <Link className="brand" href="/">brainchain</Link>
           <nav aria-label="Main navigation">
             <Link href="/learn">Learn</Link>
+            <Link href="/tools">Tools</Link>
             <Link href="/#guides">Guides</Link>
             <Link href="/updates">Updates</Link>
             <Link href="/#newsletter">Newsletter</Link>

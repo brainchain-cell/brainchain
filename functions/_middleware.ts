@@ -12,6 +12,8 @@
 
 const CANONICAL_HOST = "brainchainlab.com";
 const ALIAS_HOSTS = new Set(["www.brainchainlab.com", "brainchain.pages.dev"]);
+/** Pages Function for the tools-directory inquiry. A redirect would turn POST into GET. */
+const INQUIRY_PATH = "/api/feature-inquiry";
 
 type MiddlewareContext = {
   request: Request;
@@ -20,6 +22,7 @@ type MiddlewareContext = {
 
 export async function onRequest(context: MiddlewareContext): Promise<Response> {
   const url = new URL(context.request.url);
+  if (url.pathname === INQUIRY_PATH) return context.next();
   if (!ALIAS_HOSTS.has(url.hostname)) return context.next();
   url.protocol = "https:";
   url.hostname = CANONICAL_HOST;
