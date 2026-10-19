@@ -34,3 +34,9 @@
 .honeypot{position:absolute;left:-9999px;height:0;overflow:hidden}
 @media(max-width:900px){.tool-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.tools-page h1{letter-spacing:-1.5px}.tool-grid{grid-template-columns:1fr}.tool-card{min-height:0}}
+.prose .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px;max-width:100%}
+.prose table{border-collapse:collapse;width:100%;min-width:40rem;margin:0;font-size:16px;line-height:1.45}
+.prose th,.prose td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.prose th{background:#eef4f1;font-weight:700}
+.prose input[type="checkbox"]{margin-right:.55em;accent-color:#337657}
+.prose li:has(> input[type="checkbox"]){list-style:none}

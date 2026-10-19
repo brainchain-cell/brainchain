@@ -30,10 +30,7 @@ export default async function Article({ params }: Props) {
       <p className="notice">
         Read our <Link href="/disclosure">affiliate disclosure</Link> and <Link href="/about">editorial standards</Link>.
       </p>
-      <NewsletterSignup
-        heading="Keep this lesson handy"
-        copy={`Get the exercises from "${post.title}" by email, plus later practical lessons. The first note includes the first-automation worksheet.`}
-      />
+      <NewsletterSignup />
     </main>
   );
 }

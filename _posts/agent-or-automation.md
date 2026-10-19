@@ -1,7 +1,6 @@
 ---
 title: "Do you need an agent—or just automation?"
 category: Agents
-readTime: 8
 excerpt: "Fixed triggers and actions are not the same as a computer-using agent. Choose the simpler system that you can still inspect."
 date: "2026-09-13"
 status: published

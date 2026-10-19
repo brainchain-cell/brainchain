@@ -1,7 +1,6 @@
 ---
 title: "Choose an AI tool by the task, not the demo"
 category: Productivity
-readTime: 6
 excerpt: "A short scorecard for deciding whether a new tool deserves a place in your workflow."
 date: "2026-09-10"
 status: published

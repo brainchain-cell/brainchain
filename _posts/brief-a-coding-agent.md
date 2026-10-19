@@ -1,7 +1,6 @@
 ---
 title: "Brief a coding agent like a careful junior colleague"
 category: Cursor
-readTime: 8
 excerpt: "Give Cursor Agent a concrete outcome, constraints and a way to verify the result—before it starts editing."
 date: "2026-09-13"
 status: published

@@ -1,7 +1,6 @@
 ---
 title: "Run parallel Claude Code threads without losing the merge story"
 category: Agents
-readTime: 8
 excerpt: "Anthropic’s redesigned Claude Code Projects run parallel cloud threads under one goal. You still own merge order, conflicts, and usage."
 date: "2026-09-21"
 status: published

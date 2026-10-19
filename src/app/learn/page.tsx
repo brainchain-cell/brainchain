@@ -1,5 +1,6 @@
 import Link from "next/link";
 import modules from "../../../data/modules.json";
+import { NEWSLETTER_SIGNUP_COPY } from "@/components/NewsletterSignup";
 import {getPostBySlug} from "@/lib/api";
 import {pageMetadata} from "@/lib/metadata";
 
@@ -48,7 +49,7 @@ export default function Learn() {
         ))}
       </div>
       <p className="notice">
-        Prefer email? Join the <Link href="/#newsletter">newsletter</Link> for practical lessons and worksheets.
+        <Link href="/#newsletter">{NEWSLETTER_SIGNUP_COPY}</Link>
       </p>
     </main>
   );

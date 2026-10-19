@@ -1,7 +1,6 @@
 ---
 title: "Choose your first automation"
 category: Automation
-readTime: 7
 excerpt: "Turn one repetitive task into a testable workflow, with a worked example and a worksheet you can copy."
 date: "2026-09-10"
 status: published

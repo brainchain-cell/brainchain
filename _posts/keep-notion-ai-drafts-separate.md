@@ -1,7 +1,6 @@
 ---
 title: "Keep Notion AI drafts separate from approved records"
 category: Notion
-readTime: 8
 excerpt: "Use Notion AI for summaries and drafts—then protect the pages your team treats as source of truth."
 date: "2026-09-13"
 status: published

@@ -1,5 +1,9 @@
 import { MailerLiteForm } from "@/components/MailerLiteForm";
 
+/** The only signup promise. MailerLite is not set up to email a specific lesson's exercises. */
+export const NEWSLETTER_SIGNUP_COPY =
+  "Get new Brainchain Lab workflows by email. No spam; unsubscribe anytime.";
+
 type NewsletterSignupProps = {
   heading?: string;
   copy?: string;
@@ -7,7 +11,7 @@ type NewsletterSignupProps = {
 
 export function NewsletterSignup({
   heading = "Put one useful AI workflow into practice.",
-  copy = "Get Brainchain's practical lessons, copyable prompts and workflow exercises by email. Start with the first-automation worksheet.",
+  copy = NEWSLETTER_SIGNUP_COPY,
 }: NewsletterSignupProps) {
   return (
     <section id="newsletter" className="newsletter" aria-labelledby="newsletter-heading">
