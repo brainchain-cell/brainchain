@@ -102,7 +102,12 @@ export default function InquiryForm() {
       </div>
       <div className="form-status" role="status">
         {status.kind === "sent" ? <p>Received. There is no payment on this form. If it is a fit, Brainchain will reply by email.</p> : null}
-        {status.kind === "mailto" ? <p>The site could not store this inquiry, so your email app should open with a draft. Send that draft to finish.</p> : null}
+        {status.kind === "mailto" ? (
+          <p>
+            Your email app will open with a draft to {INQUIRY_EMAIL}. Send that draft to finish. If it does not open, write to{" "}
+            <a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a> directly.
+          </p>
+        ) : null}
         {status.kind === "unconfigured" ? <p>The inquiry form is not connected yet. Nothing was sent. The site owner still needs to add Cloudflare storage or replace the placeholder inbox.</p> : null}
         {status.kind === "error" ? <p>{status.detail}</p> : null}
       </div>

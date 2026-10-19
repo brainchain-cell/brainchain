@@ -49,7 +49,7 @@ function respond({wantsJson, url, status, body, query}) {
     return page("Inquiry received", "Thank you. Brainchain has the note and will reply if the listing is a fit. There is no payment on this form.");
   }
   if (status === 503) {
-    return page("Inquiry form is not connected yet", "Storage is not configured on this site. Set a Cloudflare KV binding named INQUIRIES or an INQUIRY_WEBHOOK_URL, or replace the placeholder inbox in data/site.json so the page can open a mail draft. Nothing was stored.");
+    return page("Inquiry form is not connected yet", "Nothing was stored. Write to hello@brainchainlab.com directly. With JavaScript on, the form opens your email app with a draft to that address.");
   }
   return Response.redirect(`${url.origin}/feature-your-tool?${query}`, 303);
 }

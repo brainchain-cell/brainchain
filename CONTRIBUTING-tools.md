@@ -61,4 +61,4 @@ Confirm `/tools`, `/tools/<slug>`, and `/llms.txt`. `/llms.txt` is generated fro
 
 To store submissions, add a KV namespace binding named `INQUIRIES` on the Pages project. To forward them, set `INQUIRY_WEBHOOK_URL` to an https endpoint you control. Either one is enough. Neither needs a paid plan.
 
-If neither is set, the function returns “not connected” and the page opens a `mailto:` draft only when `inquiryEmail` in `data/site.json` is a real inbox. The committed value is `REPLACE_WITH_INBOX@example.com`. Replace that placeholder. Do not commit a personal address if this file is public and you would rather keep the inbox in the Cloudflare dashboard only. With the placeholder left as-is, an unconfigured form tells the visitor that nothing was sent.
+If neither is set, the function returns 503 and the page opens a `mailto:` draft to `inquiryEmail` in `data/site.json`. That address is `hello@brainchainlab.com`. After submit, the page tells the visitor their email app will open, and to write to that address directly if it does not.

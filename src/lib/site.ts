@@ -3,7 +3,7 @@ import { SITE_URL } from "@/lib/constants";
 
 export { SITE_URL };
 
-/** Public inbox used only for the mailto fallback. Replace the placeholder in data/site.json. */
+/** Public inbox used only for the mailto fallback. The address lives in data/site.json. */
 export const INQUIRY_EMAIL = site.inquiryEmail;
 
 /** True when the address is safe to open in a mail client. The placeholder is not. */
