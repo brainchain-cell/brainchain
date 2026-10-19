@@ -1,6 +1,7 @@
 import site from "../../data/site.json";
+import { SITE_URL } from "@/lib/constants";
 
-export const SITE_URL = "https://brainchainlab.com";
+export { SITE_URL };
 
 /** Public inbox used only for the mailto fallback. Replace the placeholder in data/site.json. */
 export const INQUIRY_EMAIL = site.inquiryEmail;

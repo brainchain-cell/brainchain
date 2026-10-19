@@ -1,24 +1,13 @@
-import type {Metadata} from "next";
 import Link from "next/link";
 import JsonLd from "@/components/json-ld";
 import {SITE_URL} from "@/lib/site";
+import {pageMetadata} from "@/lib/metadata";
 import {displayField, featuredTools, getCategories, getTools, isUnknown, toolsInCategory, type Tool} from "@/lib/tools";
 
 const title = "AI tools";
 const description = "A directory of AI tools grouped by task, with pricing notes checked against official pages and links to the Brainchain lessons that teach them.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title: `${title} | Brainchain`,
-    description,
-    url: `${SITE_URL}/tools`,
-    siteName: "Brainchain",
-    type: "website",
-  },
-  twitter: {card: "summary", title: `${title} | Brainchain`, description},
-};
+export const metadata = pageMetadata({title, description, path: "/tools"});
 
 function priceLabel(tool: Tool): string {
   if (!isUnknown(tool.paidFrom)) return `Paid from ${tool.paidFrom}`;

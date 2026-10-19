@@ -1,25 +1,14 @@
-import type {Metadata} from "next";
 import Link from "next/link";
 import modules from "../../../data/modules.json";
 import {getPostBySlug} from "@/lib/api";
+import {pageMetadata} from "@/lib/metadata";
 import {SITE_URL} from "@/lib/site";
 import {getCategories, getTools} from "@/lib/tools";
 
 const title = "For AI assistants";
 const description = "A plain map of Brainchain Lab: the lessons, the tools directory, and how prices and affiliate links are handled.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title: `${title} | Brainchain`,
-    description,
-    url: `${SITE_URL}/for-ai`,
-    siteName: "Brainchain",
-    type: "website",
-  },
-  twitter: {card: "summary", title: `${title} | Brainchain`, description},
-};
+export const metadata = pageMetadata({title, description, path: "/for-ai"});
 
 export default function ForAi() {
   const tools = getTools();

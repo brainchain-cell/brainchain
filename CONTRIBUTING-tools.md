@@ -33,7 +33,7 @@ The directory is one file: `data/tools.json`. A daily job can add a tool by appe
 
 `featured` is `false` unless the tool has a paid featured placement. `true` fills the Sponsored slot on `/tools` and inside that tool's category. Leave it `false` for an ordinary listing.
 
-`affiliateUrl` is optional. Omit it for a normal listing. The only affiliate URL in the directory today is Make's: `https://www.make.com/en/register?pc=brainchain`. When the field is set, the tool page button uses it, `rel="sponsored noopener"`, and an “(affiliate link)” label.
+`affiliateUrl` is optional. Omit it for a normal listing. Make does not store a URL in this file: its button uses `MAKE_AFFILIATE_URL` in `src/lib/constants.ts`. Any other entry that sets `affiliateUrl` gets the same labelled button: `rel="sponsored noopener"` and an “(affiliate link)” label.
 
 `offer` is optional and only for a single figure you can point at on the pricing page. It is copied into JSON-LD. Skip it when the page did not show a clear number.
 

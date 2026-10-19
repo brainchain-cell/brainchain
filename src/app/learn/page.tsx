@@ -1,8 +1,13 @@
 import Link from "next/link";
 import modules from "../../../data/modules.json";
 import {getPostBySlug} from "@/lib/api";
+import {pageMetadata} from "@/lib/metadata";
 
-export const metadata = {title: "Learn"};
+export const metadata = pageMetadata({
+  title: "Learn",
+  description: "Short modules on automation, writing, Cursor, Notion and agents. Each lesson is an editorial guide with an exercise.",
+  path: "/learn",
+});
 
 type Module = {
   id: string;

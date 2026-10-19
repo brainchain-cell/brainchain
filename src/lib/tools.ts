@@ -1,5 +1,6 @@
 import catalog from "../../data/tools.json";
 import {getPostBySlug} from "@/lib/api";
+import {MAKE_AFFILIATE_URL} from "@/lib/constants";
 
 export type ToolOffer = {
   price: string;
@@ -88,6 +89,7 @@ function load(): {categories: ToolCategory[]; tools: Tool[]} {
       assert(/^[A-Z]{3}$/.test(tool.offer.priceCurrency), `${tool.slug}.offer.priceCurrency must be a 3-letter code`);
       assert(tool.offer.description.trim().length > 0, `${tool.slug}.offer.description is empty`);
     }
+    if (tool.slug === "make") tool.affiliateUrl = MAKE_AFFILIATE_URL;
   }
   return {categories, tools};
 }

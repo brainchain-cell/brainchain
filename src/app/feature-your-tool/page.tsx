@@ -1,23 +1,11 @@
-import type {Metadata} from "next";
 import Link from "next/link";
-import {SITE_URL} from "@/lib/site";
+import {pageMetadata} from "@/lib/metadata";
 import InquiryForm from "./inquiry-form";
 
 const title = "Feature your tool";
 const description = "Ask Brainchain about a sponsored tools-directory listing or a newsletter mention. Pricing is on request. There is no checkout.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: {
-    title: `${title} | Brainchain`,
-    description,
-    url: `${SITE_URL}/feature-your-tool`,
-    siteName: "Brainchain",
-    type: "website",
-  },
-  twitter: {card: "summary", title: `${title} | Brainchain`, description},
-};
+export const metadata = pageMetadata({title, description, path: "/feature-your-tool"});
 
 export default function FeatureYourTool() {
   return (

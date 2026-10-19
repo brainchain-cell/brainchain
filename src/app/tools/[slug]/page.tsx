@@ -3,6 +3,7 @@ import Link from "next/link";
 import {notFound} from "next/navigation";
 import JsonLd from "@/components/json-ld";
 import {getPostBySlug} from "@/lib/api";
+import {pageMetadata} from "@/lib/metadata";
 import {SITE_URL} from "@/lib/site";
 import {displayField, getCategory, getTool, getTools, isUnknown, type Tool} from "@/lib/tools";
 
@@ -40,21 +41,11 @@ export function generateStaticParams() {
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const tool = getTool((await params).slug);
   if (!tool) return {};
-  const title = tool.name;
-  const description = tool.summary;
-  const url = `${SITE_URL}/tools/${tool.slug}`;
-  return {
-    title,
-    description,
-    openGraph: {
-      title: `${title} | Brainchain`,
-      description,
-      url,
-      siteName: "Brainchain",
-      type: "website",
-    },
-    twitter: {card: "summary", title: `${title} | Brainchain`, description},
-  };
+  return pageMetadata({
+    title: tool.name,
+    description: tool.summary,
+    path: `/tools/${tool.slug}`,
+  });
 }
 
 export default async function ToolPage({params}: Props) {
