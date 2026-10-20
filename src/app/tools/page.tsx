@@ -3,26 +3,19 @@ import JsonLd from "@/components/json-ld";
 import ToolListing from "@/components/ToolListing";
 import {SITE_URL} from "@/lib/site";
 import {pageMetadata} from "@/lib/metadata";
-import {featuredTools, getCategories, getTools, toolsInCategory, type Tool} from "@/lib/tools";
+import {getTools, type Tool} from "@/lib/tools";
 
 const title = "AI tools";
-const description = "A directory of AI tools grouped by task, with pricing notes checked against official pages and links to the Brainchain lessons that teach them.";
+const description = "Most of us don't need more AI tools. We need the right one for the job in front of us.";
 
 export const metadata = pageMetadata({title, description, path: "/tools"});
 
-function FeaturedSlot({tools, label}: {tools: Tool[]; label: string}) {
-  return (
-    <aside className={tools.length ? "featured-slot" : "featured-slot featured-slot-empty"} data-featured-slot={label} aria-label={tools.length ? "Sponsored" : undefined}>
-      {tools.map((tool) => (
-        <ToolListing key={tool.slug} tool={tool} />
-      ))}
-    </aside>
-  );
+function directoryOrder(tools: Tool[]): Tool[] {
+  return [...tools.filter((tool) => tool.slug === "zapier"), ...tools.filter((tool) => tool.slug !== "zapier")];
 }
 
 export default function ToolsIndex() {
-  const tools = getTools();
-  const categories = getCategories();
+  const tools = directoryOrder(getTools());
   const itemList = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -42,44 +35,18 @@ export default function ToolsIndex() {
       <p className="eyebrow">DIRECTORY</p>
       <h1>Tools, by the task.</h1>
       <p className="lede tools-lede">
-        {tools.length} AI tools, grouped by what you are trying to get done. Every listing shows the name, what it does, the recorded price, and the official website.
-        Where no paid price is recorded, the listing says Price not listed. This is not a ranking and not a hands-on test.
+        Most of us don&apos;t need more AI tools. We need the right one for the job in front of us. So we&apos;ve grouped these {tools.length} by what you&apos;re trying to get done. For each one you&apos;ll get a plain description of what it does, the price the company lists, and a link to try it yourself. We haven&apos;t ranked them, and we&apos;ll only call something tested when we&apos;ve actually tested it.
       </p>
       <p className="tools-links">
         <Link href="/disclosure">Affiliate disclosure</Link>
         <Link href="/feature-your-tool">Feature your tool</Link>
         <Link href="/llms.txt">llms.txt</Link>
       </p>
-      <nav className="tool-jumps" aria-label="Tool categories">
-        {categories.map((category) => (
-          <a key={category.id} href={`#${category.id}`}>{category.title}</a>
+      <ul className="tool-lines">
+        {tools.map((tool) => (
+          <ToolListing key={tool.slug} tool={tool} layout="line" />
         ))}
-      </nav>
-
-      <FeaturedSlot tools={featuredTools()} label="index" />
-
-      {categories.map((category) => {
-        const group = toolsInCategory(category.id);
-        return (
-          <section className="tool-group" key={category.id} id={category.id}>
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">{category.title.toUpperCase()}</p>
-                <h2>{category.title}</h2>
-              </div>
-              <p>{category.description}</p>
-            </div>
-            <FeaturedSlot tools={featuredTools(category.id)} label={category.id} />
-            <div className="tool-grid">
-              {group.map((tool) => (
-                <article className="tool-card" key={tool.slug}>
-                  <ToolListing tool={tool} />
-                </article>
-              ))}
-            </div>
-          </section>
-        );
-      })}
+      </ul>
       <p className="notice">
         One listing, Make, uses an affiliate link on its own page. Payment is not a sign of quality.{" "}
         <Link href="/disclosure">Read the disclosure</Link>. Tool makers can ask about a featured slot or a newsletter mention on{" "}

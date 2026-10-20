@@ -25,6 +25,15 @@
 .tool-oneliner{color:#4f625a}
 .tool-price{font-weight:700}
 .tool-site a{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+.tool-lines{list-style:none;margin:8px 0 28px;padding:0}
+.tool-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding:14px 0;border-top:1px solid var(--line);line-height:1.45}
+.tool-line:last-child{border-bottom:1px solid var(--line)}
+.tool-line-name{display:inline-flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:700;font-size:18px}
+.tool-line-name a{text-decoration:none}
+.tool-line .tool-oneliner{flex:1 1 240px}
+.tool-line .tool-price{flex:1 1 200px}
+.tool-line>a{font-weight:700;white-space:nowrap}
+@media(max-width:650px){.tool-line{flex-direction:column;align-items:flex-start;gap:4px}.tool-line .tool-oneliner,.tool-line .tool-price{flex-basis:auto}.tool-line>a{min-height:44px;display:inline-flex;align-items:center}}
 .featured-slot .tool-listing h3{font-size:28px;letter-spacing:-.6px;margin:0}
 .featured-slot{background:var(--accent);border:1px solid #a4de4c;padding:22px 24px;margin:0 0 22px}
 .featured-slot h3{font-size:28px;letter-spacing:-.6px;margin:8px 0}

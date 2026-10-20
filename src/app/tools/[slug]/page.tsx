@@ -68,7 +68,7 @@ export default async function ToolPage({params}: Props) {
       <Link href="/tools">← All tools</Link>
       <p className="eyebrow tool-kicker">{category?.title.toUpperCase()}</p>
       <ToolListing tool={tool} titleAs="h1" />
-      <p className="notice">Notes from the provider&apos;s public pages, checked {tool.pricingLastChecked}. This is not a hands-on review.</p>
+      <p className="notice">From the company&apos;s own pages, as of {tool.pricingLastChecked}. We haven&apos;t tested this ourselves.</p>
       <div className="prose">
         <p>{tool.summary}</p>
         <p>
