@@ -208,6 +208,30 @@ export function postsInPath(pathId: string): Post[] {
   return getAllPosts().filter((post) => post.path === pathId);
 }
 
+/** Published lessons on a path, in frontmatter `order`. Gaps stay gaps: nothing is renumbered. */
+export function postsInPathOrder(pathId: string): Post[] {
+  return postsInPath(pathId).sort((a, b) => a.order - b.order || a.slug.localeCompare(b.slug));
+}
+
+export function firstLessonInPath(pathId: string): Post | undefined {
+  return postsInPathOrder(pathId)[0];
+}
+
+/**
+ * Newest published lessons.
+ * Lessons from the same day stay in slug order so the short list does not shuffle between builds.
+ */
+export function recentPosts(limit: number): Post[] {
+  return getAllPosts()
+    .slice()
+    .sort((a, b) => {
+      const byDate = (b.date ?? "").localeCompare(a.date ?? "");
+      if (byDate !== 0) return byDate;
+      return a.slug.localeCompare(b.slug);
+    })
+    .slice(0, limit);
+}
+
 /** Previous and next published lessons on the same path, by `order`. */
 export function pathNeighbors(post: Post): { previous?: Post; next?: Post } {
   const siblings = getAllPosts()

@@ -6,7 +6,7 @@ export const SITE_NAME = "Brainchain";
 export const SITE_TITLE = "Brainchain — AI tools for useful work";
 
 export const SITE_DESCRIPTION =
-  "Practical guides to automation, writing and productivity. Make informed decisions about AI tools.";
+  "Practical AI workflows for professionals, from your first automation to building with agents.";
 
 /** Default share image. Resolved against SITE_URL via metadataBase. */
 export const OG_IMAGE_PATH = "/og.png";
