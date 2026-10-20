@@ -1,7 +1,7 @@
 import Link from "next/link";
-import {postsInPath} from "@/lib/api";
+import {postsInPathOrder} from "@/lib/api";
+import {getEntryPoints} from "@/lib/entryPoints";
 import {pageMetadata} from "@/lib/metadata";
-import {getLearningPaths} from "@/lib/paths";
 import {SITE_URL} from "@/lib/site";
 import {getCategories, getTools} from "@/lib/tools";
 
@@ -26,16 +26,16 @@ export default function ForAi() {
           Unknown means that page did not state the fact.
         </p>
         <h2>Lessons</h2>
-        {getLearningPaths().map((path) => (
+        {getEntryPoints().flatMap((entry) => entry.paths.map(({path}) => (
           <section key={path.id}>
-            <h3>{path.title}</h3>
+            <h3><Link href={`/learn/${path.id}`}>{path.title}</Link></h3>
             <ul>
-              {postsInPath(path.id).map((post) => (
+              {postsInPathOrder(path.id).map((post) => (
                 <li key={post.slug}><Link href={`/posts/${post.slug}`}>{post.title}</Link> — {post.excerpt}</li>
               ))}
             </ul>
           </section>
-        ))}
+        )))}
         <h2>Tools</h2>
         {getCategories().map((category) => (
           <section key={category.id}>
@@ -52,7 +52,8 @@ export default function ForAi() {
           <li><Link href="/feature-your-tool">Feature your tool</Link> — sponsored slot and newsletter mention, pricing on request, no checkout.</li>
           <li><Link href="/disclosure">Disclosure</Link> — affiliate links and privacy.</li>
           <li><Link href="/about">Our approach</Link></li>
-          <li><Link href="/learn">Learning hub</Link></li>
+          <li><Link href="/start">Start here</Link></li>
+          <li><Link href="/learn">Workflows</Link></li>
         </ul>
       </div>
     </main>

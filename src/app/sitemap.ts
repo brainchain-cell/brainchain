@@ -3,6 +3,7 @@ import path from "node:path";
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/api";
 import { SITE_URL } from "@/lib/constants";
+import { getLearningPaths } from "@/lib/paths";
 import { getTools } from "@/lib/tools";
 
 export const dynamic = "force-static";
@@ -46,8 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tools = getTools().map((tool) => ({
     url: `${SITE_URL}/tools/${tool.slug}`,
   }));
+  const paths = getLearningPaths().map((path) => ({
+    url: `${SITE_URL}/learn/${path.id}`,
+  }));
   const seen = new Set<string>();
-  return [...pages, ...posts, ...tools]
+  return [...pages, ...posts, ...tools, ...paths]
     .filter((item) => {
       if (seen.has(item.url)) return false;
       seen.add(item.url);

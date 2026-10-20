@@ -48,9 +48,9 @@ function articleJsonLd(post: Post) {
 function breadcrumbJsonLd(post: Post) {
   const path = getLearningPath(post.path);
   const items = [
-    { name: "Learn", item: `${SITE_URL}/learn` },
+    { name: "Workflows", item: `${SITE_URL}/learn` },
     ...(path
-      ? [{ name: path.title, item: `${SITE_URL}/learn#${path.id}` }]
+      ? [{ name: path.title, item: `${SITE_URL}/learn/${path.id}` }]
       : []),
     { name: post.title, item: `${SITE_URL}/posts/${post.slug}` },
   ];
@@ -76,11 +76,11 @@ export default async function Article({ params }: Props) {
   return (
     <main id="main" className="article">
       <nav className="breadcrumb" aria-label="Breadcrumb">
-        <Link href="/learn">Learn</Link>
+        <Link href="/learn">Workflows</Link>
         {path ? (
           <>
             <span aria-hidden="true">/</span>
-            <Link href={`/learn#${path.id}`}>{path.title}</Link>
+            <Link href={`/learn/${path.id}`}>{path.title}</Link>
           </>
         ) : null}
         <span aria-hidden="true">/</span>

@@ -22,12 +22,11 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
         <header className="site-header">
           <Link className="brand" href="/">brainchain</Link>
           <nav aria-label="Main navigation">
-            <Link href="/learn">Learn</Link>
+            <Link href="/start">Start here</Link>
+            <Link href="/learn">Workflows</Link>
             <Link href="/tools">Tools</Link>
-            <Link href="/#guides">Guides</Link>
-            <Link href="/updates">Updates</Link>
             <Link href="/#newsletter">Newsletter</Link>
-            <Link href="/about">Our approach</Link>
+            <Link href="/about">About</Link>
           </nav>
         </header>
         {children}
@@ -35,9 +34,14 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
           <Link className="brand" href="/">brainchain</Link>
           <p>Practical thinking for an AI-powered working day.</p>
           <nav aria-label="Footer">
+            <Link href="/#guides">Guides</Link>
+            <Link href="/updates">Updates</Link>
+            <Link href="/about">Our approach</Link>
             <Link href="/about">Editorial standards</Link>
             <Link href="/disclosure">Disclosure & privacy</Link>
             <Link href="/#newsletter">Newsletter</Link>
+            <Link href="/feature-your-tool">For tool makers</Link>
+            <Link href="/for-ai">For AI assistants</Link>
           </nav>
         </footer>
         <Script id="mailerlite-universal" strategy="afterInteractive">{`

@@ -1,5 +1,5 @@
-import {postsInPath} from "@/lib/api";
-import {getLearningPaths} from "@/lib/paths";
+import {postsInPathOrder} from "@/lib/api";
+import {getEntryPoints} from "@/lib/entryPoints";
 import {SITE_URL} from "@/lib/site";
 import {getCategories, getTools, isUnknown, priceText, type Tool} from "@/lib/tools";
 
@@ -10,12 +10,15 @@ function toolLine(tool: Tool): string {
 }
 
 export function buildLlmsText(): string {
-  const paths = getLearningPaths();
+  const entries = getEntryPoints();
+  const paths = entries.flatMap((entry) => entry.paths.map((item) => item.path));
   const lessonLines: string[] = [];
   for (const path of paths) {
     lessonLines.push(`### ${path.title}`);
     lessonLines.push("");
-    for (const post of postsInPath(path.id)) {
+    lessonLines.push(`Path: ${SITE_URL}/learn/${path.id}`);
+    lessonLines.push("");
+    for (const post of postsInPathOrder(path.id)) {
       lessonLines.push(`- [${post.title}](${SITE_URL}/posts/${post.slug}): ${post.excerpt}`);
     }
     lessonLines.push("");
@@ -43,7 +46,8 @@ export function buildLlmsText(): string {
     "",
     "## Learning hub",
     "",
-    `- [Learn](${SITE_URL}/learn): four paths — ${paths.map((path) => path.title).join(", ")}.`,
+    `- [Start here](${SITE_URL}/start): three ways to begin.`,
+    `- [Workflows](${SITE_URL}/learn): four paths — ${paths.map((path) => path.title).join(", ")}.`,
     "",
     ...lessonLines,
     "## Tools directory",
