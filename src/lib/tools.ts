@@ -18,6 +18,7 @@ export type ToolCategory = {
 export type Tool = {
   slug: string;
   name: string;
+  oneLiner: string;
   category: string;
   summary: string;
   whoItsFor: string;
@@ -34,6 +35,8 @@ export type Tool = {
   offer?: ToolOffer;
 };
 
+const SCRAPING_NOTE = /text retrieved|retrieved text|retrieved pricing|not retrieved|was retrieved|were retrieved|in that text|page text|not printed/i;
+
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const HTTP = /^https:\/\/\S+$/;
@@ -45,6 +48,20 @@ function assert(condition: unknown, message: string): asserts condition {
 function requireText(value: unknown, label: string): string {
   assert(typeof value === "string", `${label} must be a string`);
   return value;
+}
+
+function rejectScrapingNotes(value: unknown, label: string) {
+  if (typeof value === "string") {
+    assert(!SCRAPING_NOTE.test(value), `${label} contains a scraping note`);
+    return;
+  }
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => rejectScrapingNotes(item, `${label}[${index}]`));
+    return;
+  }
+  if (value && typeof value === "object") {
+    for (const [key, item] of Object.entries(value)) rejectScrapingNotes(item, `${label}.${key}`);
+  }
 }
 
 function load(): {categories: ToolCategory[]; tools: Tool[]} {
@@ -68,10 +85,12 @@ function load(): {categories: ToolCategory[]; tools: Tool[]} {
     assert(!slugs.has(tool.slug), `duplicate slug ${tool.slug}`);
     slugs.add(tool.slug);
     assert(categoryIds.has(tool.category), `${tool.slug} has unknown category ${tool.category}`);
-    for (const field of ["name", "summary", "whoItsFor", "freeTier", "paidFrom", "pricingModel", "indiaNotes"] as const) {
+    for (const field of ["name", "oneLiner", "summary", "whoItsFor", "freeTier", "paidFrom", "pricingModel", "indiaNotes"] as const) {
       requireText(tool[field], `${tool.slug}.${field}`);
       assert(tool[field].trim().length > 0, `${tool.slug}.${field} is empty`);
     }
+    assert(!tool.oneLiner.includes("\n"), `${tool.slug}.oneLiner must be a single line`);
+    rejectScrapingNotes(tool, tool.slug);
     assert(DATE.test(tool.pricingLastChecked), `${tool.slug}.pricingLastChecked must be YYYY-MM-DD`);
     assert(HTTP.test(tool.pricingSource), `${tool.slug}.pricingSource must be an https URL`);
     assert(HTTP.test(tool.website), `${tool.slug}.website must be an https URL`);
@@ -126,4 +145,8 @@ export function isUnknown(value: string): boolean {
 
 export function displayField(value: string): string {
   return isUnknown(value) ? "Unknown" : value;
+}
+
+export function priceText(tool: Tool): string {
+  return isUnknown(tool.paidFrom) ? "Price not listed" : tool.paidFrom;
 }

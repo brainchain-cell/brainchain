@@ -2,10 +2,11 @@ import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
 import JsonLd from "@/components/json-ld";
+import ToolListing from "@/components/ToolListing";
 import {getPostBySlug} from "@/lib/api";
 import {pageMetadata} from "@/lib/metadata";
 import {SITE_URL} from "@/lib/site";
-import {displayField, getCategory, getTool, getTools, isUnknown, type Tool} from "@/lib/tools";
+import {displayField, getCategory, getTool, getTools, isUnknown, priceText, type Tool} from "@/lib/tools";
 
 type Props = {params: Promise<{slug: string}>};
 
@@ -66,9 +67,8 @@ export default async function ToolPage({params}: Props) {
       <JsonLd data={softwareJsonLd(tool)} />
       <Link href="/tools">← All tools</Link>
       <p className="eyebrow tool-kicker">{category?.title.toUpperCase()}</p>
-      <h1>{tool.name}</h1>
-      {tool.featured ? <p className="sponsored">Sponsored</p> : null}
-      <p className="notice">Notes from the provider&apos;s public pages, checked {tool.pricingLastChecked}. This is not a hands-on review.</p>
+      <ToolListing tool={tool} titleAs="h1" />
+      <p className="notice">From the company&apos;s own pages, as of {tool.pricingLastChecked}. We haven&apos;t tested this ourselves.</p>
       <div className="prose">
         <p>{tool.summary}</p>
         <p>
@@ -87,7 +87,7 @@ export default async function ToolPage({params}: Props) {
         <p>{tool.pricingModel}</p>
         <ul>
           <li>Free tier: {displayField(tool.freeTier)}</li>
-          <li>Paid from: {displayField(tool.paidFrom)}</li>
+          <li>Paid from: {priceText(tool)}</li>
           <li>Last checked: {tool.pricingLastChecked}. <a href={tool.pricingSource} rel="noopener noreferrer" target="_blank">Pricing source</a>.</li>
         </ul>
         <h2>India notes</h2>

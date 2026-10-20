@@ -1,10 +1,10 @@
 import {postsInPath} from "@/lib/api";
 import {getLearningPaths} from "@/lib/paths";
 import {SITE_URL} from "@/lib/site";
-import {getCategories, getTools, isUnknown, type Tool} from "@/lib/tools";
+import {getCategories, getTools, isUnknown, priceText, type Tool} from "@/lib/tools";
 
 function toolLine(tool: Tool): string {
-  const price = isUnknown(tool.paidFrom) ? "paid price unknown" : `paid from ${tool.paidFrom}`;
+  const price = isUnknown(tool.paidFrom) ? priceText(tool) : `paid from ${tool.paidFrom}`;
   const lessons = tool.lessons.length ? ` Lessons: ${tool.lessons.map((slug) => `${SITE_URL}/posts/${slug}`).join(", ")}.` : "";
   return `- [${tool.name}](${SITE_URL}/tools/${tool.slug}): ${tool.summary} ${price}. Checked ${tool.pricingLastChecked}.${lessons}`;
 }

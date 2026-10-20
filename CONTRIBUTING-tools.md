@@ -10,6 +10,7 @@ The directory is one file: `data/tools.json`. A daily job can add a tool by appe
 {
   "slug": "example-tool",
   "name": "Example Tool",
+  "oneLiner": "One sentence, based on the summary, with no new claim.",
   "category": "writing",
   "summary": "Two plain sentences from the official product page.",
   "whoItsFor": "Who the official page says it is for.",
@@ -28,6 +29,10 @@ The directory is one file: `data/tools.json`. A daily job can add a tool by appe
 `category` must be one of: `automation`, `writing`, `research`, `voice-audio`, `coding`, `image-video`, `productivity`.
 
 `slug` is lowercase letters, numbers, and single hyphens. It becomes `/tools/<slug>`.
+
+`oneLiner` is the single sentence under the name on `/tools` and at the top of the tool page. Base it on `summary`. Do not add a claim the summary does not already make.
+
+Do not leave retrieval notes in any field. The build fails if `data/tools.json` contains phrases such as "text retrieved", "retrieved text", "not retrieved", "in that text", "page text", or "not printed".
 
 `lessons` is an array of guide slugs from `_posts/`, or `[]`. Only link a lesson that actually teaches the tool.
 
