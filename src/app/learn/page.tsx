@@ -1,49 +1,42 @@
 import Link from "next/link";
-import modules from "../../../data/modules.json";
 import { NEWSLETTER_SIGNUP_COPY } from "@/components/NewsletterSignup";
-import {getPostBySlug} from "@/lib/api";
-import {pageMetadata} from "@/lib/metadata";
+import { postsInPath } from "@/lib/api";
+import { pageMetadata } from "@/lib/metadata";
+import { START_HERE_SLUG, getLearningPaths, levelLabel } from "@/lib/paths";
 
 export const metadata = pageMetadata({
   title: "Learn",
-  description: "Short modules on automation, writing, Cursor, Notion and agents. Each lesson is an editorial guide with an exercise.",
+  description: "Four paths: a first automation, briefs and research, meetings and operations, and building with agents. Beginners start with choosing a first automation.",
   path: "/learn",
 });
 
-type Module = {
-  id: string;
-  title: string;
-  summary: string;
-  lessons: string[];
-};
-
 export default function Learn() {
-  const catalog = modules as Module[];
+  const paths = getLearningPaths();
   return (
     <main id="main" className="updates">
       <p className="eyebrow">LEARNING HUB</p>
-      <h1>Modules for useful AI work.</h1>
+      <h1>Paths for useful AI work.</h1>
       <p>
-        Short courses built from editorial guides. Each lesson includes an exercise and links to primary documentation.
-        These are not hands-on product certifications.
+        Lessons are grouped by path and listed in learning order. Beginners start with choosing a first automation.
+        Each lesson includes an exercise and links to primary documentation. These are not hands-on product certifications.
       </p>
       <div className="module-list">
-        {catalog.map((mod) => (
-          <section className="module-card" key={mod.id} id={mod.id}>
-            <p className="eyebrow">{mod.title.toUpperCase()}</p>
-            <h2>{mod.title}</h2>
-            <p>{mod.summary}</p>
+        {paths.map((path) => (
+          <section className="module-card" key={path.id} id={path.id}>
+            <p className="eyebrow">{path.title.toUpperCase()}</p>
+            <h2>{path.title}</h2>
+            <p>{path.summary}</p>
             <ol className="module-lessons">
-              {mod.lessons.map((slug) => {
-                const post = getPostBySlug(slug);
-                if (!post) return null;
-                return (
-                  <li key={slug}>
-                    <Link href={`/posts/${slug}`}>{post.title}</Link>
-                    <span> · {post.readTime} min</span>
-                  </li>
-                );
-              })}
+              {postsInPath(path.id).map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+                  <span>
+                    {" "}
+                    · {levelLabel(post.level)} · {post.readTime} min
+                    {post.slug === START_HERE_SLUG ? " · Start here" : ""}
+                  </span>
+                </li>
+              ))}
             </ol>
           </section>
         ))}

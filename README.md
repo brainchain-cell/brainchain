@@ -14,6 +14,8 @@ Practical AI guides and an official-source announcement index. The site is a Nex
 
 Guides live in `_posts/` and require `status: published` to appear. They are editorial guidance with source links, not fabricated hands-on reviews. Official updates contain attributed headlines and outbound links only, not copied article bodies or AI-generated reviews.
 
+Authors: use the frontmatter fields and section skeleton in `docs/lesson-template.md`. The loader checks `level`, `path`, `order`, `prerequisites`, and the optional `next` lesson before a published lesson is included. Read time is computed from the word count and is not set in frontmatter.
+
 The GitHub Actions workflow refreshes announcements daily at approximately 08:47 India time (03:17 UTC). It accepts only approved HTTPS domains, valid recent dates and plain-text titles, deduplicates links, retains the previous collection on source failure and builds before committing. It uses no paid API. GitHub scheduled jobs can be delayed and may be disabled after repository inactivity; monitor the Actions page.
 
 Cloudflare Pages builds the default branch and publishes `out/`. The canonical host is `https://brainchainlab.com`. A Pages Function at `functions/_middleware.ts` 301-redirects `www.brainchainlab.com` and `brainchain.pages.dev` to that host, including the path and query string. Preview hostnames (`*.brainchain.pages.dev`) are not redirected.

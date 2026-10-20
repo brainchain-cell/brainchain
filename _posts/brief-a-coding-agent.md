@@ -3,6 +3,12 @@ title: "Brief a coding agent like a careful junior colleague"
 category: Cursor
 excerpt: "Give Cursor Agent a concrete outcome, constraints and a way to verify the result—before it starts editing."
 date: "2026-09-13"
+level: advanced
+path: build-with-agents
+order: 1
+prerequisites:
+  - agent-or-automation
+next: review-before-you-merge-ai-code
 status: published
 ---
 

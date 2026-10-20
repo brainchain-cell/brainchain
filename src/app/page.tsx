@@ -1,29 +1,30 @@
 import Link from "next/link";
-import modules from "../../data/modules.json";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import {getAllPosts} from "@/lib/api";
+import { START_HERE_SLUG, getLearningPaths } from "@/lib/paths";
 
 const moduleBlurbs: Record<string, {label: string; text: string}> = {
-  foundations: {
+  "first-automation": {
     label: "Start",
-    text: "Automation, writing verification and tool choice—the shared base for every module.",
+    text: "Decide whether a task needs an agent or a fixed workflow, then scope one reversible automation.",
   },
-  cursor: {
+  "briefs-and-research": {
+    label: "Briefs",
+    text: "Write a source-checked brief and choose a tool for that task.",
+  },
+  "meetings-and-ops": {
+    label: "Meetings",
+    text: "Keep AI drafts out of approved records, and turn a repeated routine into a skill.",
+  },
+  "build-with-agents": {
     label: "Build",
-    text: "Brief a coding agent, review diffs, and direct Projects that outlive one chat.",
-  },
-  notion: {
-    label: "Workspace",
-    text: "Keep AI drafts out of approved records, and share team skills as SKILL.md.",
-  },
-  agents: {
-    label: "Decide",
-    text: "Separate fixed workflows from agents, then practice parallel threads and a managed harness.",
+    text: "Brief a coding agent, review the diff, and direct work that outlives one chat.",
   },
 };
 
 export default function Home(){
   const posts=getAllPosts();
+  const paths=getLearningPaths();
   return (
     <main id="main">
       <section className="hero">
@@ -46,20 +47,20 @@ export default function Home(){
         <div className="section-heading">
           <div>
             <p className="eyebrow">LEARNING HUB</p>
-            <h2>Modules, not one-off tips.</h2>
+            <h2>Paths, not one-off tips.</h2>
           </div>
-          <p><Link href="/learn">Browse all modules ↗</Link></p>
+          <p><Link href="/learn">Browse the paths ↗</Link></p>
         </div>
         <div className="cards module-cards">
-          {modules.map((mod, i) => {
+          {paths.map((mod, i) => {
             const blurb = moduleBlurbs[mod.id];
-            const count = mod.lessons.length;
+            const count = posts.filter((post) => post.path === mod.id).length;
             return (
               <article className="card" key={mod.id}>
                 <div className="card-top"><span>{blurb?.label ?? "Module"}</span><span>{String(i + 1).padStart(2, "0")}</span></div>
                 <h3><Link href={`/learn#${mod.id}`}>{mod.title}</Link></h3>
                 <p>{blurb?.text ?? mod.summary}</p>
-                <div className="card-bottom"><span>{count} {count === 1 ? "lesson" : "lessons"}</span><Link href={`/learn#${mod.id}`}>Open module ↗</Link></div>
+                <div className="card-bottom"><span>{count} {count === 1 ? "lesson" : "lessons"}</span><Link href={`/learn#${mod.id}`}>Open path ↗</Link></div>
               </article>
             );
           })}
@@ -72,12 +73,12 @@ export default function Home(){
             <p className="eyebrow">THE FIELD GUIDES</p>
             <h2>Useful before impressive.</h2>
           </div>
-          <p>Automation · Writing · Cursor · Notion · Agents</p>
+          <p>First automation · Briefs & research · Meetings & operations · Build with agents</p>
         </div>
         <div className="cards">
           {posts.map((post,i)=>(
             <article className="card" key={post.slug}>
-              <div className="card-top"><span>{post.category}</span><span>{String(i + 1).padStart(2, "0")}</span></div>
+              <div className="card-top"><span>{post.slug === START_HERE_SLUG ? "Start here · " : ""}{post.category}</span><span>{String(i + 1).padStart(2, "0")}</span></div>
               <h3><Link href={`/posts/${post.slug}`}>{post.title}</Link></h3>
               <p>{post.excerpt}</p>
               <div className="card-bottom">

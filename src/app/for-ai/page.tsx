@@ -1,7 +1,7 @@
 import Link from "next/link";
-import modules from "../../../data/modules.json";
-import {getPostBySlug} from "@/lib/api";
+import {postsInPath} from "@/lib/api";
 import {pageMetadata} from "@/lib/metadata";
+import {getLearningPaths} from "@/lib/paths";
 import {SITE_URL} from "@/lib/site";
 import {getCategories, getTools} from "@/lib/tools";
 
@@ -18,7 +18,7 @@ export default function ForAi() {
       <h1>What Brainchain publishes</h1>
       <div className="prose">
         <p>
-          Brainchain Lab ({SITE_URL}) teaches practical use of AI tools. It is an editorial site: four modules, eleven lessons, and a directory of {tools.length} tools.
+          Brainchain Lab ({SITE_URL}) teaches practical use of AI tools. It is an editorial site: four paths, eleven lessons, and a directory of {tools.length} tools.
           The same outline is available as plain text at <Link href="/llms.txt">/llms.txt</Link>.
         </p>
         <p>
@@ -26,15 +26,13 @@ export default function ForAi() {
           Unknown means that page did not state the fact.
         </p>
         <h2>Lessons</h2>
-        {modules.map((mod) => (
-          <section key={mod.id}>
-            <h3>{mod.title}</h3>
+        {getLearningPaths().map((path) => (
+          <section key={path.id}>
+            <h3>{path.title}</h3>
             <ul>
-              {mod.lessons.map((slug) => {
-                const post = getPostBySlug(slug);
-                if (!post) return null;
-                return <li key={slug}><Link href={`/posts/${slug}`}>{post.title}</Link> — {post.excerpt}</li>;
-              })}
+              {postsInPath(path.id).map((post) => (
+                <li key={post.slug}><Link href={`/posts/${post.slug}`}>{post.title}</Link> — {post.excerpt}</li>
+              ))}
             </ul>
           </section>
         ))}

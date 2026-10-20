@@ -3,6 +3,12 @@ title: "Run parallel Claude Code threads without losing the merge story"
 category: Agents
 excerpt: "Anthropic’s redesigned Claude Code Projects run parallel cloud threads under one goal. You still own merge order, conflicts, and usage."
 date: "2026-09-21"
+level: advanced
+path: build-with-agents
+order: 4
+prerequisites:
+  - cursor-projects-for-multi-step-work
+next: openai-agents-api-harness
 status: published
 ---
 

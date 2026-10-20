@@ -3,6 +3,12 @@ title: "Use Cursor Projects for work that outlives one chat"
 category: Cursor
 excerpt: "Direct a Cursor Project through its coordinator: shared context, cloud workers, and a review gate you still own."
 date: "2026-09-21"
+level: advanced
+path: build-with-agents
+order: 3
+prerequisites:
+  - review-before-you-merge-ai-code
+next: claude-code-projects-parallel-agents
 status: published
 ---
 
