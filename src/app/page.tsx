@@ -14,7 +14,7 @@ export default function Home() {
       <section className="home-intro">
         <h1>Practical AI workflows for professionals, from your first automation to building with agents.</h1>
         <p className="lede">
-          For the work that has to be right, and for the first automation or agent you still want to check yourself.
+          Learn one workflow at a time, try it on real work, and keep what actually saves you time.
         </p>
         <Link className="button" href="/start">Find your starting point</Link>
       </section>
@@ -50,8 +50,7 @@ export default function Home() {
 
       <section className="home-note">
         <p>
-          No invented hands-on tests, and no made-up scores. Guides separate documented features from suggestions, and
-          link to the original sources.
+          We only tell you what we've checked, and we link the sources so you can check too.
         </p>
         <p>
           <Link href="/about">Our approach</Link>

@@ -33,7 +33,6 @@ export default function Learn() {
         </section>
       ))}
       <p className="home-note">
-        These lessons are editorial guidance, not hands-on product certifications.{" "}
         <Link href="/#newsletter">{NEWSLETTER_SIGNUP_COPY}</Link>
       </p>
     </main>

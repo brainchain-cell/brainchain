@@ -19,13 +19,13 @@ const DEFINITIONS: { id: string; title: string; copy: string; pathIds: string[] 
   {
     id: "automate-one-task",
     title: "Automate one task",
-    copy: "One repetitive task, kept small enough to undo. First, see whether it wants a fixed workflow or an agent.",
+    copy: "Pick one task you're tired of doing by hand, and keep it small enough to undo. First, work out whether it needs a simple workflow or an agent.",
     pathIds: ["first-automation"],
   },
   {
     id: "build-with-agents",
     title: "Build with agents",
-    copy: "A coding agent can take a real task. Begin with a brief tight enough to review, and read the change before you merge it.",
+    copy: "Hand a coding agent a real task. Learn to write a brief it can follow, and to read the change before you merge it.",
     pathIds: ["build-with-agents"],
   },
 ];
