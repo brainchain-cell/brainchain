@@ -25,7 +25,9 @@
 .tool-oneliner{color:#4f625a}
 .tool-price{font-weight:700}
 .tool-site a{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
-.tool-lines{list-style:none;margin:8px 0 28px;padding:0}
+.tool-area{margin:26px 0 0}
+.tool-area h2{margin:0 0 2px;font-size:15px;font-weight:700;letter-spacing:0;line-height:1.3;color:#526c61}
+.tool-lines{list-style:none;margin:0 0 8px;padding:0}
 .tool-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding:14px 0;border-top:1px solid var(--line);line-height:1.45}
 .tool-line:last-child{border-bottom:1px solid var(--line)}
 .tool-line-name{display:inline-flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:700;font-size:18px}
