@@ -1,41 +1,30 @@
 [
   {
-    "id": "foundations",
-    "title": "Foundations",
-    "summary": "Pick a task, design a small workflow, and keep AI outputs honest before you buy another tool.",
-    "lessons": [
-      "choose-your-first-automation",
-      "ai-writing-with-a-verification-step",
-      "choose-ai-tools-by-task"
-    ]
+    "id": "briefs-and-research",
+    "title": "Briefs & research",
+    "planOrder": 1,
+    "catalogOrder": 2,
+    "summary": "Leave with a one-page brief you can check against its sources, and a way to choose the tool for that task."
   },
   {
-    "id": "cursor",
-    "title": "Cursor",
-    "summary": "Brief a coding agent, review its diffs, keep Git as the source of truth, and direct multi-step Projects when work outlives one chat.",
-    "lessons": [
-      "brief-a-coding-agent",
-      "review-before-you-merge-ai-code",
-      "cursor-projects-for-multi-step-work"
-    ]
+    "id": "meetings-and-ops",
+    "title": "Meetings & operations",
+    "planOrder": 2,
+    "catalogOrder": 3,
+    "summary": "Leave with AI drafts kept separate from approved records, and a repeated routine turned into a skill."
   },
   {
-    "id": "notion",
-    "title": "Notion",
-    "summary": "Use Notion AI without mixing drafts into your system of record, and share team skills as SKILL.md across agents.",
-    "lessons": [
-      "keep-notion-ai-drafts-separate",
-      "notion-agent-skills-skill-md"
-    ]
+    "id": "first-automation",
+    "title": "First automation",
+    "planOrder": 3,
+    "catalogOrder": 1,
+    "summary": "Leave with one reversible workflow: decide whether the task needs an agent, then scope the first automation."
   },
   {
-    "id": "agents",
-    "title": "Agents and automation",
-    "summary": "Tell fixed workflows from computer-using agents, then practice parallel project threads and a managed harness when judgment is the bottleneck.",
-    "lessons": [
-      "agent-or-automation",
-      "claude-code-projects-parallel-agents",
-      "openai-agents-api-harness"
-    ]
+    "id": "build-with-agents",
+    "title": "Build with agents",
+    "planOrder": 4,
+    "catalogOrder": 4,
+    "summary": "Leave with a small, reviewed piece of work: brief a coding agent, check the diff, and keep the merge in your hands."
   }
 ]

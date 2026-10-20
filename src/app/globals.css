@@ -40,3 +40,12 @@
 .prose th{background:#eef4f1;font-weight:700}
 .prose input[type="checkbox"]{margin-right:.55em;accent-color:#337657}
 .prose li:has(> input[type="checkbox"]){list-style:none}
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0;color:#526c61;font-size:14px}
+.breadcrumb a{font-weight:700;text-decoration:none}
+.breadcrumb [aria-current="page"]{color:var(--ink)}
+.lesson-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 8px}
+.lesson-nav a,.lesson-nav span{display:block;border:1px solid var(--line);background:white;padding:16px 18px;text-decoration:none}
+.lesson-nav .next{text-align:right}
+.lesson-nav small{display:block;margin-bottom:6px;color:#526c61;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.lesson-nav strong{display:block;font-size:16px;line-height:1.35}
+@media(max-width:650px){.lesson-nav{grid-template-columns:1fr}.lesson-nav .next{text-align:left}}

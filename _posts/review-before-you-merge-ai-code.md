@@ -3,6 +3,12 @@ title: "Review AI code before you merge it"
 category: Cursor
 excerpt: "Use diffs, checks and a short review checklist so agent-written changes do not become silent debt."
 date: "2026-09-13"
+level: advanced
+path: build-with-agents
+order: 2
+prerequisites:
+  - brief-a-coding-agent
+next: cursor-projects-for-multi-step-work
 status: published
 ---
 

@@ -3,6 +3,11 @@ title: "A better AI writing workflow starts before the prompt"
 category: Writing
 excerpt: "Give the draft a clear brief, keep facts traceable and make the final edit yours."
 date: "2026-09-10"
+level: core
+path: briefs-and-research
+order: 1
+prerequisites: []
+next: choose-ai-tools-by-task
 status: published
 ---
 

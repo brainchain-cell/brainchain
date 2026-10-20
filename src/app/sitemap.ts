@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
   const posts = getAllPosts().map((post) => ({
     url: `${SITE_URL}/posts/${post.slug}`,
-    lastModified: post.date,
+    ...(post.date ? { lastModified: post.lastReviewed ?? post.date } : {}),
   }));
   const tools = getTools().map((tool) => ({
     url: `${SITE_URL}/tools/${tool.slug}`,

@@ -1,13 +1,7 @@
-import modules from "../../data/modules.json";
-import {getPostBySlug} from "@/lib/api";
+import {postsInPath} from "@/lib/api";
+import {getLearningPaths} from "@/lib/paths";
 import {SITE_URL} from "@/lib/site";
 import {getCategories, getTools, isUnknown, type Tool} from "@/lib/tools";
-
-function lessonLine(slug: string): string | undefined {
-  const post = getPostBySlug(slug);
-  if (!post) return;
-  return `- [${post.title}](${SITE_URL}/posts/${slug}): ${post.excerpt}`;
-}
 
 function toolLine(tool: Tool): string {
   const price = isUnknown(tool.paidFrom) ? "paid price unknown" : `paid from ${tool.paidFrom}`;
@@ -16,13 +10,13 @@ function toolLine(tool: Tool): string {
 }
 
 export function buildLlmsText(): string {
+  const paths = getLearningPaths();
   const lessonLines: string[] = [];
-  for (const mod of modules) {
-    lessonLines.push(`### ${mod.title}`);
+  for (const path of paths) {
+    lessonLines.push(`### ${path.title}`);
     lessonLines.push("");
-    for (const slug of mod.lessons) {
-      const line = lessonLine(slug);
-      if (line) lessonLines.push(line);
+    for (const post of postsInPath(path.id)) {
+      lessonLines.push(`- [${post.title}](${SITE_URL}/posts/${post.slug}): ${post.excerpt}`);
     }
     lessonLines.push("");
   }
@@ -43,13 +37,13 @@ export function buildLlmsText(): string {
     "",
     "> Practical guides to AI tools for useful work. Brainchain Lab teaches small teams and independent professionals how to choose and use automation, writing, coding, and productivity tools.",
     "",
-    "Brainchain is an editorial learning site, not a ranking and not a test lab. Four modules and eleven lessons live at the learning hub. The tools directory summarises official pricing pages. If a price or an India-specific detail could not be verified, the tool page says Unknown. Prices change. Check the provider before you pay.",
+    "Brainchain is an editorial learning site, not a ranking and not a test lab. Four paths and eleven lessons live at the learning hub. The tools directory summarises official pricing pages. If a price or an India-specific detail could not be verified, the tool page says Unknown. Prices change. Check the provider before you pay.",
     "",
     `Site: ${SITE_URL}`,
     "",
     "## Learning hub",
     "",
-    `- [Modules](${SITE_URL}/learn): four modules — Foundations, Cursor, Notion, and Agents and automation.`,
+    `- [Learn](${SITE_URL}/learn): four paths — ${paths.map((path) => path.title).join(", ")}.`,
     "",
     ...lessonLines,
     "## Tools directory",

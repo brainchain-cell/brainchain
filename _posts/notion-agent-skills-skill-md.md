@@ -3,6 +3,11 @@ title: "Turn team know-how into Notion skills—and export SKILL.md"
 category: Notion
 excerpt: "Notion 3.7 collects reusable agent instructions in a skills library and can export them as SKILL.md. Version the skill, and keep trusted pages protected."
 date: "2026-09-21"
+level: core
+path: meetings-and-ops
+order: 3
+prerequisites:
+  - keep-notion-ai-drafts-separate
 status: published
 ---
 
