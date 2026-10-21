@@ -1,5 +1,33 @@
 [
   {
+    "id": "c7c1db1d24f97b16",
+    "title": "Southeast Asia’s digital economy to hit $368 billion",
+    "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+    "source": "Google AI",
+    "date": "2026-10-21T04:00:00+00:00"
+  },
+  {
+    "id": "1725d137aa3debc0",
+    "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+    "url": "https://openai.com/index/ted-taylor-restaurant",
+    "source": "OpenAI",
+    "date": "2026-10-20T10:00:00+00:00"
+  },
+  {
+    "id": "aa8847d44cbae332",
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+    "url": "https://openai.com/index/terminal-x",
+    "source": "OpenAI",
+    "date": "2026-10-20T07:00:00+00:00"
+  },
+  {
+    "id": "1cfb6291fa158d05",
+    "title": "OpenAI acquires Orchestra Bio",
+    "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+    "source": "OpenAI",
+    "date": "2026-10-20T00:00:00+00:00"
+  },
+  {
     "id": "1dbe22633003a2af",
     "title": "Advancing coding in low‑resource programming languages",
     "url": "https://openai.com/index/low-resource-programming-languages",
@@ -14,32 +42,11 @@
     "date": "2026-10-16T19:00:00+00:00"
   },
   {
-    "id": "b6756c0a180ee554",
-    "title": "Benefit Street Partners answers questions faster with Codex",
-    "url": "https://openai.com/index/benefit-street-partners",
-    "source": "OpenAI",
-    "date": "2026-10-16T00:00:00+00:00"
-  },
-  {
     "id": "9e63539289a31c86",
     "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
     "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
     "source": "OpenAI",
     "date": "2026-10-16T00:00:00+00:00"
-  },
-  {
-    "id": "32165ee6af8945a5",
-    "title": "Bringing GPT-Rosalind to academic research labs",
-    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-    "source": "OpenAI",
-    "date": "2026-10-15T19:00:00+00:00"
-  },
-  {
-    "id": "a60f4a701f887ae8",
-    "title": "Teaching students to think and learn through questions",
-    "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
-    "source": "OpenAI",
-    "date": "2026-10-15T13:00:00+00:00"
   },
   {
     "id": "74c9e10c02543c49",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
     "source": "Google AI",
     "date": "2026-09-23T18:00:00+00:00"
-  },
-  {
-    "id": "d92122e53ec9d4f7",
-    "title": "New experts join Google’s AI & Economy team",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
-    "source": "Google AI",
-    "date": "2026-09-18T14:00:00+00:00"
   }
 ]
