@@ -1,5 +1,19 @@
 [
   {
+    "id": "ee4c22366ef7e7ab",
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "source": "OpenAI",
+    "date": "2026-10-23T17:00:00+00:00"
+  },
+  {
+    "id": "f8c156dba7886826",
+    "title": "Securing our frontier model training environment",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "source": "OpenAI",
+    "date": "2026-10-23T10:00:00+00:00"
+  },
+  {
     "id": "1a543055a02f9816",
     "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
     "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
@@ -26,20 +40,6 @@
     "url": "https://openai.com/index/uber-chatgpt-work-rollout",
     "source": "OpenAI",
     "date": "2026-10-22T00:00:00+00:00"
-  },
-  {
-    "id": "3f1a11956436b167",
-    "title": "Broad access through consistent standards",
-    "url": "https://openai.com/index/broad-access-through-consistent-standards",
-    "source": "OpenAI",
-    "date": "2026-10-21T21:00:00+00:00"
-  },
-  {
-    "id": "39cad894cdd240fb",
-    "title": "How AT&T is rethinking in-house legal work with OpenAI",
-    "url": "https://openai.com/index/att-legal",
-    "source": "OpenAI",
-    "date": "2026-10-21T17:00:00+00:00"
   },
   {
     "id": "c7c1db1d24f97b16",
