@@ -1,6 +1,6 @@
 import catalog from "../../data/tools.json";
-import {getPostBySlug} from "@/lib/api";
-import {MAKE_AFFILIATE_URL} from "@/lib/constants";
+import { getPostBySlug } from "@/lib/api";
+import { MAKE_AFFILIATE_URL } from "@/lib/constants";
 
 export type ToolOffer = {
   price: string;
@@ -35,7 +35,8 @@ export type Tool = {
   offer?: ToolOffer;
 };
 
-const SCRAPING_NOTE = /text retrieved|retrieved text|retrieved pricing|not retrieved|was retrieved|were retrieved|in that text|page text|not printed/i;
+const SCRAPING_NOTE =
+  /text retrieved|retrieved text|retrieved pricing|not retrieved|was retrieved|were retrieved|in that text|page text|not printed/i;
 
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
@@ -56,61 +57,124 @@ function rejectScrapingNotes(value: unknown, label: string) {
     return;
   }
   if (Array.isArray(value)) {
-    value.forEach((item, index) => rejectScrapingNotes(item, `${label}[${index}]`));
+    value.forEach((item, index) =>
+      rejectScrapingNotes(item, `${label}[${index}]`),
+    );
     return;
   }
   if (value && typeof value === "object") {
-    for (const [key, item] of Object.entries(value)) rejectScrapingNotes(item, `${label}.${key}`);
+    for (const [key, item] of Object.entries(value))
+      rejectScrapingNotes(item, `${label}.${key}`);
   }
 }
 
-function load(): {categories: ToolCategory[]; tools: Tool[]} {
+function load(): { categories: ToolCategory[]; tools: Tool[] } {
   const categories = catalog.categories as ToolCategory[];
   const tools = catalog.tools as Tool[];
   const categoryIds = new Set<string>();
-  assert(Array.isArray(categories) && categories.length > 0, "categories must be a non-empty array");
+  assert(
+    Array.isArray(categories) && categories.length > 0,
+    "categories must be a non-empty array",
+  );
   for (const category of categories) {
     assert(SLUG.test(category.id), `bad category id ${category.id}`);
     assert(!categoryIds.has(category.id), `duplicate category ${category.id}`);
     categoryIds.add(category.id);
-    assert(category.title.trim().length > 0, `category ${category.id} needs a title`);
-    assert(category.description.trim().length > 0, `category ${category.id} needs a description`);
-    assert(category.applicationCategory.trim().length > 0, `category ${category.id} needs applicationCategory`);
+    assert(
+      category.title.trim().length > 0,
+      `category ${category.id} needs a title`,
+    );
+    assert(
+      category.description.trim().length > 0,
+      `category ${category.id} needs a description`,
+    );
+    assert(
+      category.applicationCategory.trim().length > 0,
+      `category ${category.id} needs applicationCategory`,
+    );
   }
 
   const slugs = new Set<string>();
-  assert(Array.isArray(tools) && tools.length > 0, "tools must be a non-empty array");
+  assert(
+    Array.isArray(tools) && tools.length > 0,
+    "tools must be a non-empty array",
+  );
   for (const tool of tools) {
     assert(SLUG.test(tool.slug), `bad slug ${tool.slug}`);
     assert(!slugs.has(tool.slug), `duplicate slug ${tool.slug}`);
     slugs.add(tool.slug);
-    assert(categoryIds.has(tool.category), `${tool.slug} has unknown category ${tool.category}`);
-    for (const field of ["name", "oneLiner", "summary", "whoItsFor", "freeTier", "paidFrom", "pricingModel", "indiaNotes"] as const) {
+    assert(
+      categoryIds.has(tool.category),
+      `${tool.slug} has unknown category ${tool.category}`,
+    );
+    for (const field of [
+      "name",
+      "oneLiner",
+      "summary",
+      "whoItsFor",
+      "freeTier",
+      "paidFrom",
+      "pricingModel",
+      "indiaNotes",
+    ] as const) {
       requireText(tool[field], `${tool.slug}.${field}`);
       assert(tool[field].trim().length > 0, `${tool.slug}.${field} is empty`);
     }
-    assert(!tool.oneLiner.includes("\n"), `${tool.slug}.oneLiner must be a single line`);
+    assert(
+      !tool.oneLiner.includes("\n"),
+      `${tool.slug}.oneLiner must be a single line`,
+    );
     rejectScrapingNotes(tool, tool.slug);
-    assert(DATE.test(tool.pricingLastChecked), `${tool.slug}.pricingLastChecked must be YYYY-MM-DD`);
-    assert(HTTP.test(tool.pricingSource), `${tool.slug}.pricingSource must be an https URL`);
-    assert(HTTP.test(tool.website), `${tool.slug}.website must be an https URL`);
+    assert(
+      DATE.test(tool.pricingLastChecked),
+      `${tool.slug}.pricingLastChecked must be YYYY-MM-DD`,
+    );
+    assert(
+      HTTP.test(tool.pricingSource),
+      `${tool.slug}.pricingSource must be an https URL`,
+    );
+    assert(
+      HTTP.test(tool.website),
+      `${tool.slug}.website must be an https URL`,
+    );
     if (tool.affiliateUrl !== undefined) {
-      assert(HTTP.test(tool.affiliateUrl), `${tool.slug}.affiliateUrl must be an https URL`);
+      assert(
+        HTTP.test(tool.affiliateUrl),
+        `${tool.slug}.affiliateUrl must be an https URL`,
+      );
     }
-    assert(Array.isArray(tool.lessons), `${tool.slug}.lessons must be an array`);
+    assert(
+      Array.isArray(tool.lessons),
+      `${tool.slug}.lessons must be an array`,
+    );
     for (const lesson of tool.lessons) {
       assert(SLUG.test(lesson), `${tool.slug} has a bad lesson slug ${lesson}`);
-      assert(getPostBySlug(lesson), `${tool.slug} links to missing lesson ${lesson}`);
+      assert(
+        getPostBySlug(lesson),
+        `${tool.slug} links to missing lesson ${lesson}`,
+      );
     }
-    assert(typeof tool.featured === "boolean", `${tool.slug}.featured must be true or false`);
+    assert(
+      typeof tool.featured === "boolean",
+      `${tool.slug}.featured must be true or false`,
+    );
     if (tool.offer) {
-      assert(/^\d+(\.\d+)?$/.test(tool.offer.price), `${tool.slug}.offer.price must be a number`);
-      assert(/^[A-Z]{3}$/.test(tool.offer.priceCurrency), `${tool.slug}.offer.priceCurrency must be a 3-letter code`);
-      assert(tool.offer.description.trim().length > 0, `${tool.slug}.offer.description is empty`);
+      assert(
+        /^\d+(\.\d+)?$/.test(tool.offer.price),
+        `${tool.slug}.offer.price must be a number`,
+      );
+      assert(
+        /^[A-Z]{3}$/.test(tool.offer.priceCurrency),
+        `${tool.slug}.offer.priceCurrency must be a 3-letter code`,
+      );
+      assert(
+        tool.offer.description.trim().length > 0,
+        `${tool.slug}.offer.description is empty`,
+      );
     }
     if (tool.slug === "make") tool.affiliateUrl = MAKE_AFFILIATE_URL;
   }
-  return {categories, tools};
+  return { categories, tools };
 }
 
 const data = load();
@@ -136,7 +200,11 @@ export function toolsInCategory(id: string): Tool[] {
 }
 
 export function featuredTools(categoryId?: string): Tool[] {
-  return data.tools.filter((tool) => tool.featured && (categoryId === undefined || tool.category === categoryId));
+  return data.tools.filter(
+    (tool) =>
+      tool.featured &&
+      (categoryId === undefined || tool.category === categoryId),
+  );
 }
 
 export function isUnknown(value: string): boolean {

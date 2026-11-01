@@ -16,11 +16,15 @@ export function EntryPoints() {
                 <Link className="entry-path" href={`/learn/${path.id}`}>
                   {path.title}
                 </Link>
-                <Link className="entry-lesson" href={`/posts/${firstLesson.slug}`}>
+                <Link
+                  className="entry-lesson"
+                  href={`/posts/${firstLesson.slug}`}
+                >
                   {firstLesson.title}
                 </Link>
                 <span className="lesson-meta">
-                  {levelLabel(firstLesson.level)} · {firstLesson.readTime} min read
+                  {levelLabel(firstLesson.level)} · {firstLesson.readTime} min
+                  read
                 </span>
               </li>
             ))}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {priceText, type Tool} from "@/lib/tools";
+import { priceText, type Tool } from "@/lib/tools";
 
 type Props = {
   tool: Tool;
@@ -7,7 +7,11 @@ type Props = {
   layout?: "stack" | "line";
 };
 
-export default function ToolListing({tool, titleAs = "h3", layout = "stack"}: Props) {
+export default function ToolListing({
+  tool,
+  titleAs = "h3",
+  layout = "stack",
+}: Props) {
   const price = priceText(tool);
   const website = (
     <a href={tool.website} rel="noopener noreferrer" target="_blank">
@@ -28,7 +32,12 @@ export default function ToolListing({tool, titleAs = "h3", layout = "stack"}: Pr
     );
   }
   const Title = titleAs;
-  const name = titleAs === "h1" ? tool.name : <Link href={`/tools/${tool.slug}`}>{tool.name}</Link>;
+  const name =
+    titleAs === "h1" ? (
+      tool.name
+    ) : (
+      <Link href={`/tools/${tool.slug}`}>{tool.name}</Link>
+    );
   return (
     <div className="tool-listing">
       {tool.featured ? <p className="sponsored">Sponsored</p> : null}

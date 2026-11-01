@@ -39,32 +39,46 @@ function fail(message: string): never {
 }
 
 function loadPaths(): LearningPath[] {
-  if (!Array.isArray(modules)) fail("data/modules.json must be a list of paths");
+  if (!Array.isArray(modules))
+    fail("data/modules.json must be a list of paths");
   const paths: LearningPath[] = [];
   const ids = new Set<string>();
   const planOrders = new Set<number>();
   const catalogOrders = new Set<number>();
   for (const entry of modules) {
-    if (!entry || typeof entry !== "object") fail("data/modules.json has an entry that is not an object");
+    if (!entry || typeof entry !== "object")
+      fail("data/modules.json has an entry that is not an object");
     const path = entry as Record<string, unknown>;
     const id = path.id;
     const title = path.title;
     const summary = path.summary;
     const planOrder = path.planOrder;
     const catalogOrder = path.catalogOrder;
-    if (typeof id !== "string" || !SLUG.test(id)) fail(`path id must be a slug, got ${String(id)}`);
+    if (typeof id !== "string" || !SLUG.test(id))
+      fail(`path id must be a slug, got ${String(id)}`);
     if (ids.has(id)) fail(`duplicate path id ${id}`);
     ids.add(id);
-    if (typeof title !== "string" || title.trim() === "") fail(`${id} needs a title`);
-    if (typeof summary !== "string" || summary.trim() === "") fail(`${id} needs a summary`);
-    if (typeof planOrder !== "number" || !Number.isInteger(planOrder) || planOrder < 1) {
+    if (typeof title !== "string" || title.trim() === "")
+      fail(`${id} needs a title`);
+    if (typeof summary !== "string" || summary.trim() === "")
+      fail(`${id} needs a summary`);
+    if (
+      typeof planOrder !== "number" ||
+      !Number.isInteger(planOrder) ||
+      planOrder < 1
+    ) {
       fail(`${id} planOrder must be a positive integer`);
     }
-    if (typeof catalogOrder !== "number" || !Number.isInteger(catalogOrder) || catalogOrder < 1) {
+    if (
+      typeof catalogOrder !== "number" ||
+      !Number.isInteger(catalogOrder) ||
+      catalogOrder < 1
+    ) {
       fail(`${id} catalogOrder must be a positive integer`);
     }
     if (planOrders.has(planOrder)) fail(`duplicate planOrder ${planOrder}`);
-    if (catalogOrders.has(catalogOrder)) fail(`duplicate catalogOrder ${catalogOrder}`);
+    if (catalogOrders.has(catalogOrder))
+      fail(`duplicate catalogOrder ${catalogOrder}`);
     planOrders.add(planOrder);
     catalogOrders.add(catalogOrder);
     paths.push({ id, title, summary, planOrder, catalogOrder });

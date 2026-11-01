@@ -21,7 +21,9 @@ export function MailerLiteForm() {
     const renderIfEmpty = () => {
       if (cancelled || !node.isConnected) return true;
       if (node.childElementCount > 0) return true;
-      const ml = (window as Window & { ml?: { fn?: { renderEmbeddedForm?: unknown } } }).ml;
+      const ml = (
+        window as Window & { ml?: { fn?: { renderEmbeddedForm?: unknown } } }
+      ).ml;
       if (!ml?.fn?.renderEmbeddedForm) return false;
       script = document.createElement("script");
       script.async = true;
@@ -50,5 +52,7 @@ export function MailerLiteForm() {
     };
   }, []);
 
-  return <div ref={ref} className="ml-embedded" data-form={MAILERLITE_FORM_ID} />;
+  return (
+    <div ref={ref} className="ml-embedded" data-form={MAILERLITE_FORM_ID} />
+  );
 }

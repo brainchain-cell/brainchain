@@ -1,40 +1,51 @@
 import Link from "next/link";
-import { LessonList } from "@/components/LessonList";
-import { NEWSLETTER_SIGNUP_COPY } from "@/components/NewsletterSignup";
-import { postsInPathOrder } from "@/lib/api";
-import { getEntryPoints } from "@/lib/entryPoints";
+import { LessonCatalog } from "@/components/LessonCatalog";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { getAllPosts } from "@/lib/api";
+import { getLearningPaths } from "@/lib/paths";
 import { pageMetadata } from "@/lib/metadata";
-
 export const metadata = pageMetadata({
-  title: "Workflows",
-  description: "Lessons for briefs and meetings, a first automation, and building with agents.",
+  title: "Learn",
+  description:
+    "Find a practical AI workflow for your next brief, meeting, automation or small build.",
   path: "/learn",
 });
-
 export default function Learn() {
-  const entries = getEntryPoints();
+  const posts = getAllPosts().map(
+    ({ slug, title, excerpt, path, level, readTime }) => ({
+      slug,
+      title,
+      excerpt,
+      path,
+      level,
+      readTime,
+    }),
+  );
   return (
-    <main id="main" className="updates">
-      <h1>Workflows</h1>
-      <p className="lede">Lessons for briefs and meetings, a first automation, and building with agents.</p>
-      {entries.map((entry) => (
-        <section className="path-group" key={entry.id}>
-          <h2>{entry.title}</h2>
-          <p>{entry.copy}</p>
-          {entry.paths.map(({ path }) => (
-            <section className="path-block" id={path.id} key={path.id}>
-              <h3>
-                <Link href={`/learn/${path.id}`}>{path.title}</Link>
-              </h3>
-              <p>{path.summary}</p>
-              <LessonList posts={postsInPathOrder(path.id)} />
-            </section>
-          ))}
-        </section>
-      ))}
-      <p className="home-note">
-        <Link href="/#newsletter">{NEWSLETTER_SIGNUP_COPY}</Link>
-      </p>
+    <main id="main" className="wide-page">
+      <header className="page-intro">
+        <p className="eyebrow">THE LEARNING LIBRARY</p>
+        <h1>
+          A workflow for
+          <br />
+          <em>the work in front of you.</em>
+        </h1>
+        <p className="lede">
+          Pick a task, follow a short lesson and try the exercise. Every guide
+          keeps the sources and the review step in view.
+        </p>
+      </header>
+      <aside className="start-banner">
+        <div>
+          <span className="eyebrow">NEW TO AUTOMATION?</span>
+          <p>Start with one task you can safely undo.</p>
+        </div>
+        <Link href="/posts/choose-your-first-automation" className="text-link">
+          Choose your first automation ↗
+        </Link>
+      </aside>
+      <LessonCatalog posts={posts} paths={getLearningPaths()} />
+      <NewsletterSignup />
     </main>
   );
 }

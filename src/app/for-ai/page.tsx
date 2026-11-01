@@ -1,14 +1,15 @@
 import Link from "next/link";
-import {postsInPathOrder} from "@/lib/api";
-import {getEntryPoints} from "@/lib/entryPoints";
-import {pageMetadata} from "@/lib/metadata";
-import {SITE_URL} from "@/lib/site";
-import {getCategories, getTools} from "@/lib/tools";
+import { postsInPathOrder } from "@/lib/api";
+import { getEntryPoints } from "@/lib/entryPoints";
+import { pageMetadata } from "@/lib/metadata";
+import { SITE_URL } from "@/lib/site";
+import { getCategories, getTools } from "@/lib/tools";
 
 const title = "For AI assistants";
-const description = "A plain map of Brainchain Lab: the lessons, the tools directory, and how prices and affiliate links are handled.";
+const description =
+  "A plain map of Brainchain Lab: the lessons, the tools directory, and how prices and affiliate links are handled.";
 
-export const metadata = pageMetadata({title, description, path: "/for-ai"});
+export const metadata = pageMetadata({ title, description, path: "/for-ai" });
 
 export default function ForAi() {
   const tools = getTools();
@@ -18,42 +19,70 @@ export default function ForAi() {
       <h1>What Brainchain publishes</h1>
       <div className="prose">
         <p>
-          Brainchain Lab ({SITE_URL}) teaches practical use of AI tools. It is an editorial site: four paths, eleven lessons, and a directory of {tools.length} tools.
-          The same outline is available as plain text at <Link href="/llms.txt">/llms.txt</Link>.
+          Brainchain Lab ({SITE_URL}) teaches practical use of AI tools. It is
+          an editorial site: four paths, eleven lessons, and a directory of{" "}
+          {tools.length} tools. The same outline is available as plain text at{" "}
+          <Link href="/llms.txt">/llms.txt</Link>.
         </p>
         <p>
-          Do not treat a directory note as a test, a ranking, or a current invoice. Prices are copied from the provider&apos;s public page on the date printed on each tool.
-          Unknown means that page did not state the fact.
+          Do not treat a directory note as a test, a ranking, or a current
+          invoice. Prices are copied from the provider&apos;s public page on the
+          date printed on each tool. Unknown means that page did not state the
+          fact.
         </p>
         <h2>Lessons</h2>
-        {getEntryPoints().flatMap((entry) => entry.paths.map(({path}) => (
-          <section key={path.id}>
-            <h3><Link href={`/learn/${path.id}`}>{path.title}</Link></h3>
-            <ul>
-              {postsInPathOrder(path.id).map((post) => (
-                <li key={post.slug}><Link href={`/posts/${post.slug}`}>{post.title}</Link> — {post.excerpt}</li>
-              ))}
-            </ul>
-          </section>
-        )))}
+        {getEntryPoints().flatMap((entry) =>
+          entry.paths.map(({ path }) => (
+            <section key={path.id}>
+              <h3>
+                <Link href={`/learn/${path.id}`}>{path.title}</Link>
+              </h3>
+              <ul>
+                {postsInPathOrder(path.id).map((post) => (
+                  <li key={post.slug}>
+                    <Link href={`/posts/${post.slug}`}>{post.title}</Link> —{" "}
+                    {post.excerpt}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )),
+        )}
         <h2>Tools</h2>
         {getCategories().map((category) => (
           <section key={category.id}>
             <h3>{category.title}</h3>
             <ul>
-              {tools.filter((tool) => tool.category === category.id).map((tool) => (
-                <li key={tool.slug}><Link href={`/tools/${tool.slug}`}>{tool.name}</Link> — {tool.summary}</li>
-              ))}
+              {tools
+                .filter((tool) => tool.category === category.id)
+                .map((tool) => (
+                  <li key={tool.slug}>
+                    <Link href={`/tools/${tool.slug}`}>{tool.name}</Link> —{" "}
+                    {tool.summary}
+                  </li>
+                ))}
             </ul>
           </section>
         ))}
         <h2>Also</h2>
         <ul>
-          <li><Link href="/feature-your-tool">Feature your tool</Link> — sponsored slot and newsletter mention, pricing on request, no checkout.</li>
-          <li><Link href="/disclosure">Disclosure</Link> — affiliate links and privacy.</li>
-          <li><Link href="/about">Our approach</Link></li>
-          <li><Link href="/start">Start here</Link></li>
-          <li><Link href="/learn">Workflows</Link></li>
+          <li>
+            <Link href="/feature-your-tool">Feature your tool</Link> — sponsored
+            slot and newsletter mention, pricing on request, no checkout.
+          </li>
+          <li>
+            <Link href="/disclosure">Disclosure</Link> — affiliate links and
+            privacy.
+          </li>
+          <li>
+            <Link href="/about">Our approach</Link>
+          </li>
+          <li>
+            <Link href="/start">Start here</Link>
+          </li>
+          <li>
+            <Link href="/learn">Workflows</Link>
+          </li>
         </ul>
       </div>
     </main>
