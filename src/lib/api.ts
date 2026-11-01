@@ -33,7 +33,9 @@ export function readingTimeMinutes(wordCount: number) {
 }
 
 export function getPostSlugs() {
-  return fs.readdirSync(directory).filter((name) => /^[a-z0-9-]+\.md$/.test(name));
+  return fs
+    .readdirSync(directory)
+    .filter((name) => /^[a-z0-9-]+\.md$/.test(name));
 }
 
 function fail(slug: string, message: string): never {
@@ -47,28 +49,44 @@ function isRealIsoDate(value: string): boolean {
   const month = Number(match[2]);
   const day = Number(match[3]);
   const date = new Date(Date.UTC(year, month - 1, day));
-  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day;
+  return (
+    date.getUTCFullYear() === year &&
+    date.getUTCMonth() === month - 1 &&
+    date.getUTCDate() === day
+  );
 }
 
-function requiredString(data: Record<string, unknown>, key: string, slug: string): string {
+function requiredString(
+  data: Record<string, unknown>,
+  key: string,
+  slug: string,
+): string {
   const value = data[key];
-  if (typeof value !== "string" || value.trim() === "") fail(slug, `${key} must be a non-empty string`);
+  if (typeof value !== "string" || value.trim() === "")
+    fail(slug, `${key} must be a non-empty string`);
   return value;
 }
 
-function optionalDate(data: Record<string, unknown>, key: string, slug: string): string | undefined {
+function optionalDate(
+  data: Record<string, unknown>,
+  key: string,
+  slug: string,
+): string | undefined {
   const value = data[key];
   if (value === undefined) return undefined;
-  if (typeof value !== "string" || !isRealIsoDate(value)) fail(slug, `${key} must be YYYY-MM-DD`);
+  if (typeof value !== "string" || !isRealIsoDate(value))
+    fail(slug, `${key} must be YYYY-MM-DD`);
   return value;
 }
 
 function readSlugList(value: unknown, slug: string, key: string): string[] {
   if (value === undefined) return [];
-  if (!Array.isArray(value)) fail(slug, `${key} must be a list of lesson slugs`);
+  if (!Array.isArray(value))
+    fail(slug, `${key} must be a list of lesson slugs`);
   const slugs: string[] = [];
   for (const item of value) {
-    if (typeof item !== "string" || !SLUG.test(item)) fail(slug, `${key} must be a list of lesson slugs`);
+    if (typeof item !== "string" || !SLUG.test(item))
+      fail(slug, `${key} must be a list of lesson slugs`);
     if (item === slug) fail(slug, `${key} cannot include the lesson itself`);
     if (slugs.includes(item)) fail(slug, `${key} lists ${item} more than once`);
     slugs.push(item);
@@ -86,7 +104,10 @@ function readPost(slug: string): Post | undefined {
 
   const levelValue = fields.level;
   if (typeof levelValue !== "string" || !isLevel(levelValue)) {
-    fail(slug, `level must be one of ${["foundations", "core", "advanced"].join(", ")}`);
+    fail(
+      slug,
+      `level must be one of ${["foundations", "core", "advanced"].join(", ")}`,
+    );
   }
   const level: Level = levelValue;
 
@@ -108,7 +129,8 @@ function readPost(slug: string): Post | undefined {
 
   let next: string | undefined;
   if (fields.next !== undefined) {
-    if (typeof fields.next !== "string" || !SLUG.test(fields.next)) fail(slug, "next must be a lesson slug");
+    if (typeof fields.next !== "string" || !SLUG.test(fields.next))
+      fail(slug, "next must be a lesson slug");
     if (fields.next === slug) fail(slug, "next cannot be the lesson itself");
     next = fields.next;
   }
@@ -146,23 +168,32 @@ function assertCatalog(posts: Post[]) {
   for (const post of posts) {
     const key = `${post.path}:${post.order}`;
     const existing = orders.get(key);
-    if (existing !== undefined) fail(post.slug, `order ${post.order} is already used on this path`);
+    if (existing !== undefined)
+      fail(post.slug, `order ${post.order} is already used on this path`);
     orders.set(key, post.order);
 
     for (const prerequisite of post.prerequisites) {
-      if (!bySlug.has(prerequisite)) fail(post.slug, `prerequisite ${prerequisite} is not a published lesson`);
+      if (!bySlug.has(prerequisite))
+        fail(
+          post.slug,
+          `prerequisite ${prerequisite} is not a published lesson`,
+        );
     }
 
     if (post.next) {
       const successor = pathSuccessor(post, posts);
       if (!successor || successor.slug !== post.next) {
-        fail(post.slug, `next must be the following lesson on the same path${successor ? ` (${successor.slug})` : ""}`);
+        fail(
+          post.slug,
+          `next must be the following lesson on the same path${successor ? ` (${successor.slug})` : ""}`,
+        );
       }
     }
   }
 
   for (const path of getLearningPaths()) {
-    if (!posts.some((post) => post.path === path.id)) fail(path.id, "path has no published lessons");
+    if (!posts.some((post) => post.path === path.id))
+      fail(path.id, "path has no published lessons");
   }
 }
 
@@ -210,7 +241,9 @@ export function postsInPath(pathId: string): Post[] {
 
 /** Published lessons on a path, in frontmatter `order`. Gaps stay gaps: nothing is renumbered. */
 export function postsInPathOrder(pathId: string): Post[] {
-  return postsInPath(pathId).sort((a, b) => a.order - b.order || a.slug.localeCompare(b.slug));
+  return postsInPath(pathId).sort(
+    (a, b) => a.order - b.order || a.slug.localeCompare(b.slug),
+  );
 }
 
 export function firstLessonInPath(pathId: string): Post | undefined {
@@ -240,6 +273,9 @@ export function pathNeighbors(post: Post): { previous?: Post; next?: Post } {
   const index = siblings.findIndex((item) => item.slug === post.slug);
   return {
     previous: index > 0 ? siblings[index - 1] : undefined,
-    next: index >= 0 && index < siblings.length - 1 ? siblings[index + 1] : undefined,
+    next:
+      index >= 0 && index < siblings.length - 1
+        ? siblings[index + 1]
+        : undefined,
   };
 }

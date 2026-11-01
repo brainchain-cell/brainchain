@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LessonProgress } from "@/components/LessonProgress";
 import JsonLd from "@/components/json-ld";
 import { MakeAffiliateCta } from "@/components/MakeAffiliateCta";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
@@ -24,7 +25,8 @@ function lessonFacts(post: Post): string {
     "Brainchain editorial",
   ];
   if (post.date) parts.push(`Published ${formatIsoDate(post.date)}`);
-  if (post.lastReviewed) parts.push(`Last reviewed ${formatIsoDate(post.lastReviewed)}`);
+  if (post.lastReviewed)
+    parts.push(`Last reviewed ${formatIsoDate(post.lastReviewed)}`);
   parts.push(`${post.readTime} min read`);
   return parts.join(" · ");
 }
@@ -71,10 +73,28 @@ export default async function Article({ params }: Props) {
   if (!post) notFound();
   const path = getLearningPath(post.path);
   const { previous, next } = pathNeighbors(post);
-  const prerequisites = post.prerequisites.map((slug) => getPostBySlug(slug)).filter((item): item is Post => !!item);
+  const prerequisites = post.prerequisites
+    .map((slug) => getPostBySlug(slug))
+    .filter((item): item is Post => !!item);
 
+  const html = await markdownToHtml(post.content);
+  const sections: { id: string; label: string }[] = [];
+  const articleHtml = html.replace(
+    /<h2>([\s\S]*?)<\/h2>/g,
+    (_, label: string) => {
+      const id = `lesson-section-${sections.length + 1}`;
+      sections.push({
+        id,
+        label: label
+          .replace(/<[^>]*>/g, "")
+          .replace(/&#x26;|&amp;/g, "&")
+          .replace(/&#x27;/g, "’"),
+      });
+      return `<h2 id="${id}">${label}</h2>`;
+    },
+  );
   return (
-    <main id="main" className="article">
+    <main id="main" className="article lesson-page">
       <nav className="breadcrumb" aria-label="Breadcrumb">
         <Link href="/learn">Workflows</Link>
         {path ? (
@@ -86,7 +106,11 @@ export default async function Article({ params }: Props) {
         <span aria-hidden="true">/</span>
         <span aria-current="page">{post.title}</span>
       </nav>
-      <h1>{post.title}</h1>
+      <div className="lesson-intro">
+        <p className="eyebrow">{path?.title} · FIELD GUIDE</p>
+        <h1>{post.title}</h1>
+        <p className="lesson-outcome">{post.excerpt}</p>
+      </div>
       <p className="meta">{lessonFacts(post)}</p>
       <p className="notice">
         {prerequisites.length === 0 ? (
@@ -105,12 +129,35 @@ export default async function Article({ params }: Props) {
         )}
       </p>
       <p className="notice">
-        An editorial guide based on linked documentation. This is not a hands-on product review.
+        An editorial guide based on linked documentation. This is not a hands-on
+        product review.
       </p>
-      <div className="prose" dangerouslySetInnerHTML={{ __html: await markdownToHtml(post.content) }} />
+      <div className="lesson-reading-layout">
+        <aside className="lesson-toc">
+          <p className="eyebrow">IN THIS LESSON</p>
+          <nav aria-label="On this page">
+            {sections.map((section) => (
+              <a key={section.id} href={`#${section.id}`}>
+                {section.label}
+              </a>
+            ))}
+          </nav>
+          <p className="fine-print">
+            Documentation-based editorial.
+            <br />
+            Sources linked in the guide.
+          </p>
+        </aside>
+        <div
+          className="prose"
+          dangerouslySetInnerHTML={{ __html: articleHtml }}
+        />
+      </div>
+      <LessonProgress slug={post.slug} />
       {postShowsMakeAffiliate(post.slug) ? <MakeAffiliateCta /> : null}
       <p className="notice">
-        Read our <Link href="/disclosure">affiliate disclosure</Link> and <Link href="/about">editorial standards</Link>.
+        Read our <Link href="/disclosure">affiliate disclosure</Link> and{" "}
+        <Link href="/about">editorial standards</Link>.
       </p>
       <nav className="lesson-nav" aria-label="Lessons in this path">
         {previous ? (

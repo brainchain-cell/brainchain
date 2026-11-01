@@ -1,17 +1,29 @@
-import {postsInPathOrder} from "@/lib/api";
-import {getEntryPoints} from "@/lib/entryPoints";
-import {SITE_URL} from "@/lib/site";
-import {getCategories, getTools, isUnknown, priceText, type Tool} from "@/lib/tools";
+import { postsInPathOrder } from "@/lib/api";
+import { getEntryPoints } from "@/lib/entryPoints";
+import { SITE_URL } from "@/lib/site";
+import {
+  getCategories,
+  getTools,
+  isUnknown,
+  priceText,
+  type Tool,
+} from "@/lib/tools";
 
 function toolLine(tool: Tool): string {
-  const price = isUnknown(tool.paidFrom) ? priceText(tool) : `paid from ${tool.paidFrom}`;
-  const lessons = tool.lessons.length ? ` Lessons: ${tool.lessons.map((slug) => `${SITE_URL}/posts/${slug}`).join(", ")}.` : "";
+  const price = isUnknown(tool.paidFrom)
+    ? priceText(tool)
+    : `paid from ${tool.paidFrom}`;
+  const lessons = tool.lessons.length
+    ? ` Lessons: ${tool.lessons.map((slug) => `${SITE_URL}/posts/${slug}`).join(", ")}.`
+    : "";
   return `- [${tool.name}](${SITE_URL}/tools/${tool.slug}): ${tool.summary} ${price}. Checked ${tool.pricingLastChecked}.${lessons}`;
 }
 
 export function buildLlmsText(): string {
   const entries = getEntryPoints();
-  const paths = entries.flatMap((entry) => entry.paths.map((item) => item.path));
+  const paths = entries.flatMap((entry) =>
+    entry.paths.map((item) => item.path),
+  );
   const lessonLines: string[] = [];
   for (const path of paths) {
     lessonLines.push(`### ${path.title}`);
@@ -19,7 +31,9 @@ export function buildLlmsText(): string {
     lessonLines.push(`Path: ${SITE_URL}/learn/${path.id}`);
     lessonLines.push("");
     for (const post of postsInPathOrder(path.id)) {
-      lessonLines.push(`- [${post.title}](${SITE_URL}/posts/${post.slug}): ${post.excerpt}`);
+      lessonLines.push(
+        `- [${post.title}](${SITE_URL}/posts/${post.slug}): ${post.excerpt}`,
+      );
     }
     lessonLines.push("");
   }

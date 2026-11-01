@@ -1,6 +1,10 @@
 import type { Post } from "@/interfaces/post";
 import { firstLessonInPath } from "@/lib/api";
-import { getLearningPath, getLearningPaths, type LearningPath } from "@/lib/paths";
+import {
+  getLearningPath,
+  getLearningPaths,
+  type LearningPath,
+} from "@/lib/paths";
 
 export type EntryPoint = {
   id: string;
@@ -9,7 +13,12 @@ export type EntryPoint = {
   paths: { path: LearningPath; firstLesson: Post }[];
 };
 
-const DEFINITIONS: { id: string; title: string; copy: string; pathIds: string[] }[] = [
+const DEFINITIONS: {
+  id: string;
+  title: string;
+  copy: string;
+  pathIds: string[];
+}[] = [
   {
     id: "work-you-must-get-right",
     title: "Work you must get right",
@@ -38,23 +47,32 @@ export function getEntryPoints(): EntryPoint[] {
   for (const entry of DEFINITIONS) {
     const paths: EntryPoint["paths"] = [];
     for (const pathId of entry.pathIds) {
-      if (seen.has(pathId)) throw new Error(`Path ${pathId} is listed in more than one entry point`);
+      if (seen.has(pathId))
+        throw new Error(
+          `Path ${pathId} is listed in more than one entry point`,
+        );
       seen.add(pathId);
       const path = getLearningPath(pathId);
       const firstLesson = firstLessonInPath(pathId);
-      if (!path || !firstLesson) throw new Error(`Entry point ${entry.id} has no published lesson for ${pathId}`);
+      if (!path || !firstLesson)
+        throw new Error(
+          `Entry point ${entry.id} has no published lesson for ${pathId}`,
+        );
       paths.push({ path, firstLesson });
     }
     entries.push({ id: entry.id, title: entry.title, copy: entry.copy, paths });
   }
 
   for (const id of known) {
-    if (!seen.has(id)) throw new Error(`Path ${id} is not listed in an entry point`);
+    if (!seen.has(id))
+      throw new Error(`Path ${id} is not listed in an entry point`);
   }
 
   return entries;
 }
 
 export function entryPointForPath(pathId: string): EntryPoint | undefined {
-  return getEntryPoints().find((entry) => entry.paths.some((item) => item.path.id === pathId));
+  return getEntryPoints().find((entry) =>
+    entry.paths.some((item) => item.path.id === pathId),
+  );
 }

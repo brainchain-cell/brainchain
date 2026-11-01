@@ -1,9 +1,9 @@
 /** Canonical production origin. Preview hosts are not redirected here. */
 export const SITE_URL = "https://brainchainlab.com";
 
-export const SITE_NAME = "Brainchain";
+export const SITE_NAME = "Brainchain Lab";
 
-export const SITE_TITLE = "Brainchain — AI tools for useful work";
+export const SITE_TITLE = "Brainchain Lab — AI workflows for useful work";
 
 export const SITE_DESCRIPTION =
   "Practical AI workflows for professionals, from your first automation to building with agents.";
@@ -15,7 +15,8 @@ export const OG_IMAGE_PATH = "/og.png";
  * Make affiliate registration link (partner code `brainchain`).
  * The only place this URL is defined.
  */
-export const MAKE_AFFILIATE_URL = "https://www.make.com/en/register?pc=brainchain";
+export const MAKE_AFFILIATE_URL =
+  "https://www.make.com/en/register?pc=brainchain";
 
 /**
  * Guides that already cite Make's documentation and show one labelled affiliate CTA.

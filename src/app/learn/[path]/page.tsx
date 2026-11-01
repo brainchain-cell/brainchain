@@ -20,7 +20,9 @@ function lessonsToReadFirst(lessons: Post[]): Post[] {
       if (!inPath.has(slug) && !slugs.includes(slug)) slugs.push(slug);
     }
   }
-  return slugs.map((slug) => getPostBySlug(slug)).filter((post): post is Post => !!post);
+  return slugs
+    .map((slug) => getPostBySlug(slug))
+    .filter((post): post is Post => !!post);
 }
 
 export default async function PathPage({ params }: Props) {
