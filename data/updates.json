@@ -1,45 +1,52 @@
 [
   {
-    "id": "84abd1857de5dfd9",
-    "title": "Making it easier for websites to express AI training preferences",
-    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "id": "fc87a45dcfbf03d4",
+    "title": "Heimstaden is changing residential real estate management with AI",
+    "url": "https://openai.com/index/heimstaden",
     "source": "OpenAI",
-    "date": "2026-10-30T09:30:00+00:00"
+    "date": "2026-11-03T08:00:00+00:00"
   },
   {
-    "id": "a86d24c59c826150",
-    "title": "Community safety report and new protections for teens",
-    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "id": "bca108e4c77bd86b",
+    "title": "Rewarding defenders with bigger bug bounties",
+    "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
     "source": "OpenAI",
-    "date": "2026-10-30T09:00:00+00:00"
+    "date": "2026-11-02T18:00:00+00:00"
   },
   {
-    "id": "574dbaf7fc8731e4",
-    "title": "Fair use benefits everyone",
-    "url": "https://openai.com/index/fair-use-benefits-everyone",
+    "id": "0d297090385ad5a7",
+    "title": "Preparing our next security sprint to harden OpenAI",
+    "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
     "source": "OpenAI",
-    "date": "2026-10-30T00:00:00+00:00"
+    "date": "2026-11-02T18:00:00+00:00"
   },
   {
-    "id": "9349f418e7bc7ab4",
-    "title": "An updated Model Spec for more capable and beneficial AI",
-    "url": "https://openai.com/index/updated-model-spec",
-    "source": "OpenAI",
-    "date": "2026-10-29T17:00:00+00:00"
+    "id": "c45a0b6d7de18ac5",
+    "title": "The latest AI news we announced in October 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+    "source": "Google AI",
+    "date": "2026-11-02T17:45:00+00:00"
   },
   {
-    "id": "0f01adb2acab0a67",
-    "title": "How we detect frontier model misalignment",
-    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "id": "277870ffc8d71544",
+    "title": "Scaling Git at OpenAI",
+    "url": "https://openai.com/index/scaling-git-at-openai",
     "source": "OpenAI",
-    "date": "2026-10-29T09:00:00+00:00"
+    "date": "2026-11-02T15:30:00+00:00"
   },
   {
-    "id": "d948735545c20cf3",
-    "title": "How Ropes & Gray is developing AI for transactional diligence",
-    "url": "https://openai.com/index/ropes-gray-ai-diligence",
+    "id": "5d33ed0c66ace544",
+    "title": "Introducing the Grid Protectors Program",
+    "url": "https://openai.com/index/grid-protectors-program",
     "source": "OpenAI",
-    "date": "2026-10-29T07:00:00+00:00"
+    "date": "2026-11-02T15:00:00+00:00"
+  },
+  {
+    "id": "4094d4340f9e66f9",
+    "title": "Qodo builds context into AI code review with Codex",
+    "url": "https://openai.com/index/qodo-codex-plugin",
+    "source": "OpenAI",
+    "date": "2026-11-02T00:00:00+00:00"
   },
   {
     "id": "b1d7eb2dedce5839",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
     "source": "Google AI",
     "date": "2026-10-02T15:00:00+00:00"
-  },
-  {
-    "id": "db713ef86bd59ea8",
-    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
-    "source": "Google AI",
-    "date": "2026-09-28T19:00:00+00:00"
   }
 ]
