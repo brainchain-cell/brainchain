@@ -1,5 +1,54 @@
 [
   {
+    "id": "8e8e851f9ac38a19",
+    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+    "source": "Google AI",
+    "date": "2026-11-11T09:00:00+00:00"
+  },
+  {
+    "id": "ac94b61a25ade5ed",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "source": "OpenAI",
+    "date": "2026-11-11T08:00:00+00:00"
+  },
+  {
+    "id": "c0101f36ad82bf91",
+    "title": "Gemini Intelligence: New features, on more devices",
+    "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+    "source": "Google AI",
+    "date": "2026-11-10T19:00:00+00:00"
+  },
+  {
+    "id": "59a8a5dd3afc5312",
+    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+    "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+    "source": "Google AI",
+    "date": "2026-11-10T14:00:00+00:00"
+  },
+  {
+    "id": "ef83b8dc18b1604d",
+    "title": "Google Cloud launches Gemini for healthcare.",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+    "source": "Google AI",
+    "date": "2026-11-10T13:00:00+00:00"
+  },
+  {
+    "id": "0f0020abcf733229",
+    "title": "Helping caregivers use AI in everyday life",
+    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+    "source": "OpenAI",
+    "date": "2026-11-10T12:00:00+00:00"
+  },
+  {
+    "id": "991ad48e8559b2fe",
+    "title": "Introducing Businesses in ChatGPT",
+    "url": "https://openai.com/index/introducing-businesses-chatgpt",
+    "source": "OpenAI",
+    "date": "2026-11-10T10:00:00+00:00"
+  },
+  {
     "id": "69d4d9d74efa0162",
     "title": "Closing the AI guidance gap in education",
     "url": "https://openai.com/index/closing-ai-guidance-gap-education",
@@ -7,39 +56,18 @@
     "date": "2026-11-10T09:00:00+00:00"
   },
   {
-    "id": "caa9073cefb43725",
-    "title": "ChatGPT Enterprise now available in AWS Marketplace",
-    "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "id": "9092d5eb66f29547",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "url": "https://openai.com/index/singapore-airlines-travel-work",
     "source": "OpenAI",
-    "date": "2026-11-09T19:00:00+00:00"
+    "date": "2026-11-10T08:00:00+00:00"
   },
   {
-    "id": "952d2516af2e9054",
-    "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-    "url": "https://openai.com/index/control-room",
+    "id": "f3fc54cd1d78c100",
+    "title": "Work at the Frontier: AI’s effect on freelance work",
+    "url": "https://openai.com/index/ai-effect-on-freelance-work",
     "source": "OpenAI",
-    "date": "2026-11-09T13:00:00+00:00"
-  },
-  {
-    "id": "02e9abf47eaf3fa0",
-    "title": "CodeRabbit scales agentic software development and ships 20x more",
-    "url": "https://openai.com/index/coderabbit-codex-daybreak",
-    "source": "OpenAI",
-    "date": "2026-11-09T08:00:00+00:00"
-  },
-  {
-    "id": "2e34e84f0999c607",
-    "title": "Kuken Industries searches 70 years of drawings in minutes",
-    "url": "https://openai.com/index/kuken",
-    "source": "OpenAI",
-    "date": "2026-11-09T08:00:00+00:00"
-  },
-  {
-    "id": "a0a44ed09dc9a108",
-    "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-    "url": "https://openai.com/index/partnering-with-hacktron",
-    "source": "OpenAI",
-    "date": "2026-11-06T08:00:00+00:00"
+    "date": "2026-11-10T07:00:00+00:00"
   },
   {
     "id": "27b87d65d3f99406",
@@ -54,33 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
     "source": "Google AI",
     "date": "2026-11-02T17:45:00+00:00"
-  },
-  {
-    "id": "b1d7eb2dedce5839",
-    "title": "Our newest AI Quest: Mapping the human brain",
-    "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-    "source": "Google AI",
-    "date": "2026-10-26T16:00:00+00:00"
-  },
-  {
-    "id": "c7c1db1d24f97b16",
-    "title": "Southeast Asia’s digital economy to hit $368 billion",
-    "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-    "source": "Google AI",
-    "date": "2026-10-21T04:00:00+00:00"
-  },
-  {
-    "id": "74c9e10c02543c49",
-    "title": "Gemini 4 Argon: Built to solve your hardest problems",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-    "source": "Google AI",
-    "date": "2026-10-13T16:00:00+00:00"
-  },
-  {
-    "id": "b6aec8c05cfc3e2f",
-    "title": "Introducing Playground: Create and play custom games",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-    "source": "Google AI",
-    "date": "2026-10-07T12:00:00+00:00"
   }
 ]
