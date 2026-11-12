@@ -1,5 +1,40 @@
 [
   {
+    "id": "4922ca6fb0dd9299",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "source": "OpenAI",
+    "date": "2026-11-12T09:30:00+00:00"
+  },
+  {
+    "id": "d7c1da8cb7dc41da",
+    "title": "Supporting research on AI and children’s safety",
+    "url": "https://openai.com/index/children-first-declaration",
+    "source": "OpenAI",
+    "date": "2026-11-12T00:00:00+00:00"
+  },
+  {
+    "id": "65b96c238445cded",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "source": "OpenAI",
+    "date": "2026-11-12T00:00:00+00:00"
+  },
+  {
+    "id": "c06fca3b9549fb95",
+    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "source": "Google AI",
+    "date": "2026-11-11T18:00:00+00:00"
+  },
+  {
+    "id": "eac4d84ef949975e",
+    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+    "source": "Google AI",
+    "date": "2026-11-11T16:00:00+00:00"
+  },
+  {
     "id": "8e8e851f9ac38a19",
     "title": "Experience the art and legacy of Dr. Esther Mahlangu",
     "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
@@ -12,6 +47,13 @@
     "url": "https://openai.com/index/chatgpt-plus-for-veterans",
     "source": "OpenAI",
     "date": "2026-11-11T08:00:00+00:00"
+  },
+  {
+    "id": "55ff14dc4213127d",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "url": "https://openai.com/index/jiostar-vijay-seshadri",
+    "source": "OpenAI",
+    "date": "2026-11-11T00:00:00+00:00"
   },
   {
     "id": "c0101f36ad82bf91",
@@ -40,47 +82,5 @@
     "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
     "source": "OpenAI",
     "date": "2026-11-10T12:00:00+00:00"
-  },
-  {
-    "id": "991ad48e8559b2fe",
-    "title": "Introducing Businesses in ChatGPT",
-    "url": "https://openai.com/index/introducing-businesses-chatgpt",
-    "source": "OpenAI",
-    "date": "2026-11-10T10:00:00+00:00"
-  },
-  {
-    "id": "69d4d9d74efa0162",
-    "title": "Closing the AI guidance gap in education",
-    "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-    "source": "OpenAI",
-    "date": "2026-11-10T09:00:00+00:00"
-  },
-  {
-    "id": "9092d5eb66f29547",
-    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-    "url": "https://openai.com/index/singapore-airlines-travel-work",
-    "source": "OpenAI",
-    "date": "2026-11-10T08:00:00+00:00"
-  },
-  {
-    "id": "f3fc54cd1d78c100",
-    "title": "Work at the Frontier: AI’s effect on freelance work",
-    "url": "https://openai.com/index/ai-effect-on-freelance-work",
-    "source": "OpenAI",
-    "date": "2026-11-10T07:00:00+00:00"
-  },
-  {
-    "id": "27b87d65d3f99406",
-    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "source": "Google AI",
-    "date": "2026-11-05T17:00:00+00:00"
-  },
-  {
-    "id": "c45a0b6d7de18ac5",
-    "title": "The latest AI news we announced in October 2026",
-    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
-    "source": "Google AI",
-    "date": "2026-11-02T17:45:00+00:00"
   }
 ]
