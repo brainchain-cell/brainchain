@@ -1,5 +1,26 @@
 [
   {
+    "id": "67672a694e389b29",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "url": "https://openai.com/business/customer-stories/amplitude",
+    "source": "OpenAI",
+    "date": "2026-11-12T20:00:00+00:00"
+  },
+  {
+    "id": "f19cddd04797ae7d",
+    "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+    "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+    "source": "Google AI",
+    "date": "2026-11-12T18:00:00+00:00"
+  },
+  {
+    "id": "b9840fd67063a36a",
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "source": "OpenAI",
+    "date": "2026-11-12T12:00:00+00:00"
+  },
+  {
     "id": "4922ca6fb0dd9299",
     "title": "Holiday Extras is rethinking what it can build with Codex",
     "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
@@ -49,13 +70,6 @@
     "date": "2026-11-11T08:00:00+00:00"
   },
   {
-    "id": "55ff14dc4213127d",
-    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-    "url": "https://openai.com/index/jiostar-vijay-seshadri",
-    "source": "OpenAI",
-    "date": "2026-11-11T00:00:00+00:00"
-  },
-  {
     "id": "c0101f36ad82bf91",
     "title": "Gemini Intelligence: New features, on more devices",
     "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
@@ -68,19 +82,5 @@
     "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
     "source": "Google AI",
     "date": "2026-11-10T14:00:00+00:00"
-  },
-  {
-    "id": "ef83b8dc18b1604d",
-    "title": "Google Cloud launches Gemini for healthcare.",
-    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-    "source": "Google AI",
-    "date": "2026-11-10T13:00:00+00:00"
-  },
-  {
-    "id": "0f0020abcf733229",
-    "title": "Helping caregivers use AI in everyday life",
-    "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-    "source": "OpenAI",
-    "date": "2026-11-10T12:00:00+00:00"
   }
 ]
