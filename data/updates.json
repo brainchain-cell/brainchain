@@ -1,5 +1,33 @@
 [
   {
+    "id": "a1de396d3910fa2e",
+    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+    "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+    "source": "OpenAI",
+    "date": "2026-11-18T00:00:00+00:00"
+  },
+  {
+    "id": "8f6af8c44a4a1bfb",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "source": "OpenAI",
+    "date": "2026-11-17T17:45:00+00:00"
+  },
+  {
+    "id": "b451aff394adbb42",
+    "title": "Put Gemini to work for you",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "source": "Google AI",
+    "date": "2026-11-17T17:00:00+00:00"
+  },
+  {
+    "id": "3047d7657748ea76",
+    "title": "Introducing ChatGPT for Sales",
+    "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+    "source": "OpenAI",
+    "date": "2026-11-17T08:00:00+00:00"
+  },
+  {
     "id": "0e7f690aa4ff229b",
     "title": "Strengthening NATO and allied cyber defenses with AI",
     "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
@@ -7,18 +35,18 @@
     "date": "2026-11-17T00:00:00+00:00"
   },
   {
-    "id": "2d7a5d6b20fff3cd",
-    "title": "Broadening access to AI for scientists",
-    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "id": "b43ef08ac3ed4f7a",
+    "title": "Astra for Law leads in legal intelligence",
+    "url": "https://openai.com/index/astra-law-6-2",
     "source": "OpenAI",
-    "date": "2026-11-16T17:00:00+00:00"
+    "date": "2026-11-17T00:00:00+00:00"
   },
   {
-    "id": "dd659f011024f04f",
-    "title": "Strengthening the fight against online child sexual abuse with new tools and support",
-    "url": "https://openai.com/index/strengthening-online-child-safety",
+    "id": "3b3be741a87f5e21",
+    "title": "Introducing OpenAI for Chile",
+    "url": "https://openai.com/index/introducing-openai-for-chile",
     "source": "OpenAI",
-    "date": "2026-11-16T17:00:00+00:00"
+    "date": "2026-11-17T00:00:00+00:00"
   },
   {
     "id": "dfc32ad6652396f0",
@@ -26,27 +54,6 @@
     "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
     "source": "Google AI",
     "date": "2026-11-16T14:00:00+00:00"
-  },
-  {
-    "id": "d91fd06de7b8771e",
-    "title": "Science at the Frontier: How scientists use ChatGPT",
-    "url": "https://openai.com/index/science-at-the-frontier",
-    "source": "OpenAI",
-    "date": "2026-11-16T12:00:00+00:00"
-  },
-  {
-    "id": "b82b64ef90f76e66",
-    "title": "How Revolut raises ambition without lowering the bar",
-    "url": "https://openai.com/business/customer-stories/revolut",
-    "source": "OpenAI",
-    "date": "2026-11-16T09:30:00+00:00"
-  },
-  {
-    "id": "ff7833693fa2a067",
-    "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
-    "url": "https://openai.com/index/lvmh-media-division-partnership",
-    "source": "OpenAI",
-    "date": "2026-11-16T09:00:00+00:00"
   },
   {
     "id": "f19cddd04797ae7d",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
     "source": "Google AI",
     "date": "2026-11-11T09:00:00+00:00"
-  },
-  {
-    "id": "c0101f36ad82bf91",
-    "title": "Gemini Intelligence: New features, on more devices",
-    "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-    "source": "Google AI",
-    "date": "2026-11-10T19:00:00+00:00"
   }
 ]
