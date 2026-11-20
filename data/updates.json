@@ -1,5 +1,54 @@
 [
   {
+    "id": "1b3aafed7dd5d45c",
+    "title": "Introducing Tool Retrieval in the Gemini API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "source": "Google AI",
+    "date": "2026-11-19T18:00:00+00:00"
+  },
+  {
+    "id": "d47c74f9a7ce43a8",
+    "title": "Walter Isaacson on curiosity and creativity in the AI age.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-walter-isaacson/",
+    "source": "Google AI",
+    "date": "2026-11-19T17:00:00+00:00"
+  },
+  {
+    "id": "9342dbf934e428aa",
+    "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "source": "OpenAI",
+    "date": "2026-11-19T08:00:00+00:00"
+  },
+  {
+    "id": "a890a236270cc5e3",
+    "title": "Deploying Daybreak Red",
+    "url": "https://openai.com/business/learn/deploying-daybreak-red",
+    "source": "OpenAI",
+    "date": "2026-11-19T00:00:00+00:00"
+  },
+  {
+    "id": "17b7a2b39f098895",
+    "title": "See PR scans in action",
+    "url": "https://openai.com/business/learn/pr-scans-demo",
+    "source": "OpenAI",
+    "date": "2026-11-19T00:00:00+00:00"
+  },
+  {
+    "id": "82fe289fe466dcc1",
+    "title": "Explore the Codex Security Plugin",
+    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "source": "OpenAI",
+    "date": "2026-11-19T00:00:00+00:00"
+  },
+  {
+    "id": "da30645137037f00",
+    "title": "Get started with Daybreak Blue",
+    "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "source": "OpenAI",
+    "date": "2026-11-19T00:00:00+00:00"
+  },
+  {
     "id": "00a064e6720eae62",
     "title": "The Gemini app is now available on lower-memory Android devices.",
     "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
@@ -12,41 +61,6 @@
     "url": "https://openai.com/index/the-silent-consensus",
     "source": "OpenAI",
     "date": "2026-11-18T10:00:00+00:00"
-  },
-  {
-    "id": "58da586369f33999",
-    "title": "Research acceleration: The jagged frontier",
-    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
-    "source": "OpenAI",
-    "date": "2026-11-18T08:00:00+00:00"
-  },
-  {
-    "id": "53d809d7420a3923",
-    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-    "url": "https://openai.com/business/customer-stories/sumitomo-life",
-    "source": "OpenAI",
-    "date": "2026-11-18T08:00:00+00:00"
-  },
-  {
-    "id": "67952d9a918d2536",
-    "title": "Inside the Codex sandbox",
-    "url": "https://openai.com/index/inside-the-codex-sandbox",
-    "source": "OpenAI",
-    "date": "2026-11-18T08:00:00+00:00"
-  },
-  {
-    "id": "99be0c0a7e074380",
-    "title": "Managing frontier AI risk: From training to deployment",
-    "url": "https://openai.com/index/managing-frontier-ai-risk",
-    "source": "OpenAI",
-    "date": "2026-11-18T06:00:00+00:00"
-  },
-  {
-    "id": "a1de396d3910fa2e",
-    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
-    "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
-    "source": "OpenAI",
-    "date": "2026-11-18T00:00:00+00:00"
   },
   {
     "id": "b451aff394adbb42",
@@ -68,19 +82,5 @@
     "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
     "source": "Google AI",
     "date": "2026-11-12T18:00:00+00:00"
-  },
-  {
-    "id": "c06fca3b9549fb95",
-    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "source": "Google AI",
-    "date": "2026-11-11T18:00:00+00:00"
-  },
-  {
-    "id": "eac4d84ef949975e",
-    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
-    "source": "Google AI",
-    "date": "2026-11-11T16:00:00+00:00"
   }
 ]
