@@ -1,5 +1,12 @@
 [
   {
+    "id": "1a10f1676d46fc01",
+    "title": "Perplexity and Intelligence",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "source": "OpenAI",
+    "date": "2026-11-22T00:00:00+00:00"
+  },
+  {
     "id": "7ad44f990f0c53ef",
     "title": "Combatting adversarial distillation",
     "url": "https://openai.com/index/combatting-adversarial-distillation",
@@ -42,16 +49,9 @@
     "date": "2026-11-19T08:00:00+00:00"
   },
   {
-    "id": "82fe289fe466dcc1",
-    "title": "Explore the Codex Security Plugin",
-    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
-    "source": "OpenAI",
-    "date": "2026-11-19T00:00:00+00:00"
-  },
-  {
-    "id": "17b7a2b39f098895",
-    "title": "See PR scans in action",
-    "url": "https://openai.com/business/learn/pr-scans-demo",
+    "id": "a890a236270cc5e3",
+    "title": "Deploying Daybreak Red",
+    "url": "https://openai.com/business/learn/deploying-daybreak-red",
     "source": "OpenAI",
     "date": "2026-11-19T00:00:00+00:00"
   },
