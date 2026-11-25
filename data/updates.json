@@ -1,5 +1,47 @@
 [
   {
+    "id": "0d108e7b71c40649",
+    "title": "How Gemini is changing the game for Golden State's organization and fans.",
+    "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+    "source": "Google AI",
+    "date": "2026-11-24T16:00:00+00:00"
+  },
+  {
+    "id": "ac2f786b30f6d457",
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "source": "OpenAI",
+    "date": "2026-11-24T13:00:00+00:00"
+  },
+  {
+    "id": "7758c04a629331bf",
+    "title": "Searching for distant planets with Astra",
+    "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "source": "OpenAI",
+    "date": "2026-11-24T11:00:00+00:00"
+  },
+  {
+    "id": "7e14b56be6744308",
+    "title": "How Intentful uses dots to make more time for growth",
+    "url": "https://openai.com/business/customer-stories/intentful-dots",
+    "source": "OpenAI",
+    "date": "2026-11-24T00:00:00+00:00"
+  },
+  {
+    "id": "89a905d5eae9fa3e",
+    "title": "How iFood scales coding agents across 15,000 repositories",
+    "url": "https://openai.com/business/customer-stories/ifood",
+    "source": "OpenAI",
+    "date": "2026-11-24T00:00:00+00:00"
+  },
+  {
+    "id": "a3c9028eefd69cfd",
+    "title": "Clay helps sales teams win with Codex and ChatGPT",
+    "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "source": "OpenAI",
+    "date": "2026-11-24T00:00:00+00:00"
+  },
+  {
     "id": "b0689cf87ab570a4",
     "title": "OpenAI and Cisco introduce Shirudo",
     "url": "https://openai.com/index/introducing-shirudo",
@@ -12,41 +54,6 @@
     "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
     "source": "Google AI",
     "date": "2026-11-23T17:00:00+00:00"
-  },
-  {
-    "id": "10878202550bbbf9",
-    "title": "Connected intelligence for in-house legal",
-    "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
-    "source": "OpenAI",
-    "date": "2026-11-23T08:00:00+00:00"
-  },
-  {
-    "id": "1259b534687dd8b3",
-    "title": "Richpanel helps companies automate 50% of support in 30 days",
-    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-    "source": "OpenAI",
-    "date": "2026-11-23T08:00:00+00:00"
-  },
-  {
-    "id": "1a10f1676d46fc01",
-    "title": "Perplexity and Intelligence",
-    "url": "https://openai.com/index/perplexity-and-intelligence",
-    "source": "OpenAI",
-    "date": "2026-11-22T00:00:00+00:00"
-  },
-  {
-    "id": "7ad44f990f0c53ef",
-    "title": "Combatting adversarial distillation",
-    "url": "https://openai.com/index/combatting-adversarial-distillation",
-    "source": "OpenAI",
-    "date": "2026-11-20T10:00:00+00:00"
-  },
-  {
-    "id": "8145fefb47ff1ca9",
-    "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
-    "url": "https://openai.com/business/customer-stories/hebbia",
-    "source": "OpenAI",
-    "date": "2026-11-20T00:00:00+00:00"
   },
   {
     "id": "1b3aafed7dd5d45c",
@@ -75,12 +82,5 @@
     "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
     "source": "Google AI",
     "date": "2026-11-17T17:00:00+00:00"
-  },
-  {
-    "id": "dfc32ad6652396f0",
-    "title": "New Ask Maps features to help with holiday travel and prep",
-    "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-holiday-travel-features-2026/",
-    "source": "Google AI",
-    "date": "2026-11-16T14:00:00+00:00"
   }
 ]
